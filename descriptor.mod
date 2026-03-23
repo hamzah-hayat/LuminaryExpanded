@@ -1,0 +1,10 @@
+version="1.0.0"
+tags={
+	"Overhaul"
+	"Events"
+	"Balance"
+	"Leaders"
+	"Gameplay"
+}
+name="LuminaryExpanded"
+supported_version="v4.3.1"
