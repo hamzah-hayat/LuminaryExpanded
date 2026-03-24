@@ -6,6 +6,9 @@
 # And Linus Dilen
 # Support: Haig Morrison
 
+# Modded by Hamzah
+# Events that were edited are marked with LumEx
+
 #########################
 
 namespace = paragon
@@ -1738,6 +1741,8 @@ country_event = { # Release the Forgotten
 	}
 }
 
+# LumEx
+# Added extra options
 situation_event = { # 1st
 	id = paragon.5054
 	title = "paragon.5054.name"
@@ -1780,6 +1785,7 @@ situation_event = { # 1st
 		}
 	}
 
+	# Lose luminary trait point
 	option = {
 		name = WORRYING
 		custom_tooltip = paragon.leader.growth.negative
@@ -1792,6 +1798,8 @@ situation_event = { # 1st
 			}
 		}
 	}
+
+	# Use Unity
 	option = {
 		name = paragon.forgotten.a
 		allow = {
@@ -1816,8 +1824,50 @@ situation_event = { # 1st
 			}
 		}
 	}
+
+	# Use Influence
+	option = {
+		name = paragon.forgotten.a.2
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 100
+					mult = clampdown_costs_mult
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -100
+				mult = clampdown_costs_mult
+			}
+			hidden_effect = {
+				multiply_variable = {
+					which = clampdown_costs_mult
+					value = 1.5
+				}
+			}
+		}
+	}
+
+	# Take a bad media coverage modifier (negative happiness)
+	option = {
+		name = paragon.forgotten.a.3
+		owner = {
+			luminary_forgotton_increase_bad_media_coverage = yes
+			hidden_effect = {
+				multiply_variable = {
+					which = clampdown_costs_mult
+					value = 1.5
+				}
+			}
+		}
+	}
 }
 
+# LumEx
+# Added extra options
 situation_event = { # 2nd
 	id = paragon.5055
 	title = "paragon.5055.name"
@@ -1839,6 +1889,7 @@ situation_event = { # 2nd
 		}
 	}
 
+	# Lose luminary trait point
 	option = {
 		name = DISTURBING
 		custom_tooltip = paragon.leader.growth.negative
@@ -1851,6 +1902,8 @@ situation_event = { # 2nd
 			}
 		}
 	}
+
+	# Use Energy
 	option = {
 		name = paragon.forgotten.b
 		allow = {
@@ -1875,8 +1928,50 @@ situation_event = { # 2nd
 			}
 		}
 	}
+
+	# Use Consumer Goods
+	option = {
+		name = paragon.forgotten.b.2
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = consumer_goods
+					value >= 3000
+					mult = clampdown_costs_mult
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				consumer_goods = -3000
+				mult = clampdown_costs_mult
+			}
+			hidden_effect = {
+				multiply_variable = {
+					which = clampdown_costs_mult
+					value = 1.5
+				}
+			}
+		}
+	}
+
+	# Take a bad media coverage modifier (negative happiness)
+	option = {
+		name = paragon.forgotten.b.3
+		owner = {
+			luminary_forgotton_increase_bad_media_coverage = yes
+			hidden_effect = {
+				multiply_variable = {
+					which = clampdown_costs_mult
+					value = 1.5
+				}
+			}
+		}
+	}
 }
 
+# LumEx
+# Added extra options
 situation_event = { # 3rd
 	id = paragon.5056
 	title = "paragon.5056.name"
@@ -1898,6 +1993,7 @@ situation_event = { # 3rd
 		}
 	}
 
+	# Lose luminary trait point
 	option = {
 		name = DISCONCERTING
 		custom_tooltip = paragon.leader.growth.negative
@@ -1910,6 +2006,8 @@ situation_event = { # 3rd
 			}
 		}
 	}
+
+	# Use Unity
 	option = {
 		name = paragon.forgotten.c
 		allow = {
@@ -1926,6 +2024,46 @@ situation_event = { # 3rd
 				unity = -5000
 				mult = clampdown_costs_mult
 			}
+			hidden_effect = {
+				multiply_variable = {
+					which = clampdown_costs_mult
+					value = 1.5
+				}
+			}
+		}
+	}
+
+	# Use Influence
+	option = {
+		name = paragon.forgotten.c.2
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 100
+					mult = clampdown_costs_mult
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -100
+				mult = clampdown_costs_mult
+			}
+			hidden_effect = {
+				multiply_variable = {
+					which = clampdown_costs_mult
+					value = 1.5
+				}
+			}
+		}
+	}
+
+	# Take a bad media coverage modifier (negative happiness)
+	option = {
+		name = paragon.forgotten.c.3
+		owner = {
+			luminary_forgotton_increase_bad_media_coverage = yes
 			hidden_effect = {
 				multiply_variable = {
 					which = clampdown_costs_mult

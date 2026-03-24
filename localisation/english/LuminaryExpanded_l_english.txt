@@ -1,0 +1,10 @@
+l_english:
+	# Forgotten Events
+	paragon.forgotten.a.2:0 "Suppress the accusations."
+	paragon.forgotten.a.3:0 "Ignore the Forgotten."
+
+	paragon.forgotten.b.2:0 "Placate with bribes."
+	paragon.forgotten.b.3:0 "Ignore the deceit."
+
+	paragon.forgotten.c.2:0 "Fabricate counter-evidence."
+	paragon.forgotten.c.3:0 "Apologise for the crimes."

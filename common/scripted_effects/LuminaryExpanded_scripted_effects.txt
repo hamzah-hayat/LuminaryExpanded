@@ -1,0 +1,42 @@
+luminary_forgotton_increase_bad_media_coverage = {
+	if = {
+		limit = {
+			has_modifier = media_coverage_negative_high
+		}
+		remove_modifier = "media_coverage_negative_high"
+		add_modifier = {
+			modifier = media_coverage_negative_high
+			days = 3600
+			mult = clampdown_costs_mult
+		}
+	}
+	if = {
+		limit = {
+			has_modifier = media_coverage_negative_medium
+		}
+		remove_modifier = "media_coverage_negative_medium"
+		add_modifier = {
+			modifier = media_coverage_negative_high
+			days = 3600
+			mult = clampdown_costs_mult
+		}
+	}
+	else_if = {
+		limit = {
+			has_modifier = media_coverage_negative_low
+		}
+		remove_modifier = "media_coverage_negative_low"
+		add_modifier = {
+			modifier = media_coverage_negative_medium
+			days = 3600
+			mult = clampdown_costs_mult
+		}
+	}
+	else = {
+		add_modifier = {
+			modifier = media_coverage_negative_low
+			days = 3600
+			mult = clampdown_costs_mult
+		}
+	}
+}
