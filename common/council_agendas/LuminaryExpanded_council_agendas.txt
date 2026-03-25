@@ -1,0 +1,28 @@
+@base_agenda_cost = 7000
+
+origin_legendary_leader = {
+	agenda_cost = @base_agenda_cost
+	potential = {
+		any_situation = {
+			is_situation_type = paragon_origin_promise
+		}
+	}
+	allow = {
+		any_situation = {
+			is_situation_type = paragon_origin_promise
+		}
+	}
+	modifier = {
+		pop_citizen_happiness = 0.05
+		council_agenda_progress_speed = 0.2
+	}
+	effect = {
+		set_country_flag = origin_upgrade_agendas_situation
+		custom_tooltip = council_agenda_origin_legendary_leader_effect
+		hidden_effect = {
+			country_event = {
+				id = paragon.5324
+			}
+		}
+	}
+}

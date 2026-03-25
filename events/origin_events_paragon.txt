@@ -3868,6 +3868,46 @@ country_event = { #Ruler Insight - All Leaders exp gain (not Ruler)
 	}
 }
 
+country_event = { # Ruler Insight - 40 Year plan end, choose bonus
+	id = paragon.5324
+	title = "paragon.5324.name"
+	desc = "paragon.5324.desc"
+	picture = GFX_evt_legendary_leader
+	show_sound = event_celebration
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = root.owner.ruler
+		room = root.owner
+	}
+
+	is_triggered_only = yes
+
+	trigger = {}
+
+	immediate = {}
+
+	option = {
+		name = paragon.5324.starbase
+		hidden_effect = { country_event = { id = paragon.5325 } }
+	}
+
+	option = {
+		name = paragon.5324.living_metal
+		hidden_effect = { country_event = { id = paragon.5330 } }
+	}
+
+	option = {
+		name = paragon.5324.dark_matter
+		hidden_effect = { country_event = { id = paragon.5335 } }
+	}
+
+	option = {
+		name = paragon.5324.strategic_resources
+		hidden_effect = { country_event = { id = paragon.5360 } }
+	}
+}
+
 country_event = { #Ruler Insight - Upgrade Starbase
 	id = paragon.5325
 	title = "paragon.5325.name"

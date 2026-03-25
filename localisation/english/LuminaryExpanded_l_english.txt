@@ -1,4 +1,13 @@
 l_english:
+	# 40 Year Plan Insight events
+	paragon.5324.name:0 "40 Year Plan Insight"
+	paragon.5324.desc:0 "The 40 Year Plan has come to fruition, and many of its promises have been fulfilled!\nTogether, with our new insights, endless possibilities for expansion await us.\nHowever, there are still many challenges to overcome, but with a recent great discovery I promise that the 40 year plan will propel our civilisation to the stars!"
+
+	paragon.5324.starbase:0 "Upgrade Starbase"
+	paragon.5324.living_metal:0 "Discover Living Metal"
+	paragon.5324.dark_matter:0 "Find Dark Matter"
+	paragon.5324.strategic_resources:0 "Prospect Strategic Resources"
+	
 	# Forgotten Events
 	paragon.forgotten.a.2:0 "Suppress the accusations."
 	paragon.forgotten.a.3:0 "Ignore the Forgotten."
