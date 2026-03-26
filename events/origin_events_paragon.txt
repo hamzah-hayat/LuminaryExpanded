@@ -3894,11 +3894,41 @@ country_event = { # Ruler Insight - 40 Year plan end, choose bonus
 
 	option = {
 		name = paragon.5324.living_metal
+		trigger = {
+			owner = {
+				any_planet_within_border = {
+					has_deposit = no
+					is_colonizable = no
+					is_colony = no
+					has_any_strategic_resource = no
+					OR = {
+						is_planet_class = pc_barren
+						is_planet_class = pc_barren_cold
+						is_asteroid = yes
+					}
+				}
+			}
+		}
 		hidden_effect = { country_event = { id = paragon.5330 } }
 	}
 
 	option = {
 		name = paragon.5324.dark_matter
+		trigger = {
+			owner = {
+				any_planet_within_border = {
+					is_star = yes
+					is_colonizable = no
+					is_colony = no
+					has_any_strategic_resource = no
+					OR = {
+						is_star_class = sc_black_hole
+						is_star_class = sc_pulsar
+						is_star_class = sc_neutron_star
+					}
+				}
+			}
+		}
 		hidden_effect = { country_event = { id = paragon.5335 } }
 	}
 

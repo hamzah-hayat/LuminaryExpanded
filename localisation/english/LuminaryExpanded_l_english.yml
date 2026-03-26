@@ -1,7 +1,7 @@
-l_english:
+﻿l_english:
 	# 40 Year Plan Insight events
-	paragon.5324.name:0 "40 Year Plan Insight"
-	paragon.5324.desc:0 "The 40 Year Plan has come to fruition, and many of its promises have been fulfilled!\nTogether, with our new insights, endless possibilities for expansion await us.\nHowever, there are still many challenges to overcome, but with a recent great discovery I promise that the 40 year plan will propel our civilisation to the stars!"
+	paragon.5324.name:0 "The 40 Year Plan"
+	paragon.5324.desc:0 "The groundwork for the 40 year plan has now been established!\nTogether, our people are ready to embark on this ambitious journey to the stars.\nThere are still many challenges to overcome, but with a recent great discovery I know we will achieve greatness!"
 
 	paragon.5324.starbase:0 "Upgrade Starbase"
 	paragon.5324.living_metal:0 "Discover Living Metal"
