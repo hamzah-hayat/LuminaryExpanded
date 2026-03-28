@@ -1929,21 +1929,21 @@ situation_event = { # 2nd
 		}
 	}
 
-	# Use Consumer Goods
+	# Use Trade
 	option = {
 		name = paragon.forgotten.b.2
 		allow = {
 			owner = {
 				resource_stockpile_compare = {
-					resource = consumer_goods
-					value >= 3000
+					resource = trade
+					value >= 15000
 					mult = clampdown_costs_mult
 				}
 			}
 		}
 		owner = {
 			add_resource = {
-				consumer_goods = -3000
+				trade = -15000
 				mult = clampdown_costs_mult
 			}
 			hidden_effect = {
@@ -3868,6 +3868,8 @@ country_event = { #Ruler Insight - All Leaders exp gain (not Ruler)
 	}
 }
 
+# LumEx
+# Added event that lets you choose a bonus for finishing the 40 year plan agenda
 country_event = { # Ruler Insight - 40 Year plan end, choose bonus
 	id = paragon.5324
 	title = "paragon.5324.name"

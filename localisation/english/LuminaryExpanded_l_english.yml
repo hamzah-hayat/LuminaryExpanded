@@ -9,11 +9,11 @@
 	paragon.5324.strategic_resources:0 "Prospect Strategic Resources"
 	
 	# Forgotten Events
-	paragon.forgotten.a.2:0 "Suppress the accusations."
-	paragon.forgotten.a.3:0 "Ignore the Forgotten."
+	paragon.forgotten.a.2:0 "Release some \"dissenters\""
+	paragon.forgotten.a.3:0 "Suppress the media."
 
 	paragon.forgotten.b.2:0 "Placate with bribes."
 	paragon.forgotten.b.3:0 "Ignore the deceit."
 
 	paragon.forgotten.c.2:0 "Fabricate counter-evidence."
-	paragon.forgotten.c.3:0 "Apologise for the crimes."
+	paragon.forgotten.c.3:0 "Apologise publicly."
