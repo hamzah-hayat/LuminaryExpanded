@@ -1,19 +1,97 @@
 ﻿l_english:
 	# 40 Year Plan Insight events
-	paragon.5324.name:0 "The 40 Year Plan"
-	paragon.5324.desc:0 "The groundwork for the 40 year plan has now been established!\nTogether, our people are ready to embark on this ambitious journey to the stars.\nThere are still many challenges to overcome, but with a recent great discovery I know we will achieve greatness!"
+		paragon.5324.name:0 "The 40 Year Plan"
+		paragon.5324.desc:0 "The groundwork for the 40 year plan has now been established!\nTogether, our people are ready to embark on this ambitious journey to the stars.\nThere are still many challenges to overcome, but with a recent great discovery I know we will achieve greatness!"
 
-	paragon.5324.starbase:0 "Upgrade Starbase"
-	paragon.5324.living_metal:0 "Discover Living Metal"
-	paragon.5324.dark_matter:0 "Find Dark Matter"
-	paragon.5324.strategic_resources:0 "Prospect Strategic Resources"
+		paragon.5324.starbase:0 "Upgrade Starbase"
+		paragon.5324.living_metal:0 "Discover Living Metal"
+		paragon.5324.dark_matter:0 "Find Dark Matter"
+		paragon.5324.strategic_resources:0 "Prospect Strategic Resources"
 	
 	# Forgotten Events
-	paragon.forgotten.a.2:0 "Release some \"dissenters\""
-	paragon.forgotten.a.3:0 "Suppress the media."
+		paragon.forgotten.a.2:0 "Release some \"dissenters\""
+		paragon.forgotten.a.3:0 "Suppress the media."
 
-	paragon.forgotten.b.2:0 "Placate with bribes."
-	paragon.forgotten.b.3:0 "Ignore the deceit."
+		paragon.forgotten.b.2:0 "Placate with bribes."
+		paragon.forgotten.b.3:0 "Ignore the deceit."
 
-	paragon.forgotten.c.2:0 "Fabricate counter-evidence."
-	paragon.forgotten.c.3:0 "Apologise publicly."
+		paragon.forgotten.c.2:0 "Fabricate counter-evidence."
+		paragon.forgotten.c.3:0 "Apologise publicly."
+
+	# Heir Illness Situation
+		paragon_origin_heir_illness:0 "Dying Heir"
+		paragon_origin_heir_illness_type:0 "$paragon_origin_heir_illness$"
+		paragon_origin_heir_illness_desc:0 "§Y[Owner.GetHeirTitle] [Owner.GetHeirName]§! is afflicted with a terminal illness! We must find a cure quickly, but the condition worsens by the day, doctors and scientists across the empire are working tirelessly to find a permanent cure."
+		paragon_origin_heir_illness_monthly_change_tooltip:0 "The heir's disease continues to worsen, only with the best medical care and biological research can we hope to cure it in time."
+		situation_paragon_origin_heir_illness_palliative:0 "Palliative Care"
+		approach_situation_paragon_origin_heir_illness_palliative_tt:0 "We will do our best to make [Owner.GetHeirName] comfortable in their final days, but we must accept that there is no hope for a cure."
+		situation_paragon_origin_heir_illness_medical:0 "Medical Treatment"
+		approach_situation_paragon_origin_heir_illness_medical_tt:0 "We shall spare no expense in treating [Owner.GetHeirName]'s illness. With doctors across the empire working tirelessly, we hope to find a cure."
+		situation_paragon_origin_heir_illness_radical:0 "Radical Intervention"
+		approach_situation_paragon_origin_heir_illness_radical_tt:0 "Every single doctor and biologist in the empire will be mobilized to save [Owner.GetHeirName]. All other priorities will be set aside in order to save the Luminary's heir!"
+
+		situation_heir_illness_dying:0 "[Owner.GetHeirName]'s condition is worsening, and it seems unlikely that they will survive for much longer."
+		situation_heir_illness_steady:0 "[Owner.GetHeirName]'s condition has stabilized, but a permanent cure is still out of reach."
+		situation_heir_illness_recovering:0 "[Owner.GetHeirName]'s condition is improving, and there is hope that they will make a full recovery."
+
+		paragon_origin_heir_illness_getting_worse:0 "Illness Severity"
+		paragon_origin_heir_illness_medical_approach:0 "Medical Treatment"
+		paragon_origin_heir_illness_radical_approach:0 "Radical Intervention"
+
+		paragon_origin_heir_illness_doctor_number:0 "Doctors in Empire"
+		paragon_origin_heir_illness_biologist_number:0 "Biologists in Empire"
+
+		paragon.heir.sickness.positive:0 "§Y[owner.GetHeirTitle] [owner.GetHeirName]'s§! §YSickness§! §Gimproves§!."
+		paragon.heir.sickness.negative:0 "§Y[owner.GetHeirTitle] [owner.GetHeirName]'s§! §YSickness§! §Rworsens§!."
+
+		# Events
+		# Heir illness outcome events
+		paragon.5080.name:0 "Miraculous Recovery"
+		paragon.5080.desc:0 "Against all odds, §Y[Owner.GetHeirTitle] [Owner.GetHeirName]§! has made a miraculous recovery! The nation rejoices as hope is restored, and our future looks brighter than ever."
+		paragon.5080.a:0 "Long live the Heir!"
+
+		paragon.5081.name:0 "Tragic Loss"
+		paragon.5081.desc:0 "Despite the efforts of our finest doctors and scientist, my own child, §Y[Owner.GetHeirName]§! has passed away."
+		paragon.5081.a:0 "A great loss for the nation..."
+
+		# Heir illness progression events
+		paragon.5082.name:0 "Grave Setback"
+		paragon.5082.desc:0 "The Heir's condition has taken a turn for the worse, and the nation mourns the potential loss of our future leader."
+		paragon.5082.a:0 "We must remain strong in these trying times."
+
+		paragon.5083.name:0 "Complications"
+		paragon.5083.desc:0 "The Heir's illness has taken a turn for the worse, and complications have arisen. The nation is on edge as we await news of their condition."
+		paragon.5083.a:0 "We must stay strong and hopeful."
+
+		paragon.5084.name:0 "Disease Breakthrough"
+		paragon.5084.desc:0 "A major breakthrough has been made in the treatment of the Heir's illness! The nation is filled with hope and optimism as we see significant progress towards a cure."
+		paragon.5084.a:0 "This is incredible news! We are on the path to a cure!"
+
+		paragon.5085.name:0 "Healing Progress"
+		paragon.5085.desc:0 "The Heir's condition has improved, and there is renewed hope for their recovery. The nation breathes a collective sigh of relief as we see signs of improvement."
+		paragon.5085.a:0 "This is wonderful news!"
+
+		# Heir working events
+		paragon.5086.name:0 "Public Speech"
+		paragon.5086.desc:0 "The Heir is meant to give a public speech, and despite their illness they are determined to go through with it. However, doing so may take a toll on their health, what should we do?"
+		paragon.5086.a:0 "Allow the Speech to go on as planned."
+		paragon.5086.b:0 "Pre-record the speech."
+		paragon.5086.c:0 "Cancel the Speech."
+
+		paragon.5087.name:0 "Council Work"
+		paragon.5087.desc:0 "Day after day, §Y[owner.GetHeirTitle] [owner.GetHeirName]§! continues to work diligently, attending important council meetings and taking an active part in new legislation.\nThis is taking a clear strain on their well-being, and the council is concerned. What should we do?"
+		paragon.5087.a:0 "Keep the duty schedule as it is."
+		paragon.5087.b:0 "Reduce the heir's workload."
+		paragon.5087.c:0 "Excuse the heir from council work."
+
+		paragon.5088.name:0 "Colony Visit"
+		paragon.5088.desc:0 "A planned colony visit to [reformist_colony.GetName] to convince reformists to cooperate is on the heirs schedule, but doing so may take a toll on their health, what should we do?"
+		paragon.5088.a:0 "Proceed with the visit as planned."
+		paragon.5088.b:0 "Postpone the visit."
+		paragon.5088.c:0 "Cancel the visit."
+
+		paragon.5089.name:0 "Navy Inspection"
+		paragon.5089.desc:0 "A planned navy inspection is on the heirs schedule, but doing so may take a toll on their health, what should we do?"
+		paragon.5089.a:0 "Proceed with the inspection as planned."
+		paragon.5089.b:0 "Postpone the inspection."
+		paragon.5089.c:0 "Cancel the inspection."

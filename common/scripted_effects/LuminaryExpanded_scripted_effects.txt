@@ -40,3 +40,31 @@ luminary_forgotton_increase_bad_media_coverage = {
 		}
 	}
 }
+
+luminary_heir_illness_change_positive = {
+	add_situation_progress = $ILLNESS_SITUATION_PROGRESS$
+
+	custom_tooltip = paragon.heir.sickness.positive
+	hidden_effect = {
+		owner = {
+			change_variable = {
+				which = paragon_origin_heir_illness_sickness_progress
+				value = $ILLNESS_VARIABLE_CHANGE$
+			}
+		}
+	}
+}
+
+luminary_heir_illness_change_negative = {
+	add_situation_progress = $ILLNESS_SITUATION_PROGRESS$
+
+	custom_tooltip = paragon.heir.sickness.negative
+	hidden_effect = {
+		owner = {
+			change_variable = {
+				which = paragon_origin_heir_illness_sickness_progress
+				value = $ILLNESS_VARIABLE_CHANGE$
+			}
+		}
+	}
+}

@@ -2295,16 +2295,20 @@ country_event = {
 
 	option = {
 		name = WORRYING
-		custom_tooltip = paragon.leader.delusion.negative
-		ruler = { paragon_origin_gain_delusion = yes }
-		random_owned_leader = {
-			limit = { is_heir = yes }
-			kill_leader = { show_notification = yes }
+
+		owner = {
+			start_situation = { 
+				type = paragon_origin_heir_illness 
+				target = root 
+			}
 		}
-		country_event = {
-			id = paragon.5062 days = 30 random = 30
+
+		hidden_effect = {
+			country_event = {
+				id = paragon.5062 days = 30 random = 30
+			}
+			set_country_flag = paragon_origin_purges
 		}
-		hidden_effect = { set_country_flag = paragon_origin_purges }
 	}
 }
 
@@ -2323,6 +2327,9 @@ country_event = {
 	}
 
 	immediate = {
+		custom_tooltip = paragon.leader.delusion.negative
+		ruler = { paragon_origin_gain_delusion = yes }
+
 		every_owned_pop_group = {
 			limit = {
 				has_any_ethic = yes
@@ -2940,6 +2947,727 @@ country_event = { #Finished Agenda
 			destroy_situation = this
 		}
 		country_event = { id = paragon.5200 days = 15 random = 15 }
+	}
+}
+
+# LumEx
+# HEIR ILLNESS Situation events and outcomes
+# We cured the Heir already!
+situation_event = { #UTILITY - If the illness value is <0, then we instantly end the situation
+	id = paragon.5079
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			check_variable = {
+				which = paragon_origin_heir_illness_sickness_progress
+				value >= 0
+			}
+		}
+	}
+
+	immediate = {
+		owner = {
+			country_event = { id = paragon.5080 }
+		}
+	}
+}
+
+# Cure Heir ending
+country_event = {
+	id = paragon.5080
+	title = "paragon.5080.name"
+	desc = "paragon.5080.desc"
+	picture = GFX_evt_coronation
+	show_sound = event_celebration
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = root.owner.ruler.heir
+		room = root.owner
+	}
+
+	is_triggered_only = yes
+
+	trigger = {}
+
+	immediate = {}
+
+	option = {
+		name = paragon.5080.a
+
+		custom_tooltip = paragon.leader.delusion.positive
+		hidden_effect = {
+			ruler = { paragon_origin_delusion_trait_lowerer = yes }
+		}
+
+		custom_tooltip = paragon.leader.growth.positive
+		hidden_effect = {
+			ruler = {
+				change_variable = {
+					which = paragon_origin_story_ruling
+					value = 1
+				}
+			}
+		}
+
+		add_modifier = {
+			modifier = media_coverage_positive_medium
+			days = 1800
+		}
+
+		random_situation = {
+			limit = { is_situation_type = paragon_origin_heir_illness }
+			destroy_situation = this
+		}
+	}
+}
+
+# Heir death ending
+country_event = {
+	id = paragon.5081
+	title = "paragon.5081.name"
+	desc = "paragon.5081.desc"
+	picture = GFX_evt_space_funeral
+	show_sound = event_life_support_fail
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = root.owner.ruler
+		room = root.owner
+	}
+
+	is_triggered_only = yes
+
+	trigger = {}
+
+	immediate = {}
+
+	option = {
+		name = paragon.5081.a
+
+		custom_tooltip = paragon.leader.delusion.negative
+		ruler = { paragon_origin_gain_delusion = yes }
+
+		custom_tooltip = paragon.leader.growth.negative
+		hidden_effect = {
+			ruler = {
+				change_variable = {
+					which = paragon_origin_story_ruling
+					value = -1
+				}
+			}
+		}
+
+		add_modifier = {
+			modifier = media_coverage_negative_low
+			days = 1800
+		}
+
+		random_owned_leader = {
+			limit = { 
+				is_heir = yes
+				has_leader_flag = paragon_origin_heir_illness_heir_flag
+			}
+			kill_leader = { show_notification = yes }
+		}
+
+		random_situation = {
+			limit = { is_situation_type = paragon_origin_heir_illness }
+			destroy_situation = this
+		}
+	}
+}
+
+# Random events
+# Grave Setback
+situation_event = {
+	id = paragon.5082
+	title = "paragon.5082.name"
+	desc = "paragon.5082.desc"
+	picture = GFX_evt_zro_2
+	show_sound = event_bad_omen
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = root.owner.ruler.heir
+		room = root.owner
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_situation_flag = origin_heir_sickness_random_event }
+	}
+
+	immediate = {
+		set_timed_situation_flag = {
+			flag = origin_heir_sickness_random_event
+			days = 360
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+
+		luminary_heir_illness_change_negative = {
+			ILLNESS_SITUATION_PROGRESS = -5
+			ILLNESS_VARIABLE_CHANGE = -1
+		}
+	}
+}
+
+# Complications
+situation_event = {
+	id = paragon.5083
+	title = "paragon.5083.name"
+	desc = "paragon.5083.desc"
+	picture = GFX_evt_zro_2
+	show_sound = event_bad_omen
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = root.owner.ruler.heir
+		room = root.owner
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_situation_flag = origin_heir_sickness_random_event }
+	}
+
+	immediate = {
+		set_timed_situation_flag = {
+			flag = origin_heir_sickness_random_event
+			days = 360
+		}
+	}
+
+	option = {
+		name = WORRYING
+
+		luminary_heir_illness_change_negative = {
+			ILLNESS_SITUATION_PROGRESS = -2.5
+			ILLNESS_VARIABLE_CHANGE = -0.5
+		}
+	}
+}
+
+# Breakthrough
+situation_event = {
+	id = paragon.5084
+	title = "paragon.5084.name"
+	desc = "paragon.5084.desc"
+	picture = GFX_evt_emergency_workers
+	show_sound = event_good_luck
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = root.owner.ruler.heir
+		room = root.owner
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_situation_flag = origin_heir_sickness_random_event }
+	}
+
+	immediate = {
+		set_timed_situation_flag = {
+			flag = origin_heir_sickness_random_event
+			days = 360
+		}
+	}
+
+	option = {
+		name = MARVELOUS
+
+		luminary_heir_illness_change_positive = {
+			ILLNESS_SITUATION_PROGRESS = 5
+			ILLNESS_VARIABLE_CHANGE = 1
+		}
+	}
+}
+
+# Healing
+situation_event = {
+	id = paragon.5085
+	title = "paragon.5085.name"
+	desc = "paragon.5085.desc"
+	picture = GFX_evt_emergency_workers
+	show_sound = event_good_luck
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = root.owner.ruler.heir
+		room = root.owner
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_situation_flag = origin_heir_sickness_random_event }
+	}
+
+	immediate = {
+		set_timed_situation_flag = {
+			flag = origin_heir_sickness_random_event
+			days = 360
+		}
+	}
+
+	option = {
+		name = GOOD
+
+		luminary_heir_illness_change_positive = {
+			ILLNESS_SITUATION_PROGRESS = 2.5
+			ILLNESS_VARIABLE_CHANGE = 0.5
+		}
+	}
+}
+
+# Heir working events
+# Public Speech
+situation_event = {
+	id = paragon.5086
+	title = "paragon.5086.name"
+	desc = "paragon.5086.desc"
+	picture = GFX_evt_grand_speech
+	show_sound = event_default
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = root.owner.ruler.heir
+		room = root.owner
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_situation_flag = origin_heir_sickness_random_event }
+	}
+
+	immediate = {
+		set_timed_situation_flag = {
+			flag = origin_heir_sickness_random_event
+			days = 360
+		}
+	}
+
+	option = {
+		name = paragon.5086.a
+
+		luminary_heir_illness_change_negative = {
+			ILLNESS_SITUATION_PROGRESS = -5
+			ILLNESS_VARIABLE_CHANGE = -0.5
+		}
+
+		owner = { 
+			add_resource = { unity = 1500 }
+			add_resource = { influence = 50 }
+			add_modifier = {
+				modifier = media_coverage_positive_low
+				days = 360
+			}
+		}
+	}
+
+	option = {
+		name = paragon.5086.b
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = unity
+					value >= 1500
+				}
+			}
+		}
+
+		owner = {
+			add_resource = {
+				unity = -1500
+			}
+		}
+
+		luminary_heir_illness_change_positive = {
+			ILLNESS_SITUATION_PROGRESS = 2.5
+			ILLNESS_VARIABLE_CHANGE = 0.5
+		}
+	}
+
+	option = {
+		name = paragon.5086.c
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = unity
+					value >= 3000
+				}
+			}
+		}
+
+		owner = {
+			add_resource = {
+				unity = -3000
+			}
+			add_modifier = {
+				modifier = media_coverage_negative_low
+				days = 360
+			}
+		}
+
+		luminary_heir_illness_change_positive = {
+			ILLNESS_SITUATION_PROGRESS = 5
+			ILLNESS_VARIABLE_CHANGE = 1
+		}
+	}
+}
+
+# Council Work
+situation_event = {
+	id = paragon.5087
+	title = "paragon.5087.name"
+	desc = "paragon.5087.desc"
+	picture = GFX_evt_board_meeting
+	show_sound = event_factions
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = root.owner.ruler.heir
+		room = root.owner
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_situation_flag = origin_heir_sickness_random_event }
+		any_owned_leader = {
+			is_heir = yes
+			is_councilor = yes
+		}
+	}
+
+	immediate = {
+		set_timed_situation_flag = {
+			flag = origin_heir_sickness_random_event
+			days = 360
+		}
+	}
+
+	option = {
+		name = paragon.5087.a
+
+		luminary_heir_illness_change_negative = {
+			ILLNESS_SITUATION_PROGRESS = -5
+			ILLNESS_VARIABLE_CHANGE = -0.5
+		}
+
+		owner = { 
+			add_resource = { unity = 1500 }
+			add_resource = { influence = 50 } 
+		}
+	}
+
+	option = {
+		name = paragon.5087.b
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = unity
+					value >= 1500
+				}
+			}
+		}
+
+		owner = {
+			add_resource = {
+				unity = -1500
+			}
+		}
+
+		luminary_heir_illness_change_positive = {
+			ILLNESS_SITUATION_PROGRESS = 2.5
+			ILLNESS_VARIABLE_CHANGE = 0.5
+		}
+	}
+
+	option = {
+		name = paragon.5087.c
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = unity
+					value >= 3000
+				}
+			}
+		}
+
+		owner = {
+			add_resource = {
+				unity = -3000
+			}
+			add_modifier = {
+				modifier = council_in_tatter
+				days = 360
+			}
+		}
+
+		luminary_heir_illness_change_positive = {
+			ILLNESS_SITUATION_PROGRESS = 5
+			ILLNESS_VARIABLE_CHANGE = 1
+		}
+	}
+}
+
+# Colony Visit
+situation_event = {
+	id = paragon.5088
+	title = "paragon.5088.name"
+	desc = "paragon.5088.desc"
+	picture = GFX_evt_diplomatic_visit
+	show_sound = event_announcement
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = root.owner.ruler.heir
+		room = root.owner
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_situation_flag = origin_heir_sickness_random_event }
+		any_system_within_border = {
+			any_system_planet = {
+				is_colony = yes
+				has_owner = yes
+				is_owned_by	= root
+				is_controlled_by = root
+				has_modifier = paragon_origin_reformists
+			}
+		}
+	}
+
+	immediate = {
+		set_timed_situation_flag = {
+			flag = origin_heir_sickness_random_event
+			days = 360
+		}
+
+		random_system_within_border = {
+			random_system_colony = {
+				limit = {
+					has_modifier = paragon_origin_reformists
+				}
+				save_event_target_as = reformist_colony
+			}
+		}
+	}
+
+	option = {
+		name = paragon.5089.a
+
+		luminary_heir_illness_change_negative = {
+			ILLNESS_SITUATION_PROGRESS = -5
+			ILLNESS_VARIABLE_CHANGE = -0.5
+		}
+
+		event_target:reformist_colony = {
+			while = {
+				count = 2
+				pop_group_transfer_ethic = {
+					ETHOS = ethic_authoritarian
+					AMOUNT = 100
+				}
+			}
+			remove_modifier = paragon_origin_reformists
+		}
+
+		owner = { 
+			add_resource = { unity = 1500 }
+		}
+	}
+
+	option = {
+		name = paragon.5089.b
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = unity
+					value >= 1500
+				}
+			}
+		}
+
+		owner = {
+			add_resource = {
+				unity = -1500
+			}
+		}
+
+		luminary_heir_illness_change_positive = {
+			ILLNESS_SITUATION_PROGRESS = -2.5
+			ILLNESS_VARIABLE_CHANGE = -0.5
+		}
+	}
+
+	option = {
+		name = paragon.5089.c
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = unity
+					value >= 3000
+				}
+			}
+		}
+
+		owner = {
+			add_resource = {
+				unity = -3000
+			}
+		}
+
+		event_target:reformist_colony = {
+			while = {
+				count = 2
+				pop_group_transfer_ethic = {
+					ETHOS = ethic_egalitarian
+					AMOUNT = 100
+				}
+			}
+		}
+
+		luminary_heir_illness_change_positive = {
+			ILLNESS_SITUATION_PROGRESS = 5
+			ILLNESS_VARIABLE_CHANGE = 1
+		}
+	}
+}
+
+# Navy Inspection
+situation_event = {
+	id = paragon.5089
+	title = "paragon.5089.name"
+	desc = "paragon.5089.desc"
+	picture = GFX_evt_salute
+	show_sound = event_salute
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = root.owner.ruler.heir
+		room = root.owner
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_situation_flag = origin_heir_sickness_random_event }
+	}
+
+	immediate = {
+		set_timed_situation_flag = {
+			flag = origin_heir_sickness_random_event
+			days = 360
+		}
+	}
+
+	option = {
+		name = paragon.5089.a
+
+		luminary_heir_illness_change_negative = {
+			ILLNESS_SITUATION_PROGRESS = -5
+			ILLNESS_VARIABLE_CHANGE = -0.5
+		}
+
+		owner = { 
+			add_resource = { unity = 1500 }
+			add_modifier = {
+				modifier = fleet_maneuvers
+				days = 360
+			}
+		}
+	}
+
+	option = {
+		name = paragon.5089.b
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = unity
+					value >= 1500
+				}
+			}
+		}
+
+		owner = {
+			add_resource = {
+				unity = -1500
+			}
+		}
+
+		luminary_heir_illness_change_positive = {
+			ILLNESS_SITUATION_PROGRESS = -2.5
+			ILLNESS_VARIABLE_CHANGE = -0.5
+		}
+	}
+
+	option = {
+		name = paragon.5089.c
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = unity
+					value >= 3000
+				}
+			}
+		}
+
+		owner = {
+			add_resource = {
+				unity = -3000
+			}
+			add_modifier = {
+				modifier = maneuvers_canceled
+				days = 360
+			}
+		}
+
+		luminary_heir_illness_change_positive = {
+			ILLNESS_SITUATION_PROGRESS = 5
+			ILLNESS_VARIABLE_CHANGE = 1
+		}
+	}
+}
+
+# Utility event, Disease Progression
+situation_event = {
+	id = paragon.5091
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	# Slowly increase disease each month, min of -5
+	trigger = {
+		owner = {
+			check_variable = {
+				which = paragon_origin_heir_illness_sickness_progress
+				value >= -5
+			}
+		}
+	}
+
+	immediate = {
+		owner = {
+			change_variable = {
+				which = paragon_origin_heir_illness_sickness_progress
+				value = -0.1
+			}
+		}
 	}
 }
 

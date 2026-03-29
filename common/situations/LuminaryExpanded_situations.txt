@@ -1,0 +1,208 @@
+# A situation that represents the illness of the Luminary heir
+# Three main approaches
+# Palliative Care: Do nothing, will most likely result in the heir's death but is the easiest and quickest way to complete the situation
+# Medical Intervention: Attempt to save the heir, will most likely result in the heir surviving but is more difficult and takes longer to complete
+# Intense Treatment: Reduce research but more guaranteed to save heir.
+paragon_origin_heir_illness = {
+	picture = GFX_evt_emergency_workers
+	start_value = 0
+	initial_progress = 25
+	progress_direction = bidirectional
+	complete_category = positive
+	fail_category = negative
+	complete_icon = GFX_situation_outcome_positive
+	complete_icon_frame = GFX_situation_outcome_frame_green
+	fail_icon = GFX_situation_outcome_negative
+	fail_icon_frame = GFX_situation_outcome_frame_red
+
+	on_start = {
+		set_timed_situation_flag = {
+			flag = paragon_origin_heir_illness_recent_random_event
+			days = 360
+		}
+		owner = {
+			# Mark the heir with flag just in case
+			random_owned_leader = {
+				limit = { is_heir = yes }
+				set_leader_flag = paragon_origin_heir_illness_heir_flag
+			}
+
+			set_variable = {
+				which = paragon_origin_heir_illness_sickness_progress
+				value = -3
+			}
+		}
+	}
+
+	on_progress_complete = {
+		owner = {
+			country_event = { id = paragon.5080 }
+		}
+	}
+
+	on_fail = {
+		owner = {
+			country_event = { id = paragon.5081 }
+		}
+	}
+
+	abort_trigger = {
+		owner = {
+			exists = ruler
+			OR = {
+				ruler = {
+					NOT = { has_leader_flag = paragon_origin_legendary_leader }
+				}
+				NOT = {
+					any_owned_leader = {
+						has_leader_flag = paragon_origin_heir_illness_heir_flag
+					}
+				}			
+			}
+		}
+	}
+
+	on_abort = {
+		owner = {
+			country_event = { id = paragon.5081 }
+		}
+	}
+
+	stages = {
+		stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_red
+			end = 20
+			on_first_enter = {}
+			custom_tooltip = situation_heir_illness_dying
+			modifier = {
+				country_unity_produces_mult = 0.15
+				pop_happiness = -0.05
+			}
+		}
+		stage_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_magenta
+			end = 80
+			on_first_enter = {}
+			custom_tooltip = situation_heir_illness_steady
+			modifier = {
+				country_unity_produces_mult = 0.05
+			}
+		}
+		stage_3 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_green
+			end = 100
+			on_first_enter = {}
+			custom_tooltip = situation_heir_illness_recovering
+			modifier = {
+				country_unity_produces_mult = 0.05
+				pop_happiness = 0.05
+			}
+		}
+	}
+
+	# Approaches
+	# Palliative Care
+	approach = {
+		name = situation_paragon_origin_heir_illness_palliative
+		icon = GFX_situation_approach_this_is_fine
+		icon_background = GFX_situation_approach_bg_red
+		on_select = {
+			custom_tooltip = approach_situation_paragon_origin_heir_illness_palliative_tt
+		}
+
+		target_modifier = {
+			country_unity_produces_mult = 0.1
+			pop_ethic_egalitarian_attraction_mult = -0.25
+		}
+	}
+
+	# Medical Treatment
+	approach = {
+		name = situation_paragon_origin_heir_illness_medical
+		icon = GFX_situation_approach_genetics
+		icon_background = GFX_situation_approach_bg_yellow
+		on_select = {
+			custom_tooltip = approach_situation_paragon_origin_heir_illness_medical_tt
+		}
+
+		target_modifier = {
+			planet_doctors_upkeep_mult = 0.1
+			pop_ethic_egalitarian_attraction_mult = 0.1
+		}
+		default = yes
+	}
+
+	# Radical Intervention
+	approach = {
+		name = situation_paragon_origin_heir_illness_radical
+		icon = GFX_situation_approach_research
+		icon_background = GFX_situation_approach_bg_green
+		on_select = {
+			custom_tooltip = approach_situation_paragon_origin_heir_illness_radical_tt
+		}
+
+		target_modifier = {
+			planet_doctors_upkeep_mult = 0.15
+			planet_biologists_upkeep_mult = 0.15
+			pop_ethic_egalitarian_attraction_mult = 0.25
+		}
+	}
+
+	on_monthly = {
+		events = {
+			paragon.5079 # Check if Heir is cured
+			paragon.5091 # Increase sickness progress by -0.1 (Upto -5)
+		}
+		random_events = {
+			2 = paragon.5082 # Grave Setback - Large increase in sickness progress
+			3 = paragon.5083 # Complications - Increase sickness progress
+			1 = paragon.5084 # Breakthrough - Large decrease in sickness progress
+			2 = paragon.5085 # Feeling Better - Decrease sickness progress
+
+			# Heir working events
+			2 = paragon.5086 # Public Speech
+			2 = paragon.5087 # Council Work
+			2 = paragon.5088 # Colony Visit
+			2 = paragon.5089 # Navy Inspection
+		}
+	}
+
+	monthly_progress = {
+		base = 0
+		# Main subtraction is how sick the heir is
+		modifier = {
+			add = owner.paragon_origin_heir_illness_sickness_progress
+			desc = paragon_origin_heir_illness_getting_worse
+		}
+
+		# Main additions are from approaches
+		modifier = {
+			add = 1
+			desc = paragon_origin_heir_illness_medical_approach
+			current_situation_approach = situation_paragon_origin_heir_illness_medical
+		}
+		modifier = {
+			add = 3
+			desc = paragon_origin_heir_illness_radical_approach
+			current_situation_approach = situation_paragon_origin_heir_illness_radical
+		}
+
+		# Also based on approach, different jobs provide scaling progress
+		modifier = {
+			add = owner.value:le_doctor_workforce
+			desc = paragon_origin_heir_illness_doctor_number
+			OR = {
+				current_situation_approach = situation_paragon_origin_heir_illness_medical
+				current_situation_approach = situation_paragon_origin_heir_illness_radical
+			}
+		}
+		modifier = {
+			add = owner.value:le_biologist_workforce
+			desc = paragon_origin_heir_illness_biologist_number
+			current_situation_approach = situation_paragon_origin_heir_illness_radical
+		}
+	}
+}
