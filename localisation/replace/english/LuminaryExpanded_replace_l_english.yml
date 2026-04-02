@@ -1,5 +1,32 @@
 ﻿l_english:
 	# Used for overwriting vanilla localisation keys
+	paragon.5059.name:1 "Diligent Leader"
+	paragon.5059.desc:2 "§Y[Owner.Ruler.GetTitle] [Owner.Ruler.GetRegnalName]§! has worked extremely hard to become a better leader. [Owner.Ruler.GetHisHerCap] renewed commitment has already been noticed by the council."
+	paragon.5059.a:1 "The military must play a central role." #MILITARIST
+	paragon.5059.b:1 "Faith shall sustain us." #SPIRITUALIST
+	paragon.5059.c:1 "Law and order are paramount." #AUTHORITARIAN
+	paragon.5059.d:1 "Our nation is open to all." #XENOPHILE
+	paragon.5059.e:0 "Peace will bring us wealth and prosperity." #PACIFIST
+	paragon.5059.f:0 "Progress will lead us to greatness." #MATERIALIST
+	paragon.5059.g:0 "The Empire will be a shield against the xeno threat." #XENOPHOBE
+
+	paragon.5060.name:1 "Order Restored"
+	#paragon.5060.desc.imprisioned:2 "$paragon.beginning.speech$\n\nSociety is spiralling out of control. Rampant violence, insidious agitation, shameless lies... These things have plagued us for too long. With great pride, I announce an end to these troubled times! Those who sought to undermine us have been arrested, and I promise, they will face the full force of justice. Before long, they will repent for the harm they caused you!\n\n$paragon.ending.speech$"
+	#paragon.5060.desc.negotiated:1 "$paragon.beginning.speech$\n\nIn times of conflict, it can be easy to lose sight of what we fight for, to view our political opponents as outright enemies. We have gone through trying times, but today I am proud to tell you that we have reached a peaceful outcome. Your voices have been heard. You had put your trust in me and I had failed you.\n\nNo more! With the upcoming constitutional reform, I firmly believe that we find ourselves back on the right path, and I am humbled by your trust in my ability to see these changes through. Upon my word, I shall not fail you again!\n\n$paragon.ending.speech$"
+	#paragon.5060.desc.destroyed:1 "$paragon.beginning.speech$\n\nToday marks a great victory, but it has not been bought without sacrifice. Our enemies have been destroyed, yet the sting of their betrayal makes my heart bleed. In their selfishness they sought to destroy us all, but in the end, they were no match for our collective strength. Soon they will be executed for their crimes. We have prevailed!\n\n$paragon.ending.speech$"
+	#paragon.5060.a:1 "We need a stronger leader!"
+	#paragon.5060.a.tt:1 "§LRecent events have shown that only the wise rule of §Y[Ruler.GetTitle] [Ruler.GetRegnalName]§! can bring peace and prosperity to our society. We need to consolidate more power into the hands of our leader.§!"
+	paragon.5060.a:1 "The military must play a central role." #MILITARIST
+	paragon.5060.b:1 "Faith shall sustain us." #SPIRITUALIST
+	paragon.5060.c:1 "Law and order are paramount." #AUTHORITARIAN
+	paragon.5060.d:1 "Our nation is open to all." #XENOPHILE
+	paragon.5060.e:0 "Peace will bring us wealth and prosperity." #PACIFIST
+	paragon.5060.f:0 "Progress will lead us to greatness." #MATERIALIST
+	paragon.5060.g:0 "The Empire will be a shield against the xeno threat." #XENOPHOBE
+	paragon.5060.h:0 "We need an efficient government!"
+	paragon.5060.h.tt:0 "§LRecent events have shown that a strong government rule is needed to overcome such dilemmas in the future. We need to give more power to the council.\n§!$paragon.leader.growth.negative$"
+
+
 	# paragon.5061.name:1 "Tragedy Strikes"
 	paragon.5061.desc:1 "§Y[Owner.GetHeirTitle] [Owner.GetHeirName]§! is dying. We have yet to determine the nature of the disease, but preliminary reports suggest that it is terminal. §Y[Ruler.GetTitle] [Ruler.GetRegnalName]§! has been struck hard by the impending loss of [Ruler.GetHisHer] progeny. A period of national mourning has been decreed and we await the full results of the medical investigation into the heir's disease.\n\nWhile extremely sick, §Y[Owner.GetHeirTitle] [Owner.GetHeirName]§! admirably continues to perform their duties, but their condition is worsening by the day. The Luminary has ordered doctors and scientists across the empire to focus on finding a cure, even at the expense of our citizens."
 

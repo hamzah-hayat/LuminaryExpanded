@@ -2185,12 +2185,287 @@ country_event = { #Positive Trait
 		ruler = { has_leader_flag = paragon_origin_legendary_leader }
 	}
 
-	immediate = {
-	}
+	immediate = {}
 
 	option = {
 		name = paragon.5059.a
-		ruler = { paragon_origin_legendary_leader_trait_giver = yes }
+		trigger = {
+			is_militarist = yes
+			NOT = {
+				ruler = {
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_military_knowledge }
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_foe_hammer }
+				}
+			}
+		}
+		locked_random_list = {
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_military_knowledge }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_military_knowledge
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_foe_hammer }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_foe_hammer
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = paragon.5059.b
+		trigger = {
+			is_spiritualist = yes
+			NOT = {
+				ruler = {
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_great_teacher }
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_pious_ascet }
+				}
+			}
+		}
+		locked_random_list = {
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_great_teacher }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_great_teacher
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_pious_ascet }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_pious_ascet
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = paragon.5059.c
+		trigger = {
+			is_authoritarian = yes
+			NOT = {
+				ruler = {
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_commanding_presence }
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_high_king }
+				}
+			}
+		}
+		locked_random_list = {
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_commanding_presence }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_commanding_presence
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_high_king }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_high_king
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = paragon.5059.d
+		trigger = {
+			is_xenophile = yes
+			NOT = {
+				ruler = {
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_gunboat_diplomacy }
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_scientific_diplomacy }
+				}
+			}
+		}
+		locked_random_list = {
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_gunboat_diplomacy }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_gunboat_diplomacy
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_scientific_diplomacy }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_scientific_diplomacy
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = paragon.5059.e
+		trigger = {
+			is_pacifist = yes
+			NOT = {
+				ruler = {
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_autarky }
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_natural_ruler }
+				}
+			}
+		}
+		locked_random_list = {
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_autarky }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_autarky
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_natural_ruler }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_natural_ruler
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = paragon.5059.f
+		trigger = {
+			is_materialist = yes
+			NOT = {
+				ruler = {
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_industry_titan }
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_great_inventor }
+				}
+			}
+		}
+		locked_random_list = {
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_industry_titan }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_industry_titan
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_great_inventor }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_great_inventor
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = paragon.5059.g
+		trigger = {
+			is_xenophobe = yes
+			NOT = {
+				ruler = {
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_genetic_purist }
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_evervigilant }
+				}
+			}
+		}
+		locked_random_list = {
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_genetic_purist }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_genetic_purist
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_evervigilant }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_evervigilant
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -2239,13 +2514,286 @@ country_event = { # Forgotten are crushed - speech
 
 	option = {
 		name = paragon.5060.a
-		ruler = {
-			paragon_origin_legendary_leader_trait_giver = yes
+		trigger = {
+			is_militarist = yes
+			NOT = {
+				ruler = {
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_military_knowledge }
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_foe_hammer }
+				}
+			}
 		}
-		custom_tooltip = paragon.5060.a.tt
+		locked_random_list = {
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_military_knowledge }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_military_knowledge
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_foe_hammer }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_foe_hammer
+					}
+				}
+			}
+		}
 	}
 	option = {
 		name = paragon.5060.b
+		trigger = {
+			is_spiritualist = yes
+			NOT = {
+				ruler = {
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_great_teacher }
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_pious_ascet }
+				}
+			}
+		}
+		locked_random_list = {
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_great_teacher }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_great_teacher
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_pious_ascet }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_pious_ascet
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = paragon.5060.c
+		trigger = {
+			is_authoritarian = yes
+			NOT = {
+				ruler = {
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_commanding_presence }
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_high_king }
+				}
+			}
+		}
+		locked_random_list = {
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_commanding_presence }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_commanding_presence
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_high_king }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_high_king
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = paragon.5060.d
+		trigger = {
+			is_xenophile = yes
+			NOT = {
+				ruler = {
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_gunboat_diplomacy }
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_scientific_diplomacy }
+				}
+			}
+		}
+		locked_random_list = {
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_gunboat_diplomacy }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_gunboat_diplomacy
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_scientific_diplomacy }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_scientific_diplomacy
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = paragon.5060.e
+		trigger = {
+			is_pacifist = yes
+			NOT = {
+				ruler = {
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_autarky }
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_natural_ruler }
+				}
+			}
+		}
+		locked_random_list = {
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_autarky }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_autarky
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_natural_ruler }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_natural_ruler
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = paragon.5060.f
+		trigger = {
+			is_materialist = yes
+			NOT = {
+				ruler = {
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_industry_titan }
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_great_inventor }
+				}
+			}
+		}
+		locked_random_list = {
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_industry_titan }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_industry_titan
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_great_inventor }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_great_inventor
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = paragon.5060.g
+		trigger = {
+			is_xenophobe = yes
+			NOT = {
+				ruler = {
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_genetic_purist }
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_evervigilant }
+				}
+			}
+		}
+		locked_random_list = {
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_genetic_purist }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_genetic_purist
+					}
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					ruler = {
+						has_trait_tier1or2or3 = { TRAIT = leader_trait_legendary_evervigilant }
+					}
+				}
+				ruler = {
+					add_trait = {
+						trait = leader_trait_legendary_evervigilant
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = paragon.5060.h
 		paragon_origin_gain_modifier = yes
 		hidden_effect = {
 			ruler = {
@@ -2255,7 +2803,7 @@ country_event = { # Forgotten are crushed - speech
 				}
 			}
 		}
-		custom_tooltip = paragon.5060.b.tt
+		custom_tooltip = paragon.5060.h.tt
 	}
 
 	after = {
