@@ -4211,9 +4211,14 @@ situation_event = {
 
 	immediate = {
 		owner = {
-			change_variable = {
-				which = paragon_origin_heir_illness_sickness_progress
-				value = -0.1
+			random_list = {
+				35 = {
+					change_variable = {
+						which = paragon_origin_heir_illness_sickness_progress
+						value = -0.1
+					}
+				}
+				65 = {}
 			}
 		}
 	}
