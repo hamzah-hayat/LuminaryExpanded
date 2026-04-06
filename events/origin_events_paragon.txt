@@ -6108,7 +6108,7 @@ country_event = { #UTILITY - ascension launcher failsafe event, for players cont
 
 	immediate = {
 		country_event = {
-			id = paragon.5201 days = 3600 random = 7200
+			id = paragon.5201 days = 360 random = 720
 		}
 	}
 }
