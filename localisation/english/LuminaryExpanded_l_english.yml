@@ -95,3 +95,9 @@
 		paragon.5089.a:0 "Proceed with the inspection as planned."
 		paragon.5089.b:0 "Postpone the inspection."
 		paragon.5089.c:0 "Cancel the inspection."
+
+		# Luminary Speech events
+		# Event which triggers once Luminary maxes trait out
+		paragon.5040.name:0 "The Legendary Luminary"
+		paragon.5040.desc:0 "As I reflect on my journey as the Luminary, I am filled with a profound sense of wisdom and insight. The experiences I've had and the challenges I've overcome have shaped me into the leader I am today.\n\nI have learned so much about myself, our people, and the universe we inhabit. With this newfound wisdom, I am more determined than ever to lead our empire into a bright and prosperous future. Together, we will continue to explore the stars, expand our knowledge, and create a legacy that will endure for generations to come."
+		paragon.5040.a:0 "The Luminary will guide us!"

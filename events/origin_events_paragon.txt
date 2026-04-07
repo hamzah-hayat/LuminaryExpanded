@@ -1672,6 +1672,52 @@ country_event = {
 	}
 }
 
+# Max out the Luminary trait
+# Grants a bonus trait and sets flag on Luminary to max out the trait.
+country_event = {
+	id = paragon.5040
+	title = "paragon.5040.name"
+	desc = "paragon.5040.desc"
+	picture = GFX_evt_legendary_leader
+	show_sound = event_celebration
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = root.owner.ruler
+		room = root.owner
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = ruler
+		ruler = { 
+			has_leader_flag = paragon_origin_legendary_leader
+			check_variable = {
+				which = paragon_origin_story_ruling
+				value >= 10
+			}
+			NOT = { has_leader_flag = legendary_leader_luminary_maxed }
+		}
+	}
+
+	immediate = {
+		ruler = {
+			set_leader_flag = legendary_leader_luminary_maxed
+			add_skill_without_trait_selection = 1
+		}
+	}
+
+	option = {
+		name = paragon.5040.a
+		custom_tooltip = paragon.leader.growth.positive
+		add_modifier = {
+			modifier = media_coverage_positive_medium
+			days = 360
+		}
+	}
+}
+
 # Forgotten event chain
 
 country_event = { # Release the Forgotten

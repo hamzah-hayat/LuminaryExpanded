@@ -1,0 +1,256 @@
+######################
+# LEGENDARY/ORIGIN   #
+######################
+
+leader_trait_legendary_leader = { #Origin trait
+	inline_script = {
+		script = trait/icon
+		ICON = "GFX_leader_trait_legendary_leader"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+
+	triggered_councilor_modifier = {
+		potential = {
+			NOT = { has_leader_flag = legendary_leader_coma }
+			NOT = { has_leader_flag = legendary_leader_luminary_maxed }
+			is_variable_set = paragon_origin_story_ruling
+		}
+		planet_stability_add = 0.75
+		planet_jobs_unity_produces_mult = 0.015
+		mult = this.paragon_origin_story_ruling
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			has_leader_flag = legendary_leader_luminary_maxed
+		}
+		planet_stability_add = 7.5
+		planet_jobs_unity_produces_mult = 0.15
+		pop_happiness = 0.10
+		species_leader_exp_gain = 0.25
+	}
+	triggered_self_modifier = {
+		potential = {
+			NOT = { has_leader_flag = legendary_leader_coma }
+		}
+		leader_lifespan_add = 60
+	}
+	triggered_self_modifier = {
+		potential = {
+			has_leader_flag = legendary_leader_coma
+		}
+		species_leader_exp_gain = -2.0
+		leader_lifespan_add = 300
+	}
+
+	leader_class = { official commander scientist }
+
+	initial = no
+	randomized = no
+}
+
+######################
+# Ascended Leader Traits
+######################
+
+#The Apparatus
+leader_trait_the_apparatus_luminary = {
+	force_councilor_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_automation_champion"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+
+	inline_script = {
+		script = paragon/leader_resource_upkeep
+		RESOURCE = energy
+		AMOUNT = 50
+	}
+
+	triggered_councilor_modifier = {
+		potential = {
+			has_leader_flag = legendary_leader_luminary_maxed
+		}
+		planet_stability_add = 0.10
+		council_agenda_progress_speed = 0.25
+		ship_speed_mult = 0.15
+	}	
+
+	leader_class = { official commander scientist }
+
+	initial = no
+	randomized = no
+	immortal_leaders = yes
+}
+
+leader_trait_the_cybernetic_luminary = {
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_cyborg"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+
+	inline_script = {
+		script = paragon/leader_resource_upkeep
+		RESOURCE = energy
+		AMOUNT = 50
+	}
+
+	councilor_modifier = {
+		country_leader_pool_size = 1
+		country_official_cap_add = 1
+		country_commander_cap_add = 1
+		country_scientist_cap_add = 1
+		leaders_upkeep_mult = -0.25
+		leaders_cost_mult = 0.10
+		species_leader_exp_gain = -0.25
+	}
+
+	triggered_councilor_modifier = {
+		potential = {
+			has_leader_flag = legendary_leader_luminary_maxed
+		}
+		country_leader_pool_size = 1
+		country_official_cap_add = 1
+		country_commander_cap_add = 1
+		country_scientist_cap_add = 1
+		leaders_upkeep_mult = -0.10
+		leaders_cost_mult = -0.10
+		species_leader_exp_gain = 0.25
+	}
+
+	leader_class = { official commander scientist }
+
+	initial = no
+	randomized = no
+	immortal_leaders = yes
+}
+
+leader_trait_the_psionic_luminary = {
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_psionic"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+
+	inline_script = {
+		script = paragon/leader_resource_upkeep
+		RESOURCE = sr_zro
+		AMOUNT = 3
+	}
+
+	councilor_modifier = {
+		country_councilor_influence_produces_add = 2
+		pop_government_ethic_attraction = 0.1
+		planet_crime_add = -20
+		intel_decryption_add = 2
+		intel_encryption_add = 2
+	}
+
+	triggered_councilor_modifier = {
+		potential = {
+			has_leader_flag = legendary_leader_luminary_maxed
+		}
+		country_councilor_influence_produces_add = 1
+		pop_government_ethic_attraction = 0.05
+		planet_crime_add = -10
+		intel_decryption_add = 1
+		intel_encryption_add = 1
+	}
+
+	leader_class = { official commander scientist }
+
+	initial = no
+	randomized = no
+	immortal_leaders = yes
+}
+
+leader_trait_the_synth_luminary = {
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_synthetic"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+
+	inline_script = {
+		script = paragon/leader_resource_upkeep
+		RESOURCE = alloys
+		AMOUNT = 25
+	}
+
+	councilor_modifier = {
+		planet_jobs_produces_mult = 0.25
+		pop_ethics_shift_speed_mult = 0.25
+		planet_pop_assembly_add = 1
+		pop_happiness = -0.15
+	}
+
+	triggered_councilor_modifier = {
+		potential = {
+			has_leader_flag = legendary_leader_luminary_maxed
+		}
+		planet_jobs_produces_mult = 0.10
+		pop_ethics_shift_speed_mult = 0.25
+		planet_pop_assembly_add = 0.5
+		pop_happiness = 0.15
+	}
+
+	leader_class = { official commander scientist }
+
+	initial = no
+	randomized = no
+	immortal_leaders = yes
+}
+
+leader_trait_the_genetic_luminary = {
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_legendary_xenophobe_one"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+
+	inline_script = {
+		script = paragon/leader_resource_upkeep
+		RESOURCE = food
+		AMOUNT = 100
+	}
+
+	councilor_modifier = {
+		BIOLOGICAL_species_trait_points_add = 1
+		BIOLOGICAL_species_trait_picks_add = 1
+		modify_species_cost_mult = -0.10
+		logistic_growth_mult = -0.15
+	}
+
+	triggered_councilor_modifier = {
+		potential = {
+			has_leader_flag = legendary_leader_luminary_maxed
+		}
+		BIOLOGICAL_species_trait_points_add = 2
+		modify_species_cost_mult = -0.15
+		logistic_growth_mult = 0.15
+	}
+
+	leader_class = { official commander scientist }
+
+	initial = no
+	randomized = no
+	immortal_leaders = yes
+}
