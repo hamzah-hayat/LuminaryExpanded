@@ -1277,10 +1277,7 @@ country_event = { # Become Overlord
 
 	trigger = {
 		from = {
-			NOR = {
-				has_country_flag = increase_leader_upkeep
-				has_country_flag = made_paragon_speech_vassal
-			}
+			NOT = { has_country_flag = increase_leader_upkeep }
 			exists = ruler
 			ruler = { has_leader_flag = paragon_origin_legendary_leader }
 		}
@@ -1291,7 +1288,6 @@ country_event = { # Become Overlord
 			country_event = {
 				id = paragon.5025 days = 30 random = 30
 			}
-			set_country_flag = made_paragon_speech_vassal
 		}
 	}
 }
@@ -1353,10 +1349,7 @@ country_event = { # Won a war
 
 	trigger = {
 		exists = ruler
-		NOR = {
-			has_country_flag = increase_leader_upkeep
-			has_country_flag = made_paragon_speech_win
-		}
+		NOT = { has_country_flag = increase_leader_upkeep }
 		ruler = { has_leader_flag = paragon_origin_legendary_leader }
 		OR = {
 			NOT = {
@@ -1391,15 +1384,10 @@ country_event = {
 	trigger = {
 		exists = ruler
 		ruler = { has_leader_flag = paragon_origin_legendary_leader }
-		NOR = {
-			has_country_flag = increase_leader_upkeep
-			has_country_flag = made_paragon_speech_win
-		}
+		NOT = { has_country_flag = increase_leader_upkeep }
 	}
 
-	immediate = {
-		set_country_flag = made_paragon_speech_win
-	}
+	immediate = {}
 
 	option = {
 		name = paragon.5027.a
@@ -1427,10 +1415,7 @@ country_event = { # Lost a war
 
 	trigger = {
 		exists = ruler
-		NOR = {
-			has_country_flag = increase_leader_upkeep
-			has_country_flag = made_paragon_speech_lost
-		}
+		NOT = { has_country_flag = increase_leader_upkeep }
 		ruler = { has_leader_flag = paragon_origin_legendary_leader }
 		OR = {
 			NOT = {
@@ -1463,15 +1448,10 @@ country_event = {
 	trigger = {
 		exists = ruler
 		ruler = { has_leader_flag = paragon_origin_legendary_leader }
-		NOR = {
-			has_country_flag = increase_leader_upkeep
-			has_country_flag = made_paragon_speech_lost
-		}
+		NOT = { has_country_flag = increase_leader_upkeep }
 	}
 
-	immediate = {
-		set_country_flag = made_paragon_speech_lost
-	}
+	immediate = {}
 
 	option = {
 		name = paragon.5029.a
@@ -1505,10 +1485,7 @@ country_event = { # Become Vassal
 	trigger = {
 		exists = ruler
 		ruler = { has_leader_flag = paragon_origin_legendary_leader }
-		NOR = {
-			has_country_flag = increase_leader_upkeep
-			has_country_flag = made_paragon_speech_overlord
-		}
+		NOT = { has_country_flag = increase_leader_upkeep }
 	}
 
 	immediate = {
@@ -1536,14 +1513,10 @@ country_event = {
 	trigger = {
 		exists = ruler
 		ruler = { has_leader_flag = paragon_origin_legendary_leader }
-		NOR = {
-			has_country_flag = increase_leader_upkeep
-			has_country_flag = made_paragon_speech_overlord
-		}
+		NOT = { has_country_flag = increase_leader_upkeep }
 	}
 
 	immediate = {
-		set_country_flag = made_paragon_speech_overlord
 		random_country = {
 			limit = {
 				is_country_type = default
