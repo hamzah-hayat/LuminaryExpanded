@@ -1,3 +1,46 @@
+# Should be in leader scope, for the Luminary leader
+luminary_increase_paragon_origin_story_ruling = {
+	if = {
+		limit = {
+			ruler = {
+				is_variable_set = paragon_origin_story_ruling
+				has_leader_flag = paragon_origin_legendary_leader
+				NOT = { has_leader_flag = paragon_origin_legendary_leader_story_ruling_maxed }
+			}
+		}
+		custom_tooltip = paragon.leader.growth.positive
+		hidden_effect = {
+			ruler = {
+				change_variable = {
+					which = paragon_origin_story_ruling
+					value = $CHANGE$
+				}
+			}
+		}
+	}
+}
+
+luminary_decrease_paragon_origin_story_ruling = {
+	if = {
+		limit = {
+			ruler = {
+				is_variable_set = paragon_origin_story_ruling
+				has_leader_flag = paragon_origin_legendary_leader
+				NOT = { has_leader_flag = paragon_origin_legendary_leader_story_ruling_maxed }
+			}
+		}
+		custom_tooltip = paragon.leader.growth.negative
+		hidden_effect = {
+			ruler = {
+				change_variable = {
+					which = paragon_origin_story_ruling
+					value = $CHANGE$
+				}
+			}
+		}
+	}
+}
+
 luminary_forgotton_increase_bad_media_coverage = {
 	if = {
 		limit = {

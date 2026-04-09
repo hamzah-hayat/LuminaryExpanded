@@ -99,5 +99,6 @@
 		# Luminary Speech events
 		# Event which triggers once Luminary maxes trait out
 		paragon.5040.name:0 "The Legendary Luminary"
-		paragon.5040.desc:0 "As I reflect on my journey as the Luminary, I am filled with a profound sense of wisdom and insight. The experiences I've had and the challenges I've overcome have shaped me into the leader I am today.\n\nI have learned so much about myself, our people, and the universe we inhabit. With this newfound wisdom, I am more determined than ever to lead our empire into a bright and prosperous future. Together, we will continue to explore the stars, expand our knowledge, and create a legacy that will endure for generations to come."
+		paragon.5040.desc:0 "$paragon.beginning.speech$\n\nIn the message that follows, [Root.Owner.Ruler.GetName] reflects on a journey shaped by trials, growth, and revelation, speaking at length on the wisdom gained and the strength forged through adversity. They recount the lessons learned about themselves, their people, and the vast universe they inhabit, weaving these insights into a renewed sense of purpose. The address crescendos into a declaration of intent, a commitment to forever guide the empire toward a radiant and prosperous future.\n\n$paragon.ending.speech$"
 		paragon.5040.a:0 "The Luminary will guide us!"
+		paragon.leader.growth.positive.max:0 "§Y[owner.Ruler.GetTitle] [owner.Ruler.GetRegnalName]'s§! §YLuminary§! Trait §Ghas reached its maximum§!.\n§YThe Luminary trait (and Luminary ascension traits) gain bonus effects and will never reduce.§!"

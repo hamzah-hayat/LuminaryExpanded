@@ -420,7 +420,6 @@ planet_event = {
 
 	option = {
 		name = paragon.5012.a
-		custom_tooltip = paragon.leader.growth.positive
 		response_text = paragon.5012.a.response
 		add_modifier = { modifier = paragon_origin_rich_monument days = -1 }
 		owner = {
@@ -429,14 +428,7 @@ planet_event = {
 				days = 720
 			}
 		}
-		hidden_effect = {
-			ruler = {
-				change_variable = {
-					which = paragon_origin_story_ruling
-					value = 1
-				}
-			}
-		}
+		luminary_increase_paragon_origin_story_ruling = { CHANGE = 1 }
 	}
 }
 
@@ -466,7 +458,6 @@ planet_event = {
 
 	option = {
 		name = paragon.5013.a
-		custom_tooltip = paragon.leader.growth.positive
 		response_text = paragon.5013.a.response
 		add_modifier = { modifier = paragon_origin_residential_monument days = -1 }
 		owner = {
@@ -475,14 +466,7 @@ planet_event = {
 				days = 720
 			}
 		}
-		hidden_effect = {
-			ruler = {
-				change_variable = {
-					which = paragon_origin_story_ruling
-					value = 1
-				}
-			}
-		}
+		luminary_increase_paragon_origin_story_ruling = { CHANGE = 1 }
 	}
 }
 
@@ -1253,19 +1237,11 @@ country_event = { #Made Federation
 
 	option = {
 		name = paragon.5023.a
-		custom_tooltip = paragon.leader.growth.positive
 		add_modifier = {
 			modifier = media_coverage_positive_low
 			days = 180
 		}
-		hidden_effect = {
-			ruler = {
-				change_variable = {
-					which = paragon_origin_story_ruling
-					value = 1
-				}
-			}
-		}
+		luminary_increase_paragon_origin_story_ruling = { CHANGE = 1 }
 	}
 }
 
@@ -1325,19 +1301,11 @@ country_event = {
 
 	option = {
 		name = paragon.5025.a
-		custom_tooltip = paragon.leader.growth.positive
 		add_modifier = {
 			modifier = media_coverage_positive_low
 			days = 180
 		}
-		hidden_effect = {
-			ruler = {
-				change_variable = {
-					which = paragon_origin_story_ruling
-					value = 1
-				}
-			}
-		}
+		luminary_increase_paragon_origin_story_ruling = { CHANGE = 1 }
 	}
 }
 
@@ -1391,19 +1359,11 @@ country_event = {
 
 	option = {
 		name = paragon.5027.a
-		custom_tooltip = paragon.leader.growth.positive
 		add_modifier = {
 			modifier = media_coverage_positive_low
 			days = 180
 		}
-		hidden_effect = {
-			ruler = {
-				change_variable = {
-					which = paragon_origin_story_ruling
-					value = 1
-				}
-			}
-		}
+		luminary_increase_paragon_origin_story_ruling = { CHANGE = 1 }
 	}
 }
 
@@ -1455,7 +1415,6 @@ country_event = {
 
 	option = {
 		name = paragon.5029.a
-		custom_tooltip = paragon.leader.growth.negative
 		locked_random_list = {
 			10 = {
 				add_modifier = {
@@ -1465,14 +1424,7 @@ country_event = {
 			}
 			90 = { }
 		}
-		hidden_effect = {
-			ruler = {
-				change_variable = {
-					which = paragon_origin_story_ruling
-					value = -2
-				}
-			}
-		}
+		luminary_decrease_paragon_origin_story_ruling = { CHANGE = -2 }
 	}
 }
 
@@ -1528,15 +1480,7 @@ country_event = {
 
 	option = {
 		name = paragon.5033.a
-		custom_tooltip = paragon.leader.growth.negative
-		hidden_effect = {
-			ruler = {
-				change_variable = {
-					which = paragon_origin_story_ruling
-					value = -3
-				}
-			}
-		}
+		luminary_decrease_paragon_origin_story_ruling = { CHANGE = -3 }
 	}
 }
 
@@ -1614,19 +1558,11 @@ country_event = {
 
 	option = {
 		name = paragon.5038.a
-		custom_tooltip = paragon.leader.growth.positive
 		add_modifier = {
 			modifier = media_coverage_positive_low
 			days = 180
 		}
-		hidden_effect = {
-			ruler = {
-				change_variable = {
-					which = paragon_origin_story_ruling
-					value = 1
-				}
-			}
-		}
+		luminary_increase_paragon_origin_story_ruling = { CHANGE = 1 }
 	}
 }
 
@@ -1656,19 +1592,11 @@ country_event = {
 
 	option = {
 		name = paragon.5039.a
-		custom_tooltip = paragon.leader.growth.positive
 		add_modifier = {
 			modifier = media_coverage_positive_low
 			days = 720
 		}
-		hidden_effect = {
-			ruler = {
-				change_variable = {
-					which = paragon_origin_story_ruling
-					value = 2
-				}
-			}
-		}
+		luminary_increase_paragon_origin_story_ruling = { CHANGE = 2 }
 	}
 }
 
@@ -1695,22 +1623,24 @@ country_event = {
 			has_leader_flag = paragon_origin_legendary_leader
 			check_variable = {
 				which = paragon_origin_story_ruling
-				value >= 10
+				value >= 20
 			}
-			NOT = { has_leader_flag = legendary_leader_luminary_maxed }
+			NOT = { has_leader_flag = paragon_origin_legendary_leader_story_ruling_maxed }
 		}
 	}
 
 	immediate = {
 		ruler = {
-			set_leader_flag = legendary_leader_luminary_maxed
-			add_skill_without_trait_selection = 1
+			set_leader_flag = paragon_origin_legendary_leader_story_ruling_maxed
 		}
 	}
 
 	option = {
 		name = paragon.5040.a
-		custom_tooltip = paragon.leader.growth.positive
+		ruler = {
+			add_skill_without_trait_selection = 1
+		}
+		custom_tooltip = paragon.leader.growth.positive.max
 		add_modifier = {
 			modifier = media_coverage_positive_medium
 			days = 360
@@ -1807,15 +1737,7 @@ situation_event = { # 1st
 	# Lose luminary trait point
 	option = {
 		name = WORRYING
-		custom_tooltip = paragon.leader.growth.negative
-		hidden_effect = {
-			owner.ruler = {
-				change_variable = {
-					which = paragon_origin_story_ruling
-					value = -1
-				}
-			}
-		}
+		luminary_decrease_paragon_origin_story_ruling = { CHANGE = -1 }
 	}
 
 	# Use Unity
@@ -1911,15 +1833,7 @@ situation_event = { # 2nd
 	# Lose luminary trait point
 	option = {
 		name = DISTURBING
-		custom_tooltip = paragon.leader.growth.negative
-		hidden_effect = {
-			owner.ruler = {
-				change_variable = {
-					which = paragon_origin_story_ruling
-					value = -1
-				}
-			}
-		}
+		luminary_decrease_paragon_origin_story_ruling = { CHANGE = -1 }
 	}
 
 	# Use Energy
@@ -2015,15 +1929,7 @@ situation_event = { # 3rd
 	# Lose luminary trait point
 	option = {
 		name = DISCONCERTING
-		custom_tooltip = paragon.leader.growth.negative
-		hidden_effect = {
-			owner.ruler = {
-				change_variable = {
-					which = paragon_origin_story_ruling
-					value = -1
-				}
-			}
-		}
+		luminary_decrease_paragon_origin_story_ruling = { CHANGE = -1 }
 	}
 
 	# Use Unity
@@ -3053,7 +2959,6 @@ country_event = { #Situation Aborted in unnatural way
 	}
 	option = {
 		name = paragon.5063.norebel.b
-		custom_tooltip = paragon.leader.growth.positive
 		trigger = {
 			ruler = { has_leader_flag = paragon_origin_legendary_leader }
 			NOR = {
@@ -3066,14 +2971,7 @@ country_event = { #Situation Aborted in unnatural way
 			limit = { has_modifier = paragon_origin_reformists }
 			remove_modifier = paragon_origin_reformists
 		}
-		hidden_effect = {
-			ruler = {
-				change_variable = {
-					which = paragon_origin_story_ruling
-					value = 2
-				}
-			}
-		}
+		luminary_increase_paragon_origin_story_ruling = { CHANGE = 2 }
 	}
 }
 
@@ -3618,15 +3516,7 @@ country_event = {
 		custom_tooltip = paragon.leader.delusion.negative
 		ruler = { paragon_origin_gain_delusion = yes }
 
-		custom_tooltip = paragon.leader.growth.negative
-		hidden_effect = {
-			ruler = {
-				change_variable = {
-					which = paragon_origin_story_ruling
-					value = -1
-				}
-			}
-		}
+		luminary_decrease_paragon_origin_story_ruling = { CHANGE = -2 }
 
 		add_modifier = {
 			modifier = media_coverage_negative_low
@@ -6391,15 +6281,7 @@ country_event = {
 
 	option = {
 		name = paragon.6005.a
-		custom_tooltip = paragon.leader.growth.positive
-		hidden_effect = {
-			ruler = {
-				change_variable = {
-					which = paragon_origin_story_ruling
-					value = 1
-				}
-			}
-		}
+		luminary_increase_paragon_origin_story_ruling = { CHANGE = 1 }
 		ruler = {
 			add_trait = {
 				trait = leader_trait_the_apparatus_luminary
@@ -6435,15 +6317,7 @@ country_event = {
 
 	option = {
 		name = paragon.6010.a
-		custom_tooltip = paragon.leader.growth.positive
-		hidden_effect = {
-			ruler = {
-				change_variable = {
-					which = paragon_origin_story_ruling
-					value = 1
-				}
-			}
-		}
+		luminary_increase_paragon_origin_story_ruling = { CHANGE = 1 }
 		ruler = {
 			add_trait = {
 				trait = leader_trait_the_cybernetic_luminary
