@@ -8,6 +8,31 @@
 		paragon.5324.dark_matter:0 "Find Dark Matter"
 		paragon.5324.strategic_resources:0 "Prospect Strategic Resources"
 	
+	# Milestone Events
+		paragon.5031.name:0 "A Monument to Progress"
+		paragon.5031.desc:0 "$paragon.beginning.speech$\n\nToday marks a defining moment in the history of our great empire. The completion of this megastructure stands as a testament to the ingenuity and resolve of our people. Under the visionary leadership of [Root.Owner.Ruler.GetName], we have achieved what many believed impossible, bending the very fabric of the cosmos to our will.\n\n$paragon.ending.speech$"
+		paragon.5031.a:0 "A triumph of engineering!"
+
+		paragon.5401.name:0 "The Beast is Slain"
+		paragon.5401.desc:0 "$paragon.beginning.speech$\n\nA great and terrible creature, a colossus of the void, has fallen before the might of our fleets. Where others trembled, we stood firm, and under the guidance of [Root.Owner.Ruler.GetName], our forces struck down the leviathan. Let the galaxy know that no beast, however ancient or fearsome, is beyond the reach of our empire.\n\n$paragon.ending.speech$"
+		paragon.5401.a:0 "None can stand against us!"
+
+		paragon.5403.name:0 "A Homeworld Claimed"
+		paragon.5403.desc:0 "$paragon.beginning.speech$\n\nThe birthworld of a rival civilization now flies our banner. This is no mere conquest of territory — it is the uprooting of a people's most sacred ground. Under the decisive leadership of [Root.Owner.Ruler.GetName], our armies have secured the very cradle of another species, forever altering the balance of power in the galaxy.\n\n$paragon.ending.speech$"
+		paragon.5403.a:0 "Their legacy is now ours!"
+
+		paragon.5405.name:0 "The Pillars of Culture"
+		paragon.5405.desc:0 "$paragon.beginning.speech$\n\nEvery tradition slot has been filled, every cultural pillar erected. Our society has reached a breadth of cultural achievement rarely seen among the stars. Under the stewardship of [Root.Owner.Ruler.GetName], our people have explored every avenue of thought, philosophy, and practice available to them. We stand as a civilization fully realized.\n\n$paragon.ending.speech$"
+		paragon.5405.a:0 "Our culture is unmatched!"
+
+		paragon.5407.name:0 "Echoes of the Ancients"
+		paragon.5407.desc:0 "$paragon.beginning.speech$\n\nWe have uncovered the final remnants of a civilization that came before us, a precursor whose achievements once shaped the very galaxy. Their secrets are now ours to study and preserve. Under the vision of [Root.Owner.Ruler.GetName], we have completed the greatest archaeological endeavour in the history of our people, connecting our future to a lost and ancient past.\n\n$paragon.ending.speech$"
+		paragon.5407.a:0 "We carry their torch forward!"
+
+		paragon.5409.name:0 "The Crisis Averted"
+		paragon.5409.desc:0 "$paragon.beginning.speech$\n\nThe galaxy teetered on the brink of annihilation, and yet we endured. The crisis that threatened to consume all of civilization has been defeated. Under the unyielding resolve of [Root.Owner.Ruler.GetName], our empire stood as a bulwark against the darkness. This victory belongs not only to us, but to every species that still draws breath in this galaxy.\n\n$paragon.ending.speech$"
+		paragon.5409.a:0 "The galaxy is saved!"
+
 	# Forgotten Events
 		paragon.forgotten.a.2:0 "Release some \"dissenters\""
 		paragon.forgotten.a.3:0 "Suppress the media."

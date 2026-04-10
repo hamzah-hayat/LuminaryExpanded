@@ -2,5 +2,35 @@
 on_monthly_pulse_country = {
 	events = {
 		paragon.5040	# Check if Luminary trait is maxed
+		paragon.5406	# Precursor chain completed
+		paragon.5408	# Crisis defeated
+	}
+}
+
+# this = country, from = megastructure
+on_megastructure_built = {
+	events = {
+		paragon.5030	# Built a megastructure
+	}
+}
+
+# this = owner of combatant fleet, from = owner of destroyed fleet
+on_fleet_destroyed_perp = {
+	events = {
+		paragon.5400	# Defeated a guardian/leviathan
+	}
+}
+
+# this = planet, from = new owner, fromfrom = former owner
+on_planet_conquer = {
+	events = {
+		paragon.5402	# Conquered homeworld of another empire
+	}
+}
+
+# this = country
+on_tradition_picked = {
+	events = {
+		paragon.5404	# All tradition slots filled
 	}
 }

@@ -1367,6 +1367,369 @@ country_event = {
 	}
 }
 
+country_event = { # Built a megastructure
+	id = paragon.5030
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = ruler
+		NOT = { has_country_flag = increase_leader_upkeep }
+		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+	}
+
+	immediate = {
+		country_event = {
+			id = paragon.5031
+		}
+	}
+}
+
+country_event = {
+	id = paragon.5031
+	title = "paragon.5031.name"
+	desc = "paragon.5031.desc"
+	picture = GFX_evt_legendary_leader
+	show_sound = event_celebration
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = root.owner.ruler
+		room = root.owner
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = ruler
+		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		NOT = { has_country_flag = increase_leader_upkeep }
+	}
+
+	immediate = {}
+
+	option = {
+		name = paragon.5031.a
+		add_modifier = {
+			modifier = media_coverage_positive_low
+			days = 180
+		}
+		luminary_increase_paragon_origin_story_ruling = { CHANGE = 1 }
+	}
+}
+
+country_event = { # Defeated a guardian/leviathan
+	id = paragon.5400
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	# on_fleet_destroyed_perp
+	# this = owner of combatant fleet (us)
+	# from = owner of destroyed fleet (guardian)
+
+	trigger = {
+		exists = ruler
+		NOT = { has_country_flag = increase_leader_upkeep }
+		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		from = {
+			is_country_type = guardian
+		}
+	}
+
+	immediate = {
+		country_event = {
+			id = paragon.5401
+		}
+	}
+}
+
+country_event = {
+	id = paragon.5401
+	title = "paragon.5401.name"
+	desc = "paragon.5401.desc"
+	picture = GFX_evt_legendary_leader
+	show_sound = event_celebration
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = root.owner.ruler
+		room = root.owner
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = ruler
+		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		NOT = { has_country_flag = increase_leader_upkeep }
+	}
+
+	immediate = {}
+
+	option = {
+		name = paragon.5401.a
+		add_modifier = {
+			modifier = media_coverage_positive_low
+			days = 180
+		}
+		luminary_increase_paragon_origin_story_ruling = { CHANGE = 1 }
+	}
+}
+
+planet_event = { # Conquered the homeworld of another empire
+	id = paragon.5402
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	# on_planet_conquer
+	# this = planet
+	# from = new owner (us)
+	# fromfrom = former owner
+
+	trigger = {
+		is_homeworld = yes
+		from = {
+			exists = ruler
+			NOT = { has_country_flag = increase_leader_upkeep }
+			ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		}
+		fromfrom = {
+			is_country_type = default
+		}
+	}
+
+	immediate = {
+		from = {
+			country_event = {
+				id = paragon.5403
+			}
+		}
+	}
+}
+
+country_event = {
+	id = paragon.5403
+	title = "paragon.5403.name"
+	desc = "paragon.5403.desc"
+	picture = GFX_evt_legendary_leader
+	show_sound = event_celebration
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = root.owner.ruler
+		room = root.owner
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = ruler
+		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		NOT = { has_country_flag = increase_leader_upkeep }
+	}
+
+	immediate = {}
+
+	option = {
+		name = paragon.5403.a
+		add_modifier = {
+			modifier = media_coverage_positive_low
+			days = 180
+		}
+		luminary_increase_paragon_origin_story_ruling = { CHANGE = 1 }
+	}
+}
+
+country_event = { # All tradition slots filled
+	id = paragon.5404
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	# on_tradition_picked
+	# this = country
+
+	trigger = {
+		exists = ruler
+		NOT = { has_country_flag = increase_leader_upkeep }
+		NOT = { has_country_flag = had_paragon_full_traditions }
+		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		num_tradition_categories >= 8
+	}
+
+	immediate = {
+		set_country_flag = had_paragon_full_traditions
+		country_event = {
+			id = paragon.5405
+		}
+	}
+}
+
+country_event = {
+	id = paragon.5405
+	title = "paragon.5405.name"
+	desc = "paragon.5405.desc"
+	picture = GFX_evt_legendary_leader
+	show_sound = event_celebration
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = root.owner.ruler
+		room = root.owner
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = ruler
+		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		NOT = { has_country_flag = increase_leader_upkeep }
+	}
+
+	immediate = {}
+
+	option = {
+		name = paragon.5405.a
+		add_modifier = {
+			modifier = media_coverage_positive_low
+			days = 180
+		}
+		luminary_increase_paragon_origin_story_ruling = { CHANGE = 1 }
+	}
+}
+
+country_event = { # Finished a precursor event chain
+	id = paragon.5406
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	# on_monthly_pulse_country
+	# this = country
+
+	trigger = {
+		exists = ruler
+		NOT = { has_country_flag = increase_leader_upkeep }
+		NOT = { has_country_flag = had_paragon_precursor_completed }
+		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		OR = {
+			has_relic = r_cybrex_war_forge
+			has_relic = r_the_surveyor
+			has_relic = r_the_last_baol
+			has_relic = r_the_defragmentor
+			has_relic = r_yuht_cryo_core
+			has_relic = r_irassian_concordat
+			has_relic = r_the_vultaum_reality_perforator
+		}
+	}
+
+	immediate = {
+		set_country_flag = had_paragon_precursor_completed
+		country_event = {
+			id = paragon.5407
+		}
+	}
+}
+
+country_event = {
+	id = paragon.5407
+	title = "paragon.5407.name"
+	desc = "paragon.5407.desc"
+	picture = GFX_evt_legendary_leader
+	show_sound = event_celebration
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = root.owner.ruler
+		room = root.owner
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = ruler
+		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		NOT = { has_country_flag = increase_leader_upkeep }
+	}
+
+	immediate = {}
+
+	option = {
+		name = paragon.5407.a
+		add_modifier = {
+			modifier = media_coverage_positive_low
+			days = 180
+		}
+		luminary_increase_paragon_origin_story_ruling = { CHANGE = 1 }
+	}
+}
+
+country_event = { # Defeated a mid-game or end-game crisis
+	id = paragon.5408
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	# on_monthly_pulse_country
+	# this = country
+
+	trigger = {
+		exists = ruler
+		NOT = { has_country_flag = increase_leader_upkeep }
+		NOT = { has_country_flag = had_paragon_crisis_defeated }
+		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		OR = {
+			has_global_flag = prethoryn_scourge_defeated
+			has_global_flag = contingency_defeated
+			has_global_flag = extradimensional_invasion_defeated
+			has_global_flag = great_khan_dead
+		}
+	}
+
+	immediate = {
+		set_country_flag = had_paragon_crisis_defeated
+		country_event = {
+			id = paragon.5409
+		}
+	}
+}
+
+country_event = {
+	id = paragon.5409
+	title = "paragon.5409.name"
+	desc = "paragon.5409.desc"
+	picture = GFX_evt_legendary_leader
+	show_sound = event_celebration
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = root.owner.ruler
+		room = root.owner
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = ruler
+		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		NOT = { has_country_flag = increase_leader_upkeep }
+	}
+
+	immediate = {}
+
+	option = {
+		name = paragon.5409.a
+		add_modifier = {
+			modifier = media_coverage_positive_low
+			days = 180
+		}
+		luminary_increase_paragon_origin_story_ruling = { CHANGE = 1 }
+	}
+}
+
 country_event = { # Lost a war
 	id = paragon.5028
 	hide_window = yes
