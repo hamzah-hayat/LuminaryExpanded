@@ -7,4 +7,4 @@ tags={
 	"Gameplay"
 }
 name="LuminaryExpanded"
-supported_version="v4.3.1"
+supported_version="v4.3.*"
