@@ -7,4 +7,6 @@ tags={
 	"Gameplay"
 }
 name="LuminaryExpanded"
+picture="thumbnail.png"
 supported_version="v4.3.*"
+remote_file_id="3704128169"

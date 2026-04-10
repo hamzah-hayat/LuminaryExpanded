@@ -1,7 +1,7 @@
 [h1]Luminary Expanded[/h1]
 
 [h2]Overview[/h2]
-Luminary Expanded is a mod for Stellaris that overhauls and expands the Galactic Paragons DLC's Luminary origin. This mod adds new events, situations, council agendas, and expanded player choices to make the Luminary origin feel more dynamic and reactive to your empire's achievements. It is designed to reward players who engage with the origin's narrative by providing more ways to grow (or lose) the Luminary trait through meaningful gameplay milestones.
+Luminary Expanded is a mod for Stellaris that overhauls and expands the Galactic Paragons DLC's Luminary origin. This mod adds new events, situations, council agendas, and expanded player choices. It allows you to save your heir from certain doom, and to ultimately max out the Luminary trait through more milestones, giving a final bonus effect. Plus lots of other smaller changes to make the origin feel better to play.
 
 [h2]Features[/h2]
 
@@ -15,18 +15,13 @@ Choose the bonus from the 40 year plan, instead of getting one randomly, choices
 [/list]
 
 [h3]Expanded Forgotten Situation Events[/h3]
-The three Forgotten situation escalation events now have additional options beyond the vanilla choices:
-[list]
-[*][b]Event 1:[/b] Pay Unity, pay Influence, or take a bad media coverage modifier.
-[*][b]Event 2:[/b] Pay Energy, pay Trade, or take a bad media coverage modifier.
-[*][b]Event 3:[/b] Pay Unity, pay Influence, or take a bad media coverage modifier.
-[/list]
+The three Forgotten situation escalation events now have additional options beyond the vanilla choices.
 These give you bonus cost options instead of relying on unity and energy to avoid losing Luminary points.
 Each option scales, similar to vanilla, a stronger government tier lowers the scaling, as per vanilla.
 
 [h3]Dying Heir Situation[/h3]
 A fully-featured bidirectional situation that adds a major narrative event chain when the Luminary's heir falls ill.
-This replaces your heir always dying, with a nice little situation that happens alongside the reformist one.
+This replaces your heir always dying, with a situation that happens alongside the reformist one.
 
 [b]Three Approaches:[/b]
 [list]
@@ -36,13 +31,6 @@ This replaces your heir always dying, with a nice little situation that happens 
 [/list]
 [b]Workforce Scaling:[/b] Having more healthcare and biologist jobs in your empire directly improves your chances of curing the heir (every 100 workers provides +0.1 monthly situation progress).
 [b]Disease progress:[/b] As time passes, the heirs sickness gets worse, upto a maximum level of negative progress.
-
-[b]Three Stages:[/b]
-[list]
-[*][b]Dying (0–20):[/b] Condition worsening. +15% unity, -5% pop happiness.
-[*][b]Steady (20–80):[/b] Condition stabilized. +5% unity.
-[*][b]Recovering (80–100):[/b] Condition improving. +5% unity, +5% pop happiness.
-[/list]
 
 [b]Random Events:[/b] Medical setbacks, breakthroughs, and four duty dilemma events where you must balance the heir's health against governance needs (public speeches, council work, colony visits, navy inspections).
 
@@ -249,7 +237,7 @@ Or install via the Steam workshop.
 
 [h2]Credits[/h2]
 [list]
-[*]Mod Author: Hamzah Hayat
+[*]Mod Author: Chickenboy
 [*]Original Luminary Origin by Marek Kozlowski, Linus Dilen, and Haig Morrison (Paradox Interactive)
 [*]Special thanks to the Stellaris modding community for resources and inspiration.
 [/list]
