@@ -1616,14 +1616,15 @@ country_event = { # Finished a precursor event chain
 		NOT = { has_country_flag = had_paragon_precursor_completed }
 		ruler = { has_leader_flag = paragon_origin_legendary_leader }
 		OR = {
-			has_relic = r_zro_crystal
-			has_relic = r_the_last_baol
-			has_relic = r_the_defragmentor
-			has_relic = r_reality_perforator
-			has_relic = r_pox_sample
-			has_relic = r_cryo_core
-			has_relic = r_war_forge
-			has_relic = r_vacuum_flower
+			has_country_flag = irassian_world_found
+			has_country_flag = yuht_world_found
+			has_country_flag = vultaum_world_found
+			has_country_flag = cybrex_world_found
+			has_country_flag = league_world_found
+			has_country_flag = last_baol_system
+			has_country_flag = last_zroni_system
+			has_country_flag = tempest_invocator_found
+			has_country_flag = weather_manipulator_found
 		}
 	}
 
