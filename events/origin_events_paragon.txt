@@ -1377,11 +1377,49 @@ country_event = { # Built a megastructure
 		exists = ruler
 		NOT = { has_country_flag = increase_leader_upkeep }
 		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+
+		# Check what kind of megastructure it was
+		# Only big megastructures count!
+		from = {
+			NOR = {
+				# Don't count dyson swarms or arc furnaces (during "small" stages)
+				is_megastructure_type = dyson_swarm_1
+				is_megastructure_type = dyson_swarm_2
+				is_megastructure_type = dyson_swarm_3
+
+				is_megastructure_type = orbital_arc_furnace_1
+				is_megastructure_type = orbital_arc_furnace_2
+				is_megastructure_type = orbital_arc_furnace_3
+
+				# Don't count gateways
+				is_megastructure_type = gateway_restored
+				is_megastructure_type = gateway_final
+				is_megastructure_type = lgate_base
+
+				# Or Hyper Relays
+				is_megastructure_type = hyper_relay
+				is_megastructure_type = hyper_relay_restored
+
+				# Orbital rings
+				is_megastructure_type = orbital_ring
+				is_megastructure_type = orbital_ring_restored
+
+				# Habitats
+				is_megastructure_type = habitat_central_complex
+				is_megastructure_type = habitat_central_complex_restored
+				is_megastructure_type = habitat_major_orbital
+				is_megastructure_type = habitat_minor_orbital
+			}
+		}
+		NOT = { has_megastructure_flag = paragon_origin_megastructure_built }
 	}
 
 	immediate = {
 		country_event = {
 			id = paragon.5031
+		}
+		from = {
+			set_megastructure_flag = paragon_origin_megastructure_built
 		}
 	}
 }
