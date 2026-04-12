@@ -1496,9 +1496,6 @@ planet_event = { # Conquered the homeworld of another empire
 			NOT = { has_country_flag = increase_leader_upkeep }
 			ruler = { has_leader_flag = paragon_origin_legendary_leader }
 		}
-		fromfrom = {
-			is_country_type = default
-		}
 	}
 
 	immediate = {
