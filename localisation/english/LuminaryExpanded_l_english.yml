@@ -10,27 +10,27 @@
 	
 	# Milestone Events
 		paragon.5031.name:0 "A Monument to Progress"
-		paragon.5031.desc:0 "$paragon.beginning.speech$\n\nToday marks a defining moment in the history of our great empire. The completion of this megastructure stands as a testament to the ingenuity and resolve of our people. Under the visionary leadership of [Root.Owner.Ruler.GetName], we have achieved what many believed impossible, bending the very fabric of the cosmos to our will.\n\n$paragon.ending.speech$"
+		paragon.5031.desc:0 "$paragon.beginning.speech$\n\nToday marks a defining moment in the history of our great empire. The completion of this megastructure stands as a testament to the ingenuity and resolve of our people. Under my visionary leadership, we have achieved what many believed impossible, bending the very fabric of the cosmos to our will.\n\n$paragon.ending.speech$"
 		paragon.5031.a:0 "A triumph of engineering!"
 
 		paragon.5401.name:0 "The Beast is Slain"
-		paragon.5401.desc:0 "$paragon.beginning.speech$\n\nA great and terrible creature, a colossus of the void, has fallen before the might of our fleets. Where others trembled, we stood firm, and under the guidance of [Root.Owner.Ruler.GetName], our forces struck down the leviathan. Let the galaxy know that no beast, however ancient or fearsome, is beyond the reach of our empire.\n\n$paragon.ending.speech$"
+		paragon.5401.desc:0 "$paragon.beginning.speech$\n\nA great and terrible creature, a colossus of the void, has fallen before the might of our fleets. Where others trembled, we stood firm, and under my guidance, our forces struck down the leviathan. Let the galaxy know that no beast, however ancient or fearsome, is beyond the reach of our empire.\n\n$paragon.ending.speech$"
 		paragon.5401.a:0 "None can stand against us!"
 
 		paragon.5403.name:0 "A Homeworld Claimed"
-		paragon.5403.desc:0 "$paragon.beginning.speech$\n\nThe birthworld of a rival civilization now flies our banner. This is no mere conquest of territory — it is the uprooting of a people's most sacred ground. Under the decisive leadership of [Root.Owner.Ruler.GetName], our armies have secured the very cradle of another species, forever altering the balance of power in the galaxy.\n\n$paragon.ending.speech$"
+		paragon.5403.desc:0 "$paragon.beginning.speech$\n\nThe birthworld of a rival civilization now flies our banner. This is no mere conquest of territory, it is the uprooting of a people's most sacred ground. Under my decisive leadership, our armies have secured the very cradle of another species, forever altering the balance of power in the galaxy.\n\n$paragon.ending.speech$"
 		paragon.5403.a:0 "Their legacy is now ours!"
 
 		paragon.5405.name:0 "The Pillars of Culture"
-		paragon.5405.desc:0 "$paragon.beginning.speech$\n\nEvery tradition slot has been filled, every cultural pillar erected. Our society has reached a breadth of cultural achievement rarely seen among the stars. Under the stewardship of [Root.Owner.Ruler.GetName], our people have explored every avenue of thought, philosophy, and practice available to them. We stand as a civilization fully realized.\n\n$paragon.ending.speech$"
+		paragon.5405.desc:0 "$paragon.beginning.speech$\n\nOur traditions have guided us for generations, and now they are fully realized. Our society has reached a breadth of cultural achievement rarely seen among the stars. Under my stewardship, our people have explored every avenue of thought, philosophy, and practice available to them. We stand as a fully complete civilization.\n\n$paragon.ending.speech$"
 		paragon.5405.a:0 "Our culture is unmatched!"
 
 		paragon.5407.name:0 "Echoes of the Ancients"
-		paragon.5407.desc:0 "$paragon.beginning.speech$\n\nWe have uncovered the final remnants of a civilization that came before us, a precursor whose achievements once shaped the very galaxy. Their secrets are now ours to study and preserve. Under the vision of [Root.Owner.Ruler.GetName], we have completed the greatest archaeological endeavour in the history of our people, connecting our future to a lost and ancient past.\n\n$paragon.ending.speech$"
+		paragon.5407.desc:0 "$paragon.beginning.speech$\n\nWe have uncovered the final remnants of a civilization that came before us, a precursor whose achievements once shaped the very galaxy. Their secrets are now ours to study and preserve. Under my vision, we have completed the greatest archaeological endeavour in the history of our people, connecting our future to a lost and ancient past.\n\n$paragon.ending.speech$"
 		paragon.5407.a:0 "We carry their torch forward!"
 
 		paragon.5409.name:0 "The Crisis Averted"
-		paragon.5409.desc:0 "$paragon.beginning.speech$\n\nThe galaxy teetered on the brink of annihilation, and yet we endured. The crisis that threatened to consume all of civilization has been defeated. Under the unyielding resolve of [Root.Owner.Ruler.GetName], our empire stood as a bulwark against the darkness. This victory belongs not only to us, but to every species that still draws breath in this galaxy.\n\n$paragon.ending.speech$"
+		paragon.5409.desc:0 "$paragon.beginning.speech$\n\nThe galaxy teetered on the brink of annihilation, and yet we endured. The crisis that threatened to consume all of civilization has been defeated. Under my unyielding resolve, our empire stood as a bulwark against the darkness. This victory belongs not only to us, but to every species that still draws breath in this galaxy.\n\n$paragon.ending.speech$"
 		paragon.5409.a:0 "The galaxy is saved!"
 
 	# Forgotten Events
@@ -72,51 +72,51 @@
 		# Events
 		# Heir illness outcome events
 		paragon.5080.name:0 "Miraculous Recovery"
-		paragon.5080.desc:0 "Against all odds, §Y[Owner.GetHeirTitle] [Owner.GetHeirName]§! has made a miraculous recovery! The nation rejoices as hope is restored, and our future looks brighter than ever."
-		paragon.5080.a:0 "Long live the Heir!"
+		paragon.5080.desc:0 "§H§Y[Owner.GetHeirTitle] [Owner.GetHeirName]§! has appeared on every screen across the empire. Our population is waiting for the address to begin.§!\n\nCitizens of our great empire, I stand before you today alive, whole, and filled with a gratitude that words can scarcely express. Not long ago, I lay at death's door, my body failing, my future uncertain. But I am here now because of the extraordinary people who refused to let me die.\n\nThe doctors who worked through sleepless nights, the biologists who pushed the boundaries of science itself, they are the true heroes of this empire.\n\nI owe them everything, and so does this empire. Let their names be remembered, for it is their brilliance and devotion that keeps the empire going!\n\n$paragon.ending.speech$"
+		paragon.5080.a:0 "Long live the [Owner.GetHeirTitle]!"
 
 		paragon.5081.name:0 "Tragic Loss"
-		paragon.5081.desc:0 "Despite the efforts of our finest doctors and scientist, my own child, §Y[Owner.GetHeirName]§! has passed away."
-		paragon.5081.a:0 "A great loss for the nation..."
+		paragon.5081.desc:0 "$paragon.beginning.speech$\n\nToday I address you not only as your Luminary, but as a parent broken by grief. My child, §Y[Owner.GetHeirName]§!, the future of this great empire, has been taken from us. Let there be no mistake, this was no act of fate. It was the Reformists, Those wretched agitators who sowed division and undermined our efforts at every turn, who bear the weight of this tragedy.\n\nTheir obstruction delayed critical research, their sabotage bled resources meant for the cure, and now my progeny lies cold because of their treachery. I swear before every citizen of this empire: their reckoning will come. We will endure this loss, but we will never forget who is responsible.\n\n$paragon.ending.speech$"
+		paragon.5081.a:0 "The traitors will pay for this!"
 
 		# Heir illness progression events
 		paragon.5082.name:0 "Grave Setback"
-		paragon.5082.desc:0 "The Heir's condition has taken a turn for the worse, and the nation mourns the potential loss of our future leader."
-		paragon.5082.a:0 "We must remain strong in these trying times."
+		paragon.5082.desc:0 "The medical teams attending §Y[owner.GetHeirTitle] [owner.GetHeirName]§! have delivered grim news. Overnight, the heir's vital signs deteriorated sharply, and a new wave of symptoms has emerged that the doctors had not anticipated.\n\nThe carefully constructed treatment regimen that had been holding the disease at bay appears to be failing, and the physicians are scrambling to adjust their approach before the window of opportunity closes entirely.\nAcross the empire, word has already begun to spread. Vigils have formed outside government buildings, and the mood in the capital has grown sombre.\n\nOfficials are quietly discussing contingencies that no one dares speak of openly."
+		paragon.5082.a:0 "We must endure."
 
 		paragon.5083.name:0 "Complications"
-		paragon.5083.desc:0 "The Heir's illness has taken a turn for the worse, and complications have arisen. The nation is on edge as we await news of their condition."
-		paragon.5083.a:0 "We must stay strong and hopeful."
+		paragon.5083.desc:0 "A cascade of secondary complications has struck §Y[owner.GetHeirTitle] [owner.GetHeirName]§!, compounding the already dire prognosis. What began as a single affliction has now spread its tendrils through multiple organ systems, and the heir's body is struggling to fight on so many fronts at once. The lead physician has reported that several experimental treatments had to be abandoned after triggering adverse reactions, narrowing the remaining options considerably."
+		paragon.5083.a:0 "Stay hopeful."
 
 		paragon.5084.name:0 "Disease Breakthrough"
-		paragon.5084.desc:0 "A major breakthrough has been made in the treatment of the Heir's illness! The nation is filled with hope and optimism as we see significant progress towards a cure."
-		paragon.5084.a:0 "This is incredible news! We are on the path to a cure!"
+		paragon.5084.desc:0 "The research teams working around the clock to save §Y[owner.GetHeirTitle] [owner.GetHeirName]§! have made a critical discovery. A new compound, synthesised from biological samples gathered across the empire, has shown remarkable effectiveness against the disease in laboratory trials.\n\nEarly tests on the heir have yielded promising results, with key symptoms showing measurable retreat for the first time since the illness began.\n\nThe news has electrified the empire. Doctors are being hailed as heroes, and a wave of cautious optimism has swept through the population.\n\nFor the first time in months, there is genuine hope that a full cure may be within reach."
+		paragon.5084.a:0 "A cure is within reach!"
 
 		paragon.5085.name:0 "Healing Progress"
-		paragon.5085.desc:0 "The Heir's condition has improved, and there is renewed hope for their recovery. The nation breathes a collective sigh of relief as we see signs of improvement."
-		paragon.5085.a:0 "This is wonderful news!"
+		paragon.5085.desc:0 "For the first time in what feels like an eternity, §Y[owner.GetHeirTitle] [owner.GetHeirName]'s§! physicians have delivered encouraging news. The heir's colour has returned, their appetite has improved, and they have regained some strength, something that would have been unthinkable just weeks ago.\nWhile the medical team cautions that the road to full recovery is still long and uncertain, the improvement is undeniable.\n\nCitizens have taken to the streets in quiet celebration, and messages of support continue to pour in from every corner of the empire."
+		paragon.5085.a:0 "Wonderful news!"
 
 		# Heir working events
 		paragon.5086.name:0 "Public Speech"
-		paragon.5086.desc:0 "The Heir is meant to give a public speech, and despite their illness they are determined to go through with it. However, doing so may take a toll on their health, what should we do?"
+		paragon.5086.desc:0 "§Y[owner.GetHeirTitle] [owner.GetHeirName]§! is scheduled to deliver a major public address before the citizens of the capital. Despite the visible toll of their illness, the heir has made it abundantly clear that they intend to take the stage in person. Their physicians have warned that the physical strain of such an appearance could worsen their condition significantly, but the heir insists that the people need to see strength from their future leader.\nThe council has raised the matter with us directly. What should we do?"
 		paragon.5086.a:0 "Allow the Speech to go on as planned."
 		paragon.5086.b:0 "Pre-record the speech."
 		paragon.5086.c:0 "Cancel the Speech."
 
 		paragon.5087.name:0 "Council Work"
-		paragon.5087.desc:0 "Day after day, §Y[owner.GetHeirTitle] [owner.GetHeirName]§! continues to work diligently, attending important council meetings and taking an active part in new legislation.\nThis is taking a clear strain on their well-being, and the council is concerned. What should we do?"
+		paragon.5087.desc:0 "Day after day, §Y[owner.GetHeirTitle] [owner.GetHeirName]§! continues to push themselves relentlessly, attending every council meeting, reviewing legislation, and weighing in on matters of state as though nothing were wrong. The council members have noticed the dark circles under their eyes, the pale and gaunt appearance, the moments where they pause mid-sentence to steady themselves.\nSeveral advisors have privately expressed their alarm, warning that this punishing schedule is accelerating the heir's decline. Yet the heir refuses to step back, insisting that their duty to the empire comes before their own well-being. The council has formally brought the matter to our attention. What should we do?"
 		paragon.5087.a:0 "Keep the duty schedule as it is."
 		paragon.5087.b:0 "Reduce the heir's workload."
 		paragon.5087.c:0 "Excuse the heir from council work."
 
 		paragon.5088.name:0 "Colony Visit"
-		paragon.5088.desc:0 "A planned colony visit to [reformist_colony.GetName] to convince reformists to cooperate is on the heirs schedule, but doing so may take a toll on their health, what should we do?"
+		paragon.5088.desc:0 "A diplomatic visit to [reformist_colony.GetName] has long been on §Y[owner.GetHeirTitle] [owner.GetHeirName]'s§! schedule. The colony has become a hotbed of reformist sentiment, and the heir's personal presence was intended to calm tensions and persuade the local leaders to cooperate with the central government.\nHowever, the journey itself is gruelling, the stress of negotiations would be immense, and the heir's physicians have cautioned that travel in their current state carries serious risk. On the other hand, cancelling could embolden the reformists further. What should we do?"
 		paragon.5088.a:0 "Proceed with the visit as planned."
 		paragon.5088.b:0 "Postpone the visit."
 		paragon.5088.c:0 "Cancel the visit."
 
 		paragon.5089.name:0 "Navy Inspection"
-		paragon.5089.desc:0 "A planned navy inspection is on the heirs schedule, but doing so may take a toll on their health, what should we do?"
+		paragon.5089.desc:0 "§Y[owner.GetHeirTitle] [owner.GetHeirName]§! is scheduled to conduct a formal inspection of the imperial fleet. The visit was arranged months ago, a show of leadership and solidarity with our naval forces that would see the heir touring the flagship, addressing the officers, and reviewing combat readiness reports in person.\nThe admiralty has been preparing for the heir's arrival, but the heir's medical team has raised serious objections. The physical demands of moving through a warship, combined with the fatigue of the ceremonies, could push their fragile health past its limits. What should we do?"
 		paragon.5089.a:0 "Proceed with the inspection as planned."
 		paragon.5089.b:0 "Postpone the inspection."
 		paragon.5089.c:0 "Cancel the inspection."
