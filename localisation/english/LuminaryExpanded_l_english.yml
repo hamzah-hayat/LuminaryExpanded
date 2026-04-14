@@ -139,3 +139,17 @@
 		paragon.5040.desc:0 "$paragon.beginning.speech$\n\nIn the message that follows, [Root.Owner.Ruler.GetName] reflects on a journey shaped by trials, growth, and revelation, speaking at length on the wisdom gained and the strength forged through adversity. They recount the lessons learned about themselves, their people, and the vast universe they inhabit, weaving these insights into a renewed sense of purpose. The address crescendos into a declaration of intent, a commitment to forever guide the empire toward a radiant and prosperous future.\n\n$paragon.ending.speech$"
 		paragon.5040.a:0 "The Luminary will guide us!"
 		paragon.leader.growth.positive.max:0 "§Y[owner.Ruler.GetTitle] [owner.Ruler.GetRegnalName]'s§! §YLuminary§! Trait §Ghas reached its maximum§!.\n§YThe Luminary trait (and Luminary ascension traits) gain bonus effects and will never reduce.§!"
+
+	# LumEx - Post-Fall Ascension Upgrade
+		paragon.6041.name:0 "Transcending the Apparatus"
+		paragon.6041.desc:0 "$paragon.beginning.speech$\n\nFor years, the Sustaining Apparatus has kept me alive, a marvel of engineering that has bound my consciousness to this mortal frame. But our people have achieved something far greater. Through our ascension, a new path has opened, one that could free me from the confines of this machine and grant me a form worthy of the empire I have built.\n\nThe question before us now is simple: shall I remain tethered to the apparatus, or shall I embrace the future our people have unlocked?\n\n$paragon.ending.speech$"
+		paragon.6041.a:0 "Keep the Apparatus."
+		paragon.6041.a.tooltip:0 "My throne will suffice. §RWarning: This choice will not repeat§!"
+		paragon.6041.b:0 "$paragon.6000.b$"
+		paragon.6041.b.tooltip:0 "$paragon.6000.b.tooltip$"
+		paragon.6041.c:0 "$paragon.6000.c$"
+		paragon.6041.c.tooltip:0 "$paragon.6000.c.tooltip$"
+		paragon.6041.d:0 "$paragon.6000.d$"
+		paragon.6041.d.tooltip:0 "$paragon.6000.d.tooltip$"
+		paragon.6041.e:0 "$paragon.6000.e$"
+		paragon.6041.e.tooltip:0 "$paragon.6000.e.tooltip$"

@@ -7098,3 +7098,151 @@ country_event = {
 		}
 	}
 }
+
+####################################
+# LumEx - Post-Fall Ascension Upgrade
+# If the Luminary chose the Apparatus and later completes an ascension tradition,
+# allow them to swap the Apparatus for the matching ascension trait.
+####################################
+
+country_event = { #UTILITY - monthly check for post-fall ascension
+	id = paragon.6040
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = ruler
+		ruler = {
+			has_leader_flag = paragon_origin_legendary_leader
+			has_trait = leader_trait_the_apparatus_luminary
+		}
+		NOT = { has_country_flag = luminary_post_fall_ascension_offered }
+		OR = {
+			has_finished_psionic_tradition = yes
+			has_tradition = tr_cybernetics_finish
+			has_country_flag = synthetic_empire
+			has_tradition = tr_genetics_finish
+			has_tradition = tr_cloning_finish
+			has_tradition = tr_purity_finish
+			has_tradition = tr_mutation_finish
+		}
+	}
+
+	immediate = {
+		set_country_flag = luminary_post_fall_ascension_offered
+		country_event = {
+			id = paragon.6041 days = 30 random = 60
+		}
+	}
+}
+
+country_event = { # Post-Fall Ascension - Choose new path to replace apparatus
+	id = paragon.6041
+	title = "paragon.6041.name"
+	desc = "paragon.6041.desc"
+	picture = GFX_evt_legendary_leader
+	show_sound = event_celebration
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = owner.ruler
+		room = owner
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = ruler
+		ruler = {
+			has_leader_flag = paragon_origin_legendary_leader
+			has_trait = leader_trait_the_apparatus_luminary
+		}
+	}
+
+	option = { # Cybernetic
+		name = paragon.6041.b
+		trigger = {
+			has_tradition = tr_cybernetics_finish
+		}
+		custom_tooltip = paragon.6041.b.tooltip
+		hidden_effect = {
+			if = {
+				limit = { capital_scope = { has_modifier = sustaining_apparatus } }
+				capital_scope = { remove_modifier = sustaining_apparatus }
+			}
+		}
+		ruler = {
+			remove_trait = leader_trait_the_apparatus_luminary
+			add_trait = {
+				trait = leader_trait_the_cybernetic_luminary
+			}
+		}
+	}
+	option = { # Psionic
+		name = paragon.6041.c
+		trigger = {
+			has_finished_psionic_tradition = yes
+		}
+		custom_tooltip = paragon.6041.c.tooltip
+		hidden_effect = {
+			if = {
+				limit = { capital_scope = { has_modifier = sustaining_apparatus } }
+				capital_scope = { remove_modifier = sustaining_apparatus }
+			}
+		}
+		ruler = {
+			remove_trait = leader_trait_the_apparatus_luminary
+			add_trait = {
+				trait = leader_trait_the_psionic_luminary
+			}
+		}
+	}
+	option = { # Synthetic
+		name = paragon.6041.d
+		trigger = {
+			has_country_flag = synthetic_empire
+		}
+		custom_tooltip = paragon.6041.d.tooltip
+		hidden_effect = {
+			if = {
+				limit = { capital_scope = { has_modifier = sustaining_apparatus } }
+				capital_scope = { remove_modifier = sustaining_apparatus }
+			}
+		}
+		ruler = {
+			remove_trait = leader_trait_the_apparatus_luminary
+			add_trait = {
+				trait = leader_trait_the_synth_luminary
+			}
+		}
+	}
+	option = { # Genetic
+		name = paragon.6041.e
+		trigger = {
+			OR = {
+				has_tradition = tr_genetics_finish
+				has_tradition = tr_cloning_finish
+				has_tradition = tr_purity_finish
+				has_tradition = tr_mutation_finish
+			}
+		}
+		custom_tooltip = paragon.6041.e.tooltip
+		hidden_effect = {
+			if = {
+				limit = { capital_scope = { has_modifier = sustaining_apparatus } }
+				capital_scope = { remove_modifier = sustaining_apparatus }
+			}
+		}
+		ruler = {
+			remove_trait = leader_trait_the_apparatus_luminary
+			add_trait = {
+				trait = leader_trait_the_genetic_luminary
+			}
+		}
+	}
+	option = { # Keep apparatus
+		name = paragon.6041.a
+		custom_tooltip = paragon.6041.a.tooltip
+	}
+}
