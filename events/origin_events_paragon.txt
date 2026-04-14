@@ -2086,6 +2086,7 @@ country_event = {
 
 # Max out the Luminary trait
 # Grants a bonus trait and sets flag on Luminary to max out the trait.
+# Also removes all negative traits from the Luminary
 country_event = {
 	id = paragon.5040
 	title = "paragon.5040.name"
@@ -2123,6 +2124,7 @@ country_event = {
 		name = paragon.5040.a
 		ruler = {
 			add_skill_without_trait_selection = 1
+			luminary_remove_all_negative_traits = yes
 		}
 		custom_tooltip = paragon.leader.growth.positive.max
 		add_modifier = {
@@ -2557,6 +2559,8 @@ situation_event = { #Situation ended
 	}
 }
 
+# LumEx - The Luminary can only get another negative trait if they don't already have a bad trait
+# This looks like a vanilla design choice, as each Luminary trait is a opposite with each other one, meaning that once you have one it is impossible to get any more.
 country_event = { #Negative Trait
 	id = paragon.5058
 	title = "paragon.5058.name"
@@ -2568,7 +2572,18 @@ country_event = { #Negative Trait
 
 	trigger = {
 		exists = ruler
-		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		ruler = { 
+			has_leader_flag = paragon_origin_legendary_leader
+			NOR = {
+				has_trait = leader_trait_legendary_unfriendly
+				has_trait = leader_trait_legendary_warmonger
+				has_trait = leader_trait_legendary_dreamlike
+				has_trait = leader_trait_legendary_harsh_ruler
+				has_trait = leader_trait_legendary_too_open
+				has_trait = leader_trait_legendary_hoplofobia
+				has_trait = leader_trait_legendary_bad_meritocracy
+			}
+		}
 	}
 
 	immediate = {

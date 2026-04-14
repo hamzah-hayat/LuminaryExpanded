@@ -111,3 +111,48 @@ luminary_heir_illness_change_negative = {
 		}
 	}
 }
+
+luminary_remove_all_negative_traits = {
+	if = {
+		limit = {
+			has_trait = leader_trait_legendary_unfriendly
+		}
+		remove_trait = leader_trait_legendary_unfriendly
+	}
+	if = {
+		limit = {
+			has_trait = leader_trait_legendary_warmonger
+		}
+		remove_trait = leader_trait_legendary_warmonger
+	}
+	if = {
+		limit = {
+			has_trait = leader_trait_legendary_dreamlike
+		}
+		remove_trait = leader_trait_legendary_dreamlike
+	} 
+	if = {
+		limit = {
+			has_trait = leader_trait_legendary_harsh_ruler
+		}
+		remove_trait = leader_trait_legendary_harsh_ruler
+	} 
+	if = {
+		limit = {
+			has_trait = leader_trait_legendary_too_open
+		}
+		remove_trait = leader_trait_legendary_too_open
+	} 
+	if = {
+		limit = {
+			has_trait = leader_trait_legendary_hoplofobia
+		}
+		remove_trait = leader_trait_legendary_hoplofobia
+	} 
+	if = {
+		limit = {
+			has_trait = leader_trait_legendary_bad_meritocracy
+		}
+		remove_trait = leader_trait_legendary_bad_meritocracy
+	}
+}
