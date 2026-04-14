@@ -62,6 +62,88 @@ country_event = { #Give trait to the leader
 		country_event = {
 			id = paragon.5004 days = 180 random = 360
 		}
+		# LumEx - Let player choose Luminary's ethic trait
+		country_event = {
+			id = paragon.5001 days = 1
+		}
+	}
+}
+
+####################################
+# LumEx - Choose Luminary Ethic at Game Start
+# Lets the player choose which ethic the Luminary starts with.
+####################################
+country_event = { # Choose Luminary's ethic
+	id = paragon.5001
+	title = "paragon.5001.name"
+	desc = "paragon.5001.desc"
+	picture = GFX_evt_legendary_leader
+	show_sound = event_factions
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = root.owner.ruler
+		room = root.owner
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = ruler
+		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		NOT = { has_country_flag = luminary_ethic_chosen }
+	}
+
+	immediate = {}
+
+	option = { # Militarist
+		name = paragon.5001.militarist
+		trigger = {
+			is_militarist = yes
+		}
+		ruler = { change_background_ethic = ethic_militarist }
+	}
+	option = { # Pacifist
+		name = paragon.5001.pacifist
+		trigger = {
+			is_pacifist = yes
+		}
+		ruler = { change_background_ethic = ethic_pacifist }
+	}
+	option = { # Authoritarian
+		name = paragon.5001.authoritarian
+		trigger = {
+			is_authoritarian = yes
+		}
+		ruler = { change_background_ethic = ethic_authoritarian }
+	}
+	option = { # Spiritualist
+		name = paragon.5001.spiritualist
+		trigger = {
+			is_spiritualist = yes
+		}
+		ruler = { change_background_ethic = ethic_spiritualist }
+	}
+	option = { # Materialist
+		name = paragon.5001.materialist
+		trigger = {
+			is_materialist = yes
+		}
+		ruler = { change_background_ethic = ethic_materialist }
+	}
+	option = { # Xenophobe
+		name = paragon.5001.xenophobe
+		trigger = {
+			is_xenophobe = yes
+		}
+		ruler = { change_background_ethic = ethic_xenophobe }
+	}
+	option = { # Xenophile
+		name = paragon.5001.xenophile
+		trigger = {
+			is_xenophile = yes
+		}
+		ruler = { change_background_ethic = ethic_xenophile }
 	}
 }
 

@@ -1,4 +1,16 @@
 ﻿l_english:
+	# LumEx - Choose Luminary Ethic Trait
+		paragon.5001.name:0 "Guiding Principles"
+		paragon.5001.desc:0 "As §Y[Owner.Ruler.GetTitle] [Owner.Ruler.GetRegnalName]§! takes the reins of power, a defining question emerges: what guiding ethic will shape [Owner.Ruler.GetHisHer] legendary rule?\n\nThe council awaits the Luminary's declaration, knowing that this choice will echo throughout the empire for generations to come."
+		# Use Vanilla text when able, to keep loc for other languages
+		paragon.5001.militarist:0 "$paragon.5021.a$"
+		paragon.5001.pacifist:0 "$paragon.5021.e$"
+		paragon.5001.authoritarian:0 "$paragon.5021.c$"
+		paragon.5001.spiritualist:0 "$paragon.5021.b$"
+		paragon.5001.materialist:0 "$paragon.5021.f$"
+		paragon.5001.xenophobe:0 "$paragon.5021.g$"
+		paragon.5001.xenophile:0 "$paragon.5021.d$"
+
 	# 40 Year Plan Insight events
 		paragon.5324.name:0 "The 40 Year Plan"
 		paragon.5324.desc:0 "The groundwork for the 40 year plan has now been established!\nTogether, our people are ready to embark on this ambitious journey to the stars.\nThere are still many challenges to overcome, but with a recent great discovery I know we will achieve greatness!"
