@@ -35,3 +35,23 @@ This version is built for Stellaris Cetus 4.3.3 (456f)
 [list]
 [*] None
 [/list]
+
+
+[h1]1.0.2[/h1]
+This version is built for Stellaris Cetus 4.3.3 (456f)
+
+[h2]Fixes[/h2]
+[list]
+[*] Don't trigger Luminary negative trait event if you already have one, as per vanilla design all of the Luminary negative traits are opposites to each other, meaning you can only have one!
+[/list]
+
+[h2]Changes[/h2]
+[list]
+[*] Maxing out the Luminary trait event also removes the Luminary's negative trait
+[/list]
+
+[h2]Features[/h2]
+[list]
+[*] Add start event that lets you choose your Luminarys background ethic, based on your empire ethics
+[*] Add event that lets you choose an ascension path for your Luminary, if they are apparatus bound but you have now completed an ascension path.
+[/list]
