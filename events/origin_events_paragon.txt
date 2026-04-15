@@ -1290,7 +1290,10 @@ country_event = { #Made Federation
 
 	trigger = {
 		exists = ruler
-		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		ruler = {
+			has_leader_flag = paragon_origin_legendary_leader
+			NOT = { has_leader_flag = paragon_origin_legendary_leader_story_ruling_maxed }
+		}
 		NOR = {
 			has_country_flag = increase_leader_upkeep
 			has_country_flag = first_federation_event
@@ -1337,7 +1340,10 @@ country_event = { # Become Overlord
 		from = {
 			NOT = { has_country_flag = increase_leader_upkeep }
 			exists = ruler
-			ruler = { has_leader_flag = paragon_origin_legendary_leader }
+			ruler = {
+				has_leader_flag = paragon_origin_legendary_leader
+				NOT = { has_leader_flag = paragon_origin_legendary_leader_story_ruling_maxed }
+			}
 		}
 	}
 
@@ -1400,7 +1406,10 @@ country_event = { # Won a war
 	trigger = {
 		exists = ruler
 		NOT = { has_country_flag = increase_leader_upkeep }
-		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		ruler = {
+			has_leader_flag = paragon_origin_legendary_leader
+			NOT = { has_leader_flag = paragon_origin_legendary_leader_story_ruling_maxed }
+		}
 		OR = {
 			NOT = {
 				any_country = { has_country_flag = rebel_empire_@root }
@@ -1458,7 +1467,10 @@ country_event = { # Built a megastructure
 	trigger = {
 		exists = ruler
 		NOT = { has_country_flag = increase_leader_upkeep }
-		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		ruler = {
+			has_leader_flag = paragon_origin_legendary_leader
+			NOT = { has_leader_flag = paragon_origin_legendary_leader_story_ruling_maxed }
+		}
 
 		# Check what kind of megastructure it was
 		# Only big megastructures count!
@@ -1553,7 +1565,10 @@ country_event = { # Defeated a guardian/leviathan
 		exists = ruler
 		NOT = { has_country_flag = increase_leader_upkeep }
 		NOT = { has_country_flag = had_paragon_killed_guardian }
-		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		ruler = {
+			has_leader_flag = paragon_origin_legendary_leader
+			NOT = { has_leader_flag = paragon_origin_legendary_leader_story_ruling_maxed }
+		}
 		has_country_flag = killed_guardian
 	}
 
@@ -1614,7 +1629,10 @@ planet_event = { # Conquered the homeworld of another empire
 		from = {
 			exists = ruler
 			NOT = { has_country_flag = increase_leader_upkeep }
-			ruler = { has_leader_flag = paragon_origin_legendary_leader }
+			ruler = {
+				has_leader_flag = paragon_origin_legendary_leader
+				NOT = { has_leader_flag = paragon_origin_legendary_leader_story_ruling_maxed }
+			}
 		}
 	}
 
@@ -1673,7 +1691,10 @@ country_event = { # All tradition slots filled
 		exists = ruler
 		NOT = { has_country_flag = increase_leader_upkeep }
 		NOT = { has_country_flag = had_paragon_full_traditions }
-		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		ruler = {
+			has_leader_flag = paragon_origin_legendary_leader
+			NOT = { has_leader_flag = paragon_origin_legendary_leader_story_ruling_maxed }
+		}
 		num_tradition_categories >= @max_tradition_trees
 	}
 
@@ -1731,7 +1752,10 @@ country_event = { # Finished a precursor event chain
 		exists = ruler
 		NOT = { has_country_flag = increase_leader_upkeep }
 		NOT = { has_country_flag = had_paragon_precursor_completed }
-		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		ruler = {
+			has_leader_flag = paragon_origin_legendary_leader
+			NOT = { has_leader_flag = paragon_origin_legendary_leader_story_ruling_maxed }
+		}
 		OR = {
 			has_country_flag = irassian_world_found
 			has_country_flag = yuht_world_found
@@ -1799,7 +1823,10 @@ country_event = { # Defeated a mid-game or end-game crisis
 		exists = ruler
 		NOT = { has_country_flag = increase_leader_upkeep }
 		NOT = { has_country_flag = had_paragon_crisis_defeated }
-		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		ruler = {
+			has_leader_flag = paragon_origin_legendary_leader
+			NOT = { has_leader_flag = paragon_origin_legendary_leader_story_ruling_maxed }
+		}
 		OR = {
 			has_global_flag = prethoryn_invasion_defeated
 			has_global_flag = ai_invasion_defeated
@@ -1860,7 +1887,10 @@ country_event = { # Lost a war
 	trigger = {
 		exists = ruler
 		NOT = { has_country_flag = increase_leader_upkeep }
-		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		ruler = {
+			has_leader_flag = paragon_origin_legendary_leader
+			NOT = { has_leader_flag = paragon_origin_legendary_leader_story_ruling_maxed }
+		}
 		OR = {
 			NOT = {
 				any_country = { has_country_flag = rebel_empire_@root }
@@ -1920,7 +1950,10 @@ country_event = { # Become Vassal
 
 	trigger = {
 		exists = ruler
-		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		ruler = {
+			has_leader_flag = paragon_origin_legendary_leader
+			NOT = { has_leader_flag = paragon_origin_legendary_leader_story_ruling_maxed }
+		}
 		NOT = { has_country_flag = increase_leader_upkeep }
 	}
 
@@ -1981,7 +2014,10 @@ country_event = { # Become Emperor
 			has_country_flag = made_paragon_speech_emperor
 			has_country_flag = increase_leader_upkeep
 		}
-		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		ruler = {
+			has_leader_flag = paragon_origin_legendary_leader
+			NOT = { has_leader_flag = paragon_origin_legendary_leader_story_ruling_maxed }
+		}
 	}
 
 	immediate = {
@@ -2005,7 +2041,10 @@ country_event = { # Become Custodian
 			has_country_flag = increase_leader_upkeep
 		}
 		is_galactic_custodian = yes
-		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		ruler = {
+			has_leader_flag = paragon_origin_legendary_leader
+			NOT = { has_leader_flag = paragon_origin_legendary_leader_story_ruling_maxed }
+		}
 	}
 
 	immediate = {
