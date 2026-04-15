@@ -2164,6 +2164,19 @@ country_event = {
 		ruler = {
 			add_skill_without_trait_selection = 1
 			luminary_remove_all_negative_traits = yes
+
+			if = {
+				limit = {
+						has_trait = leader_trait_legendary_delusional
+				}
+				custom_tooltip = paragon.leader.delusion.positive
+				hidden_effect = {
+					while = {
+						count = 3
+						paragon_origin_delusion_trait_lowerer = yes
+					}
+				}
+			}
 		}
 		custom_tooltip = paragon.leader.growth.positive.max
 		add_modifier = {
@@ -4001,9 +4014,17 @@ country_event = {
 	option = {
 		name = paragon.5080.a
 
-		custom_tooltip = paragon.leader.delusion.positive
-		hidden_effect = {
-			ruler = { paragon_origin_delusion_trait_lowerer = yes }
+		if = {
+			limit = {
+					has_trait = leader_trait_legendary_delusional
+			}
+			custom_tooltip = paragon.leader.delusion.positive
+			hidden_effect = {
+				while = {
+					count = 3
+					paragon_origin_delusion_trait_lowerer = yes
+				}
+			}
 		}
 
 		custom_tooltip = paragon.leader.growth.positive
@@ -7196,7 +7217,6 @@ country_event = { # Post-Fall Ascension - Choose new path to replace apparatus
 	title = "paragon.6041.name"
 	desc = "paragon.6041.desc"
 	picture = GFX_evt_legendary_leader
-	show_sound = event_celebration
 	event_window_type = leader_story
 
 	picture_event_data = {
