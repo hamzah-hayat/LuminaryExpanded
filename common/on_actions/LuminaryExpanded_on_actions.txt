@@ -8,6 +8,13 @@ on_monthly_pulse_country = {
 	}
 }
 
+# this = country
+on_new_heir = {
+	events = {
+		paragon.5002	# LumEx - Choose Heir's ethic and class
+	}
+}
+
 # this = country, from = megastructure
 on_megastructure_built = {
 	events = {

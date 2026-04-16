@@ -147,6 +147,135 @@ country_event = { # Choose Luminary's ethic
 	}
 }
 
+####################################
+# LumEx - Choose Heir Ethic and Class
+# Lets the player choose the ethic and leader class of the Luminary's first heir.
+####################################
+country_event = { # Choose Heir's ethic
+	id = paragon.5002
+	title = "paragon.5002.name"
+	desc = "paragon.5002.desc"
+	picture = GFX_evt_legendary_leader
+	show_sound = event_factions
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = root.owner.ruler.heir
+		room = root.owner
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = ruler
+		exists = heir
+		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+		NOT = { has_country_flag = luminary_heir_ethic_chosen }
+	}
+
+	immediate = {
+		set_country_flag = luminary_heir_ethic_chosen
+
+		random_owned_leader = {
+			limit = { 
+				is_heir = yes
+			}
+			save_event_target_as = heir
+		}
+	}
+
+	option = { # Militarist
+		name = paragon.5002.militarist
+		trigger = {
+			is_militarist = yes
+		}
+		event_target:heir = { change_background_ethic = ethic_militarist }
+	}
+	option = { # Pacifist
+		name = paragon.5002.pacifist
+		trigger = {
+			is_pacifist = yes
+		}
+		event_target:heir = { change_background_ethic = ethic_pacifist }
+	}
+	option = { # Authoritarian
+		name = paragon.5002.authoritarian
+		trigger = {
+			is_authoritarian = yes
+		}
+		event_target:heir = { change_background_ethic = ethic_authoritarian }
+	}
+	option = { # Spiritualist
+		name = paragon.5002.spiritualist
+		trigger = {
+			is_spiritualist = yes
+		}
+		event_target:heir = { change_background_ethic = ethic_spiritualist }
+	}
+	option = { # Materialist
+		name = paragon.5002.materialist
+		trigger = {
+			is_materialist = yes
+		}
+		event_target:heir = { change_background_ethic = ethic_materialist }
+	}
+	option = { # Xenophobe
+		name = paragon.5002.xenophobe
+		trigger = {
+			is_xenophobe = yes
+		}
+		event_target:heir = { change_background_ethic = ethic_xenophobe }
+	}
+	option = { # Xenophile
+		name = paragon.5002.xenophile
+		trigger = {
+			is_xenophile = yes
+		}
+		event_target:heir = { change_background_ethic = ethic_xenophile }
+	}
+
+	after = {
+		country_event = { id = paragon.5003 }
+	}
+}
+
+country_event = { # Choose Heir's leader class
+	id = paragon.5003
+	title = "paragon.5003.name"
+	desc = "paragon.5003.desc"
+	picture = GFX_evt_legendary_leader
+	show_sound = event_factions
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = root.owner.ruler.heir
+		room = root.owner
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = ruler
+		exists = event_target:heir
+		ruler = { has_leader_flag = paragon_origin_legendary_leader }
+	}
+
+	immediate = {}
+
+	option = { # Commander
+		name = paragon.5003.commander
+		event_target:heir = { change_leader_class = commander }
+	}
+	option = { # Scientist
+		name = paragon.5003.scientist
+		event_target:heir = { change_leader_class = scientist }
+	}
+	option = { # Official
+		name = paragon.5003.official
+		event_target:heir = { change_leader_class = official }
+	}
+}
+
 ###############
 #Origin Events#
 ###############

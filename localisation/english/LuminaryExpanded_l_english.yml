@@ -11,6 +11,24 @@
 		paragon.5001.xenophobe:0 "$paragon.5021.g$"
 		paragon.5001.xenophile:0 "$paragon.5021.d$"
 
+	# LumEx - Choose Heir Ethic
+		paragon.5002.name:0 "Shaping the Heir"
+		paragon.5002.desc:0 "A new heir has been designated to carry on the legacy of §Y[Owner.Ruler.GetTitle] [Owner.Ruler.GetRegnalName]§!. Before §Y[Owner.GetHeirName]§! begins their training, a crucial decision must be made: what guiding ethic will shape their worldview and future leadership?\n\nThe Luminary must choose wisely, for this choice will define the heir's character for years to come."
+		paragon.5002.militarist:0 "$paragon.5001.militarist$"
+		paragon.5002.pacifist:0 "$paragon.5001.pacifist$"
+		paragon.5002.authoritarian:0 "$paragon.5001.authoritarian$"
+		paragon.5002.spiritualist:0 "$paragon.5001.spiritualist$"
+		paragon.5002.materialist:0 "$paragon.5001.materialist$"
+		paragon.5002.xenophobe:0 "$paragon.5001.xenophobe$"
+		paragon.5002.xenophile:0 "$paragon.5001.xenophile$"
+
+	# LumEx - Choose Heir Leader Class
+		paragon.5003.name:0 "The Heir's Path"
+		paragon.5003.desc:0 "With §Y[Owner.GetHeirName]'s§! guiding principles now established, the time has come to determine the path of their training. Shall they be forged into a military commander, shaped into a brilliant scientist, or groomed as a skilled official?\n\nThe Luminary's choice will determine the heir's expertise and role within the empire."
+		paragon.5003.commander:0 "Train as a Commander"
+		paragon.5003.scientist:0 "Train as a Scientist"
+		paragon.5003.official:0 "Train as an Official"
+
 	# 40 Year Plan Insight events
 		paragon.5324.name:0 "The 40 Year Plan"
 		paragon.5324.desc:0 "The groundwork for the 40 year plan has now been established!\nTogether, our people are ready to embark on this ambitious journey to the stars.\nThere are still many challenges to overcome, but with a recent great discovery I know we will achieve greatness!"
