@@ -5,19 +5,16 @@ Luminary Expanded is a mod for Stellaris that overhauls and expands the Galactic
 
 [h2]Features[/h2]
 
-[h3]40 Year Plan[/h3]
-Choose the bonus from the 40 year plan, instead of getting one randomly, choices are vanilla, which are:
+[h3] Quality of Life improvements [/h3]
 [list]
-[*]Upgrade a starbase
-[*]Discover living metal
-[*]Find dark matter
-[*]Prospect strategic resources
+[*] Choose Luminary start ethic
+[*] Choose your first heir (Imperial government) ethic and leader class
+[*] Gaining new Luminary traits is based on ethic alignment for new traits, rather then random
+[*] The 40 Year plan now lets you choose the bonus you want
+[*] Forgotten Situation events have more options
+[*] Reduce time to ascend the Luminary after achieving an ascension path.
+[*] You may ascend the Luminary after achieving an ascension path if you were forced to make the apparatus for them. Works retroactively!
 [/list]
-
-[h3]Expanded Forgotten Situation Events[/h3]
-The three Forgotten situation escalation events now have additional options beyond the vanilla choices.
-These give you bonus cost options instead of relying on unity and energy to avoid losing Luminary points.
-Each option scales, similar to vanilla, a stronger government tier lowers the scaling, as per vanilla.
 
 [h3]Dying Heir Situation[/h3]
 A fully-featured bidirectional situation that adds a major narrative event chain when the Luminary's heir falls ill.
@@ -55,13 +52,6 @@ Winning a war or making another empire a vassal are now repeatable events, rewar
 [*]The Luminary trait can now be maxed out at 20 points, triggering [b]"The Legendary Luminary"[/b] event.
 [*]Grants a bonus skill level and gives the Luminary trait and Luminary ascension traits small bonus effects.
 [/list]
-
-[h3]Ethic-Specific Leader Trait Choices[/h3]
-The vanilla "Diligent Leader" and "Order Restored" events are expanded with 7 ethic-aligned response options (Militarist, Spiritualist, Authoritarian, Xenophile, Pacifist, Materialist, Xenophobe), each granting a corresponding legendary trait.
-Lets you get the Luminary traits more closely aligned with your empires ethics, rather then a random one.
-
-[h3]Ascension Path Event[/h3]
-Reduced the time after an Ascension path is finished before the Luminary Ascension event fires.
 
 [h3]Luminary Trait Growth Summary[/h3]
 
@@ -126,7 +116,7 @@ Events that [b]increase[/b] the Luminary trait:
 [td]Defeated a Guardian[/td]
 [td]Killed a guardian/leviathan[/td]
 [td]+1[/td]
-[td][/td]
+[td]Repeatable[/td]
 [/tr]
 [tr]
 [td]Conquered a Homeworld[/td]

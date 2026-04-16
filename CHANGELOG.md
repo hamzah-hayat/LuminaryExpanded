@@ -55,3 +55,22 @@ This version is built for Stellaris Cetus 4.3.3 (456f)
 [*] Add start event that lets you choose your Luminarys background ethic, based on your empire ethics
 [*] Add event that lets you choose an ascension path for your Luminary, if they are apparatus bound but you have now completed an ascension path.
 [/list]
+
+
+[h1]1.0.3[/h1]
+This version is built for Stellaris Cetus 4.3.3 (456f)
+
+[h2]Fixes[/h2]
+[list]
+[*] Stop Milestone events triggering once Luminary trait is maxed.
+[/list]
+
+[h2]Changes[/h2]
+[list]
+[*] Lower Delusion by three when saving Heir and when maxing Luminary trait. Can remove the delusion trait if it is low enough.
+[/list]
+
+[h2]Features[/h2]
+[list]
+[*] Add event on new heir (but only the first one!) that lets you choose their ethic and leader class (commander/scientist/official)
+[/list]
