@@ -1624,8 +1624,8 @@ country_event = { # Built a megastructure
 				is_megastructure_type = habitat_major_orbital
 				is_megastructure_type = habitat_minor_orbital
 			}
+			NOT = { has_megastructure_flag = paragon_origin_megastructure_built }
 		}
-		NOT = { has_megastructure_flag = paragon_origin_megastructure_built }
 	}
 
 	immediate = {
@@ -4481,9 +4481,11 @@ situation_event = {
 	
 	trigger = {
 		NOT = { has_situation_flag = origin_heir_sickness_random_event }
-		any_owned_leader = {
-			is_heir = yes
-			is_councilor = yes
+		owner = {
+			any_owned_leader = {
+				is_heir = yes
+				is_councilor = yes
+			}
 		}
 	}
 
@@ -4577,13 +4579,15 @@ situation_event = {
 
 	trigger = {
 		NOT = { has_situation_flag = origin_heir_sickness_random_event }
-		any_system_within_border = {
-			any_system_planet = {
-				is_colony = yes
-				has_owner = yes
-				is_owned_by	= root
-				is_controlled_by = root
-				has_modifier = paragon_origin_reformists
+		owner = {
+			any_system_within_border = {
+				any_system_planet = {
+					is_colony = yes
+					has_owner = yes
+					is_owned_by	= root
+					is_controlled_by = root
+					has_modifier = paragon_origin_reformists
+				}
 			}
 		}
 	}
@@ -4594,12 +4598,14 @@ situation_event = {
 			days = 360
 		}
 
-		random_system_within_border = {
-			random_system_colony = {
-				limit = {
-					has_modifier = paragon_origin_reformists
+		owner = {
+			random_system_within_border = {
+				random_system_colony = {
+					limit = {
+						has_modifier = paragon_origin_reformists
+					}
+					save_event_target_as = reformist_colony
 				}
-				save_event_target_as = reformist_colony
 			}
 		}
 	}
