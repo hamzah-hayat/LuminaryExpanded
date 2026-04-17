@@ -74,3 +74,12 @@ This version is built for Stellaris Cetus 4.3.3 (456f)
 [list]
 [*] Add event on new heir (but only the first one!) that lets you choose their ethic and leader class (commander/scientist/official)
 [/list]
+
+
+[h1]1.0.4[/h1]
+This version is built for Stellaris Cetus 4.3.3 (456f)
+
+[h2]Fixes[/h2]
+[list]
+[*] Fix Heir Leader start events not firing! Wrong scope! 😳
+[/list]
