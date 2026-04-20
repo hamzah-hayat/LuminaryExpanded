@@ -4134,28 +4134,22 @@ country_event = {
 	option = {
 		name = paragon.5080.a
 
-		if = {
-			limit = {
-					has_trait = leader_trait_legendary_delusional
-			}
-			custom_tooltip = paragon.leader.delusion.positive
-			hidden_effect = {
-				while = {
-					count = 3
-					paragon_origin_delusion_trait_lowerer = yes
+		ruler = {
+			if = {
+				limit = {
+						has_trait = leader_trait_legendary_delusional
+				}
+				custom_tooltip = paragon.leader.delusion.positive
+				hidden_effect = {
+					while = {
+						count = 3
+						paragon_origin_delusion_trait_lowerer = yes
+					}
 				}
 			}
 		}
 
-		custom_tooltip = paragon.leader.growth.positive
-		hidden_effect = {
-			ruler = {
-				change_variable = {
-					which = paragon_origin_story_ruling
-					value = 1
-				}
-			}
-		}
+		luminary_increase_paragon_origin_story_ruling = { CHANGE = 1 }
 
 		add_modifier = {
 			modifier = media_coverage_positive_medium
