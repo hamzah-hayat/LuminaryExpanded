@@ -4162,6 +4162,24 @@ country_event = {
 			days = 1800
 		}
 
+		# If the reformist situation is active, reduce progress and remove reformists from roughly 30% of planets
+		if = {
+			limit = {
+				any_situation = { is_situation_type = paragon_origin_reformists_struggle }
+			}
+			random_situation = {
+				limit = { is_situation_type = paragon_origin_reformists_struggle }
+				add_situation_progress = -12
+			}
+			every_owned_planet = {
+				limit = { has_modifier = paragon_origin_reformists }
+				random = {
+					chance = 30
+					remove_modifier = paragon_origin_reformists
+				}
+			}
+		}
+
 		random_situation = {
 			limit = { is_situation_type = paragon_origin_heir_illness }
 			destroy_situation = this
@@ -4208,6 +4226,17 @@ country_event = {
 				has_leader_flag = paragon_origin_heir_illness_heir_flag
 			}
 			kill_leader = { show_notification = yes }
+		}
+
+		# If the reformist situation is active, increase progress
+		if = {
+			limit = {
+				any_situation = { is_situation_type = paragon_origin_reformists_struggle }
+			}
+			random_situation = {
+				limit = { is_situation_type = paragon_origin_reformists_struggle }
+				add_situation_progress = 8
+			}
 		}
 
 		random_situation = {
