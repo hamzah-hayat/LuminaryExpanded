@@ -157,16 +157,16 @@ paragon_origin_heir_illness = {
 			paragon.5091 # Increase sickness progress by -0.1 (Upto -5)
 		}
 		random_events = {
-			2 = paragon.5082 # Grave Setback - Large increase in sickness progress
-			3 = paragon.5083 # Complications - Increase sickness progress
-			1 = paragon.5084 # Breakthrough - Large decrease in sickness progress
-			2 = paragon.5085 # Feeling Better - Decrease sickness progress
+			10 = paragon.5082 # Grave Setback - Large increase in sickness progress
+			15 = paragon.5083 # Complications - Increase sickness progress
+			5 = paragon.5084 # Breakthrough - Large decrease in sickness progress
+			10 = paragon.5085 # Feeling Better - Decrease sickness progress
 
 			# Heir working events
-			2 = paragon.5086 # Public Speech
-			2 = paragon.5087 # Council Work
-			2 = paragon.5088 # Colony Visit
-			2 = paragon.5089 # Navy Inspection
+			15 = paragon.5086 # Public Speech
+			15 = paragon.5087 # Council Work
+			15 = paragon.5088 # Colony Visit
+			15 = paragon.5089 # Navy Inspection
 		}
 	}
 
