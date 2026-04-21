@@ -35,12 +35,14 @@ paragon_origin_heir_illness = {
 	}
 
 	on_progress_complete = {
+		custom_tooltip = paragon_origin_heir_illness_complete
 		owner = {
 			country_event = { id = paragon.5080 }
 		}
 	}
 
 	on_fail = {
+		custom_tooltip = paragon_origin_heir_illness_fail
 		owner = {
 			country_event = { id = paragon.5081 }
 		}

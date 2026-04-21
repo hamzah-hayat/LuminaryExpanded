@@ -96,6 +96,9 @@
 		paragon_origin_heir_illness_doctor_number:0 "Doctors in Empire"
 		paragon_origin_heir_illness_biologist_number:0 "Biologists in Empire"
 
+		paragon_origin_heir_illness_complete:0 "§G[Owner.GetHeirName] makes a miraculous recovery§!."
+		paragon_origin_heir_illness_fail:0 "§R[Owner.GetHeirName] succumbs to their illness§!."
+
 		paragon.heir.sickness.positive:0 "§Y[owner.GetHeirTitle] [owner.GetHeirName]'s§! §YSickness§! §Gimproves§!."
 		paragon.heir.sickness.negative:0 "§Y[owner.GetHeirTitle] [owner.GetHeirName]'s§! §YSickness§! §Rworsens§!."
 
