@@ -83,3 +83,25 @@ This version is built for Stellaris Cetus 4.3.3 (456f)
 [list]
 [*] Fix Heir Leader start events not firing! Wrong scope! 😳
 [/list]
+
+
+[h1]1.0.5[/h1]
+This version is built for Stellaris Cetus 4.3.3 (456f)
+
+[h2]Fixes[/h2]
+[list]
+[*] Fix script trigger scopes for heir situation events
+[*] Fix cure heir event effects on Luminary trait not applying correctly
+[*] Add localisation for heir illness complete and fail outcomes
+[/list]
+
+[h2]Changes[/h2]
+[list]
+[*] Heir situation ending now affects the Reformation situation — curing the heir reduces reformist situation progress and removes the reformist modifier from 30% of planets, while heir death increases reformist situation progress
+[*] Normalize heir situation random event chances for more balanced outcomes
+[/list]
+
+[h2]Features[/h2]
+[list]
+[*] N/A
+[/list]

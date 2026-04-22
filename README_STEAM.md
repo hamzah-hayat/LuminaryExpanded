@@ -1,11 +1,16 @@
-[h1]Luminary Expanded[/h1]
+[h1]✦ Luminary Expanded[/h1]
+[i]An overhaul mod for the Galactic Paragons DLC's Luminary origin in Stellaris.[/i]
+
+[hr][/hr]
 
 [h2]Overview[/h2]
-Luminary Expanded is a mod for Stellaris that overhauls and expands the Galactic Paragons DLC's Luminary origin. This mod adds new events, situations, council agendas, and expanded player choices. It allows you to save your heir from certain doom, and to ultimately max out the Luminary trait through more milestones, giving a final bonus effect. Plus lots of other smaller changes to make the origin feel better to play.
+Luminary Expanded overhauls and expands the Galactic Paragons DLC's Luminary origin. This mod adds new events, situations, council agendas, and expanded player choices. It allows you to save your heir from certain doom, and to ultimately max out the Luminary trait through more milestones, giving a final bonus effect. Plus lots of other smaller changes to make the origin feel better to play.
+
+[hr][/hr]
 
 [h2]Features[/h2]
 
-[h3] Quality of Life improvements [/h3]
+[h3]🔧 Quality of Life Improvements[/h3]
 [list]
 [*] Choose Luminary start ethic
 [*] Choose your first heir (Imperial government) ethic and leader class
@@ -16,7 +21,9 @@ Luminary Expanded is a mod for Stellaris that overhauls and expands the Galactic
 [*] You may ascend the Luminary after achieving an ascension path if you were forced to make the apparatus for them. Works retroactively!
 [/list]
 
-[h3]Dying Heir Situation[/h3]
+[hr][/hr]
+
+[h3]💀 Dying Heir Situation[/h3]
 A fully-featured bidirectional situation that adds a major narrative event chain when the Luminary's heir falls ill.
 This replaces your heir always dying, with a situation that happens alongside the reformist one.
 
@@ -33,7 +40,9 @@ This replaces your heir always dying, with a situation that happens alongside th
 
 [b]Two Outcomes:[/b] Miraculous recovery (+1 Luminary, delusion decrease) or tragic death (-2 Luminary, delusion increase).
 
-[h3]Milestone Achievement Events[/h3]
+[hr][/hr]
+
+[h3]🏆 Milestone Achievement Events[/h3]
 Six new narrative speech events triggered by major empire accomplishments. Each increases the Luminary trait by +1.
 
 [list]
@@ -47,13 +56,17 @@ Six new narrative speech events triggered by major empire accomplishments. Each 
 
 Winning a war or making another empire a vassal are now repeatable events, rewarding +1 Luminary point each.
 
-[h3]Luminary Trait Max Cap[/h3]
+[hr][/hr]
+
+[h3]⭐ Luminary Trait Max Cap[/h3]
 [list]
 [*]The Luminary trait can now be maxed out at 20 points, triggering [b]"The Legendary Luminary"[/b] event.
 [*]Grants a bonus skill level and gives the Luminary trait and Luminary ascension traits small bonus effects.
 [/list]
 
-[h3]Luminary Trait Growth Summary[/h3]
+[hr][/hr]
+
+[h3]📊 Luminary Trait Growth Summary[/h3]
 
 Events that [b]increase[/b] the Luminary trait:
 
@@ -203,31 +216,35 @@ Events that [b]decrease[/b] the Luminary trait:
 [/tr]
 [/table]
 
-[h2]Installation - Manual[/h2]
+[hr][/hr]
+
+[h2]Installation[/h2]
 [olist]
 [*]Download or clone this repository into your Stellaris mods folder.
 [*]Ensure the folder structure is preserved (the descriptor.mod file should be in the root of the mod folder).
 [*]Enable "Luminary Expanded" in your Stellaris launcher.
 [/olist]
 
-Or install via the Steam workshop.
+Or install via the Steam Workshop.
+
+[hr][/hr]
 
 [h2]Compatibility[/h2]
 [list]
-[*]Designed for Stellaris version 4.3.1 and above.
+[*]Designed for Stellaris version 4.3.* and above.
 [*]Requires the [b]Galactic Paragons[/b] DLC.
 [*]Compatible with most mods that do not alter the Luminary origin events.
 [*]Vanilla file overwrites:
-[/list]
-
 [olist]
 [*]Overwrites [i]events/origin_events_paragon.txt[/i] (the main Luminary origin events file)
 [*]Overwrites [i]common/traits/10_paragon_traits.txt[/i] (paragon leader traits)
 [/olist]
+[/list]
+
+[hr][/hr]
 
 [h2]Credits[/h2]
 [list]
-[*]Mod Author: Chickenboy
-[*]Original Luminary Origin by Marek Kozlowski, Linus Dilen, and Haig Morrison (Paradox Interactive)
-[*]Special thanks to the Stellaris modding community for resources and inspiration.
+[*][b]Mod Author:[/b] Chickenboy
+[*][b]Original Luminary Origin:[/b] Marek Kozlowski, Linus Dilen, and Haig Morrison (Paradox Interactive)
 [/list]
