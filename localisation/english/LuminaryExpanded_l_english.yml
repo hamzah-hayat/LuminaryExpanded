@@ -31,12 +31,32 @@
 
 	# 40 Year Plan Insight events
 		paragon.5324.name:0 "The 40 Year Plan"
-		paragon.5324.desc:0 "The groundwork for the 40 year plan has now been established!\nTogether, our people are ready to embark on this ambitious journey to the stars.\nThere are still many challenges to overcome, but with a recent great discovery I know we will achieve greatness!"
+		paragon.5324.desc:0 "$paragon.beginning.speech$\n\nThe foundation has been laid. The 40 Year Plan, that grand vision I set forth at the dawn of my rule, has reached its culmination. Our people have laboured tirelessly, our scientists have pushed the boundaries of knowledge, and our empire stands poised on the threshold of greatness.\n\nBut this is not merely an ending, it is a beginning. The infrastructure we have built, the expertise we have cultivated, the momentum we have gathered, all of this now allows us to achieve something truly extraordinary. I have reviewed the possibilities before us, and the time has come to choose which path will carry our empire into its next era of glory.\n\n$paragon.ending.speech$"
 
-		paragon.5324.starbase:0 "Upgrade Starbase"
-		paragon.5324.living_metal:0 "Discover Living Metal"
-		paragon.5324.dark_matter:0 "Find Dark Matter"
+		paragon.5324.expand_armada:0 "Expand the Armada"
+		paragon.5324.expand_armada.tt:0 "Gain §Y5000§! $i_alloys$ \nAll §YStarbases§! upgraded by one tier\nGain research progress toward the next §YStarbase§! technology\nGain research progress toward the next §YShip Hull§! technology"
+		paragon.5324.harness_star:0 "Harness the Star"
+		paragon.5324.harness_star.tt:0 "Capital Star gains a large $i_energy$ deposit\nCapital Star gains one of: $i_volatile_motes$, $i_rare_crystals$, $i_exotic_gases$, or $i_alloys$ deposit\nGain research progress toward the appropriate §YExtraction Technology§!"
 		paragon.5324.strategic_resources:0 "Prospect Strategic Resources"
+		paragon.5324.strategic_resources.tt:0 "Gain §Y250§! $i_volatile_motes$\nGain §Y250§! $i_rare_crystals$\nGain §Y250§! $i_exotic_gases$\nGain a $i_volatile_motes$ deposit\nGain a $i_rare_crystals$ deposit\nGain an $i_exotic_gases$ deposit\nGain research progress toward all three §YExtraction Technologies§!"
+		paragon.5324.living_metal:0 "Discover Living Metal"
+		paragon.5324.living_metal.tt:0 "Gain a $i_living_metal$ deposit\nGain research progress toward $i_living_metal$ extraction technology"
+		paragon.5324.dark_matter:0 "Find Dark Matter"
+		paragon.5324.dark_matter.tt:0 "Gain a $i_dark_matter$ deposit\nGain research progress toward $i_dark_matter$ extraction technology"
+		paragon.5324.zro:0 "Distil Zro"
+		paragon.5324.zro.tt:0 "Gain a $i_zro$ deposit\nGain research progress toward $i_zro$ extraction technology"
+
+	# 40 Year Plan - Expand Armada event
+		paragon.5326.name:0 "The Armada Expands"
+		paragon.5326.desc:0 "$paragon.beginning.speech$\n\nThe time has come to forge an armada worthy of our destiny. I have issued a sweeping mandate: every starbase in our territory will be upgraded immediately, their defenses reinforced, their capabilities expanded beyond current limits. Our shipwrights have been granted unlimited resources to develop the next generation of warship designs, and our military architects are already drafting plans for fortifications that will make our borders impregnable.\n\nLet the galaxy take notice. Where we once had outposts, we now have fortresses. Where we fielded corvettes, we shall soon deploy dreadnoughts. Our strength will be undeniable.\n\n$paragon.ending.speech$"
+
+	# 40 Year Plan - Zro event
+		paragon.5327.name:0 "Zro Distillation"
+		paragon.5327.desc:0 "$paragon.beginning.speech$\n\nOur scientists have detected faint traces of Zro, that most enigmatic of substances, drifting through the void within our borders. This is no ordinary material, it defies conventional physics, resonates with psionic energy, and holds properties that even our greatest minds struggle to comprehend. I have mobilized our research ships to pinpoint its source and establish extraction operations immediately.\n\nWhether Zro unlocks the secrets of the mind, fuels technologies beyond our current understanding, or opens doorways to realities we have yet to imagine, we will be the ones to discover it. The universe guards its mysteries jealously, but we shall pry them loose.\n\n$paragon.ending.speech$"
+
+	# 40 Year Plan - Harness the Star event
+		paragon.5328.name:0 "Harnessing the Star"
+		paragon.5328.desc:0 "$paragon.beginning.speech$\n\nFor eons, our home star has blazed in the void, a furnace of limitless potential that we have barely begun to exploit. I have commanded our finest engineers to construct a network of advanced energy collectors in close orbit, drawing forth power on a scale never before achieved by our civilization.\n\nBut that is not all. In the process of surveying optimal collection points, our scientists have made a remarkable discovery, hidden within the star's corona lies a concentrated deposit of strategic materials, forged by stellar processes and now ready for extraction. What was once merely our sun will become the beating heart of our industrial might.\n\n$paragon.ending.speech$"
 	
 	# Milestone Events
 		paragon.5031.name:0 "A Monument to Progress"
@@ -60,8 +80,7 @@
 		paragon.5407.a:0 "We carry their torch forward!"
 
 		paragon.5409.name:0 "The Crisis Averted"
-		paragon.5409.desc:0 "$paragon.beginning.speech$\n\nThe galaxy teetered on the brink of annihilation, and yet we endured. The crisis that threatened to consume all of civilization has been defeated. Under my unyielding resolve, our empire stood as a bulwark against the darkness. This victory belongs not only to us, but to every species that still draws breath in this galaxy.\n\n$paragon.ending.speech$"
-		paragon.5409.a:0 "The galaxy is saved!"
+		paragon.5409.desc:0 "$paragon.beginning.speech$\n\nThe galaxy teetered on the brink of annihilation, and yet we endured. The crisis that threatened to consume all of civilization has been defeated. Under my unyielding resolve, our empire stood as a bulwark against the darkness. This victory  
 
 	# Forgotten Events
 		paragon.forgotten.a.2:0 "Release some \"dissenters\""

@@ -5787,17 +5787,33 @@ country_event = { # Ruler Insight - 40 Year plan end, choose bonus
 
 	immediate = {}
 
-	option = {
-		name = paragon.5324.starbase
-		hidden_effect = { country_event = { id = paragon.5325 } }
+	option = { # LumEx - Expand Armada: Get 5000 Alloys, upgrade all starbases + next starbase tech + next ship tech
+		name = paragon.5324.expand_armada
+		custom_tooltip = paragon.5324.expand_armada.tt
+		hidden_effect = { country_event = { id = paragon.5326 } }
 	}
 
-	option = {
+	option = { # LumEx - Harness the Star: boost home star energy + add strategic deposit or alloys
+		name = paragon.5324.harness_star
+		trigger	= {
+			has_machine_age_dlc = yes # For Dyson Swarm tech
+		}
+		custom_tooltip = paragon.5324.harness_star.tt
+		hidden_effect = { country_event = { id = paragon.5328 } }
+	}
+
+	option = { # LumEx - Strategic Resources: give all three basic deposits
+		name = paragon.5324.strategic_resources
+		custom_tooltip = paragon.5324.strategic_resources.tt
+		hidden_effect = { country_event = { id = paragon.5360 } }
+	}
+
+	option = { # LumEx - Living Metal: add/expand deposit + tech progress
 		name = paragon.5324.living_metal
+		custom_tooltip = paragon.5324.living_metal.tt
 		trigger = {
 			owner = {
 				any_planet_within_border = {
-					has_deposit = no
 					is_colonizable = no
 					is_colony = no
 					has_any_strategic_resource = no
@@ -5812,19 +5828,20 @@ country_event = { # Ruler Insight - 40 Year plan end, choose bonus
 		hidden_effect = { country_event = { id = paragon.5330 } }
 	}
 
-	option = {
+	option = { # LumEx - Dark Matter: add/expand deposit + tech progress
 		name = paragon.5324.dark_matter
+		custom_tooltip = paragon.5324.dark_matter.tt
 		trigger = {
 			owner = {
 				any_planet_within_border = {
-					is_star = yes
 					is_colonizable = no
 					is_colony = no
 					has_any_strategic_resource = no
 					OR = {
 						is_star_class = sc_black_hole
-						is_star_class = sc_pulsar
-						is_star_class = sc_neutron_star
+						is_planet_class = pc_barren
+						is_planet_class = pc_barren_cold
+						is_asteroid = yes
 					}
 				}
 			}
@@ -5832,12 +5849,117 @@ country_event = { # Ruler Insight - 40 Year plan end, choose bonus
 		hidden_effect = { country_event = { id = paragon.5335 } }
 	}
 
-	option = {
-		name = paragon.5324.strategic_resources
-		hidden_effect = { country_event = { id = paragon.5360 } }
+	option = { # LumEx - Zro: add deposit + tech progress
+		name = paragon.5324.zro
+		custom_tooltip = paragon.5324.zro.tt
+		trigger = {
+			owner = {
+				any_planet_within_border = {
+					is_colonizable = no
+					is_colony = no
+					has_any_strategic_resource = no
+					is_planet_class = pc_toxic
+				}
+			}
+		}
+		hidden_effect = { country_event = { id = paragon.5327 } }
 	}
 }
 
+country_event = { # LumEx - Ruler Insight - Expand Armada: Get 5000 Alloys, upgrade all starbases + next starbase tech + next ship tech
+	id = paragon.5326
+	title = "paragon.5326.name"
+	desc = "paragon.5326.desc"
+	picture = GFX_evt_legendary_leader
+	show_sound = event_celebration
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = root.owner.ruler
+		room = root.owner
+	}
+
+	is_triggered_only = yes
+
+	trigger = {}
+
+	immediate = {}
+
+	option = {
+		name = paragon.origin.insight
+	}
+	after = {
+		owner = {
+			# Get some Alloys
+			add_resource = { alloys = 5000 }
+
+			# Upgrade every starbase by one tier (cap at citadel)
+			every_owned_starbase = {
+				limit = {
+					NOT = { has_starbase_size = starbase_outpost }
+				}
+				if = {
+					limit = { has_starbase_size = starbase_starport }
+					set_starbase_size = starbase_starhold
+				}
+				else_if = {
+					limit = { has_starbase_size = starbase_starhold }
+					set_starbase_size = starbase_starfortress
+				}
+				else_if = {
+					limit = { has_starbase_size = starbase_starfortress }
+					set_starbase_size = starbase_citadel
+				}
+			}
+			
+			# Grant next starbase tech not yet researched
+			if = {
+				limit = { NOT = { has_technology = tech_starbase_2 } }
+				add_research_option = tech_starbase_2
+				add_tech_progress = { tech = tech_starbase_2 progress = 0.25 }
+			}
+			else_if = {
+				limit = { NOT = { has_technology = tech_starbase_3 } }
+				add_research_option = tech_starbase_3
+				add_tech_progress = { tech = tech_starbase_3 progress = 0.25 }
+			}
+			else_if = {
+				limit = { NOT = { has_technology = tech_starbase_4 } }
+				add_research_option = tech_starbase_4
+				add_tech_progress = { tech = tech_starbase_4 progress = 0.25 }
+			}
+			else_if = {
+				limit = { NOT = { has_technology = tech_starbase_5 } }
+				add_research_option = tech_starbase_5
+				add_tech_progress = { tech = tech_starbase_5 progress = 0.25 }
+			}
+
+			# Grant next ship hull tech not yet researched
+			if = {
+				limit = { NOT = { has_technology = tech_destroyers } }
+				add_research_option = tech_destroyers
+				add_tech_progress = { tech = tech_destroyers progress = 0.25 }
+			}
+			else_if = {
+				limit = { NOT = { has_technology = tech_cruisers } }
+				add_research_option = tech_cruisers
+				add_tech_progress = { tech = tech_cruisers progress = 0.25 }
+			}
+			else_if = {
+				limit = { NOT = { has_technology = tech_battleships } }
+				add_research_option = tech_battleships
+				add_tech_progress = { tech = tech_battleships progress = 0.25 }
+			}
+			else_if = {
+				limit = { NOT = { has_technology = tech_titans } }
+				add_research_option = tech_titans
+				add_tech_progress = { tech = tech_titans progress = 0.25 }
+			}
+		}
+	}
+}
+
+# LumEx - Not used anymore
 country_event = { #Ruler Insight - Upgrade Starbase
 	id = paragon.5325
 	title = "paragon.5325.name"
@@ -5891,7 +6013,128 @@ country_event = { #Ruler Insight - Upgrade Starbase
 	}
 }
 
-country_event = { #Ruler Insight - Make Living Metal
+country_event = { # LumEx - Ruler Insight - Zro: add deposit + tech
+	id = paragon.5327
+	title = "paragon.5327.name"
+	desc = "paragon.5327.desc"
+	picture = GFX_evt_legendary_leader
+	show_sound = event_celebration
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = root.owner.ruler
+		room = root.owner
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		any_planet_within_border = {
+			is_colonizable = no
+			is_colony = no
+			has_any_strategic_resource = no
+			is_planet_class = pc_toxic
+		}
+	}
+
+	immediate = {}
+
+	option = {
+		name = paragon.origin.insight
+	}
+
+	after = {
+		owner = {
+			# Create a new Zro deposit
+			random_planet_within_border = {
+				limit = {
+					is_colonizable = no
+					is_colony = no
+					has_any_strategic_resource = no
+					is_planet_class = pc_toxic
+				}
+				add_deposit = d_zro_deposit_1
+			}
+			# Tech bonus
+			if = {
+				limit = { NOT = { has_technology = tech_mine_zro } }
+				add_research_option = tech_mine_zro
+			}
+		}
+	}
+}
+
+country_event = { # LumEx - Ruler Insight - Harness the Star: boost home star energy + add strategic deposit or alloys to capital system
+	id = paragon.5328
+	title = "paragon.5328.name"
+	desc = "paragon.5328.desc"
+	picture = GFX_evt_legendary_leader
+	show_sound = event_celebration
+	event_window_type = leader_story
+
+	picture_event_data = {
+		portrait = root.owner.ruler
+		room = root.owner
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_machine_age_dlc = yes # For Dyson Swarm tech
+	}
+
+	immediate = {}
+
+	option = {
+		name = paragon.origin.insight
+	}
+	
+	after = {
+		owner = {
+			capital_scope.star = {
+				# Boost the star's energy output
+				add_deposit = d_energy_5
+				# Add a strategic deposit to the star
+				locked_random_list = {
+					1 = { 
+						add_deposit = d_volatile_motes_2
+						owner = {
+							if = {
+								limit = { NOT = { has_technology = tech_volatile_motes } }
+								add_research_option = tech_mine_volatile_motes
+							}
+						}
+					}
+					1 = { 
+						add_deposit = d_rare_crystals_2
+						owner = {
+							if = {
+								limit = { NOT = { has_technology = tech_rare_crystals } }
+								add_research_option = tech_mine_rare_crystals
+							}
+						}
+					}
+					1 = { 
+						add_deposit = d_exotic_gases_2
+						owner = {
+							if = {
+								limit = { NOT = { has_technology = tech_exotic_gases } }
+								add_research_option = tech_mine_exotic_gases
+							}
+						}
+					}
+					1 = { add_deposit = d_alloys_3 }
+				}
+			}
+			if = {
+				limit = { NOT = { has_technology = tech_dyson_swarm } }
+				add_research_option = tech_dyson_swarm
+			}
+		}
+	}
+}
+
+country_event = { # LumEx - Ruler Insight - Living Metal: add deposit + tech
 	id = paragon.5330
 	title = "paragon.5330.name"
 	desc = "paragon.5330.desc"
@@ -5908,7 +6151,6 @@ country_event = { #Ruler Insight - Make Living Metal
 
 	trigger = {
 		any_planet_within_border = {
-			has_deposit = no
 			is_colonizable = no
 			is_colony = no
 			has_any_strategic_resource = no
@@ -5927,11 +6169,12 @@ country_event = { #Ruler Insight - Make Living Metal
 	option = {
 		name = paragon.origin.insight
 	}
+
 	after = {
 		owner = {
+			# Create a new Living Metal deposit
 			random_planet_within_border = {
 				limit = {
-					has_deposit = no
 					is_colonizable = no
 					is_colony = no
 					has_any_strategic_resource = no
@@ -5941,14 +6184,18 @@ country_event = { #Ruler Insight - Make Living Metal
 						is_asteroid = yes
 					}
 				}
-				clear_deposits = yes
-				set_deposit = d_living_metal_deposit
+				add_deposit = d_living_metal_deposit
+			}
+			# Tech bonus
+			if = {
+				limit = { NOT = { has_technology = tech_mine_living_metal } }
+				add_research_option = tech_mine_living_metal
 			}
 		}
 	}
 }
 
-country_event = { #Ruler Insight - Make Dark Matter
+country_event = { # LumEx - Ruler Insight - Dark Matter: add deposit + tech
 	id = paragon.5335
 	title = "paragon.5335.name"
 	desc = "paragon.5335.desc"
@@ -5965,14 +6212,14 @@ country_event = { #Ruler Insight - Make Dark Matter
 
 	trigger = {
 		any_planet_within_border = {
-			is_star = yes
 			is_colonizable = no
 			is_colony = no
 			has_any_strategic_resource = no
 			OR = {
 				is_star_class = sc_black_hole
-				is_star_class = sc_pulsar
-				is_star_class = sc_neutron_star
+				is_planet_class = pc_barren
+				is_planet_class = pc_barren_cold
+				is_asteroid = yes
 			}
 		}
 	}
@@ -5984,8 +6231,10 @@ country_event = { #Ruler Insight - Make Dark Matter
 	option = {
 		name = paragon.origin.insight
 	}
+
 	after = {
 		owner = {
+			# Create a new Dark Matter deposit
 			random_planet_within_border = {
 				limit = {
 					is_star = yes
@@ -5994,12 +6243,17 @@ country_event = { #Ruler Insight - Make Dark Matter
 					has_any_strategic_resource = no
 					OR = {
 						is_star_class = sc_black_hole
-						is_star_class = sc_pulsar
-						is_star_class = sc_neutron_star
+						is_planet_class = pc_barren
+						is_planet_class = pc_barren_cold
+						is_asteroid = yes
 					}
 				}
-				hidden_effect = { clear_deposits = yes }
-				set_deposit = d_dark_matter_deposit_1
+				add_deposit = d_dark_matter_deposit_1
+			}
+			# Tech bonus
+			if = {
+				limit = { NOT = { has_technology = tech_mine_dark_matter } }
+				add_research_option = tech_mine_dark_matter
 			}
 		}
 	}
@@ -6073,7 +6327,7 @@ country_event = { #Slap Unique Modifier On Capital
 	}
 }
 
-country_event = { #Ruler Insight - Slap Strategic Resource Somewhere (Crystal, Gas, Mote)
+country_event = { # LumEx - Ruler Insight - Strategic Resources: give all three basic deposits (motes, crystals, gases)
 	id = paragon.5360
 	title = "paragon.5360.name"
 	desc = "paragon.5360.desc"
@@ -6092,13 +6346,9 @@ country_event = { #Ruler Insight - Slap Strategic Resource Somewhere (Crystal, G
 	}
 
 	immediate = {
-		if = {
-			limit = {
-				owner = {
-					NOT = { has_country_flag = strategic_resource_found }
-				}
-			}
-			owner = {
+		owner = {
+			if = {
+				limit = { NOT = { has_country_flag = strategic_resource_found } }
 				set_country_flag = strategic_resource_found
 			}
 		}
@@ -6108,10 +6358,15 @@ country_event = { #Ruler Insight - Slap Strategic Resource Somewhere (Crystal, G
 		name = paragon.origin.insight
 	}
 	after = {
-		locked_random_list = {
-			1 = {
-				modifier = {
-					factor = 0
+		owner = {
+			# Get Some SR resources
+			add_resource = { exotic_gases = 250 }
+			add_resource = { rare_crystals = 250 }
+			add_resource = { volatile_motes = 250 }
+
+			# Create a Exotic Gases / Rare Crystals / Volatile Motes
+			if = {
+				limit = {
 					any_planet_within_border = {
 						OR = {
 							has_deposit_for = shipclass_mining_station
@@ -6127,33 +6382,26 @@ country_event = { #Ruler Insight - Slap Strategic Resource Somewhere (Crystal, G
 						}
 					}
 				}
-				owner = {
-					random_planet_within_border = {
-						limit = {
-							OR = {
-								has_deposit_for = shipclass_mining_station
-								has_deposit = no
-							}
-							is_colonizable = no
-							is_colony = no
-							has_any_strategic_resource = no
-							OR = {
-								is_planet_class = pc_frozen
-								is_planet_class = pc_ice_asteroid
-								is_inside_nebula = yes
-							}
+				random_planet_within_border = {
+					limit = {
+						OR = {
+							has_deposit_for = shipclass_mining_station
+							has_deposit = no
 						}
-						add_deposit = d_exotic_gases_1
+						is_colonizable = no
+						is_colony = no
+						has_any_strategic_resource = no
+						OR = {
+							is_planet_class = pc_frozen
+							is_planet_class = pc_ice_asteroid
+							is_inside_nebula = yes
+						}
 					}
-					add_resource = { exotic_gases = 250 }
-					if = {
-						limit = {
-							NOT = {
-								has_country_flag = exotic_gases_found
-							}
-						}
-						set_country_flag = exotic_gases_found
-						root.owner = {
+					add_deposit = d_exotic_gases_3
+					owner = {
+						if = {
+							limit = { NOT = { has_country_flag = exotic_gases_found } }
+							set_country_flag = exotic_gases_found
 							create_strategic_resource_message = {
 								RESOURCE_TYPE = MESSAGE_STRATEGIC_RESOURCE_FOUND_EXOTIC_GASES
 								RESOURCE_DESC = MESSAGE_STRATEGIC_RESOURCE_FOUND_EXOTIC_GASES_SHORT_DESC
@@ -6162,9 +6410,8 @@ country_event = { #Ruler Insight - Slap Strategic Resource Somewhere (Crystal, G
 					}
 				}
 			}
-			1 = {
-				modifier = {
-					factor = 0
+			if = {
+				limit = {
 					any_planet_within_border = {
 						OR = {
 							has_deposit_for = shipclass_mining_station
@@ -6179,32 +6426,25 @@ country_event = { #Ruler Insight - Slap Strategic Resource Somewhere (Crystal, G
 						}
 					}
 				}
-				owner = {
-					random_planet_within_border = {
-						limit = {
-							OR = {
-								has_deposit_for = shipclass_mining_station
-								has_deposit = no
-							}
-							is_colonizable = no
-							is_colony = no
-							has_any_strategic_resource = no
-							OR = {
-								is_planet_class = pc_gas_giant
-								is_planet_class = pc_toxic
-							}
+				random_planet_within_border = {
+					limit = {
+						OR = {
+							has_deposit_for = shipclass_mining_station
+							has_deposit = no
 						}
-						add_deposit = d_rare_crystals_1
+						is_colonizable = no
+						is_colony = no
+						has_any_strategic_resource = no
+						OR = {
+							is_planet_class = pc_gas_giant
+							is_planet_class = pc_toxic
+						}
 					}
-					add_resource = { rare_crystals = 250 }
-					if = {
-						limit = {
-							NOT = {
-								has_country_flag = rare_crystals_found
-							}
-						}
-						set_country_flag =	rare_crystals_found
-						root.owner = {
+					add_deposit = d_rare_crystals_3
+					owner = {
+						if = {
+							limit = { NOT = { has_country_flag = rare_crystals_found } }
+							set_country_flag = rare_crystals_found
 							create_strategic_resource_message = {
 								RESOURCE_TYPE = MESSAGE_STRATEGIC_RESOURCE_FOUND_RARE_CRYSTALS
 								RESOURCE_DESC = MESSAGE_STRATEGIC_RESOURCE_FOUND_RARE_CRYSTALS_SHORT_DESC
@@ -6213,9 +6453,8 @@ country_event = { #Ruler Insight - Slap Strategic Resource Somewhere (Crystal, G
 					}
 				}
 			}
-			1 = {
-				modifier = {
-					factor = 0
+			if = {
+				limit = {
 					any_planet_within_border = {
 						OR = {
 							has_deposit_for = shipclass_mining_station
@@ -6230,32 +6469,25 @@ country_event = { #Ruler Insight - Slap Strategic Resource Somewhere (Crystal, G
 						}
 					}
 				}
-				owner = {
-					random_planet_within_border = {
-						limit = {
-							OR = {
-								has_deposit_for = shipclass_mining_station
-								has_deposit = no
-							}
-							is_colonizable = no
-							is_colony = no
-							has_any_strategic_resource = no
-							OR = {
-								is_planet_class = pc_molten
-								is_planet_class = pc_asteroid
-							}
+				random_planet_within_border = {
+					limit = {
+						OR = {
+							has_deposit_for = shipclass_mining_station
+							has_deposit = no
 						}
-						add_deposit = d_volatile_motes_1
+						is_colonizable = no
+						is_colony = no
+						has_any_strategic_resource = no
+						OR = {
+							is_planet_class = pc_molten
+							is_planet_class = pc_asteroid
+						}
 					}
-					add_resource = { volatile_motes = 250 }
-					if = {
-						limit = {
-							NOT = {
-								has_country_flag = volatile_motes_found
-							}
-						}
-						set_country_flag =	volatile_motes_found
-						root.owner = {
+					add_deposit = d_volatile_motes_3
+					owner = {
+						if = {
+							limit = { NOT = { has_country_flag = volatile_motes_found } }
+							set_country_flag = volatile_motes_found
 							create_strategic_resource_message = {
 								RESOURCE_TYPE = MESSAGE_STRATEGIC_RESOURCE_FOUND_VOLATILE_MOTES
 								RESOURCE_DESC = MESSAGE_STRATEGIC_RESOURCE_FOUND_VOLATILE_MOTES_SHORT_DESC
@@ -6264,27 +6496,19 @@ country_event = { #Ruler Insight - Slap Strategic Resource Somewhere (Crystal, G
 					}
 				}
 			}
-			0 = {
-				modifier = {
-					add = 1
-					any_planet_within_border = {
-						NOR = {
-							is_planet_class = pc_molten
-							is_planet_class = pc_asteroid
-							is_planet_class = pc_gas_giant
-							is_planet_class = pc_toxic
-							is_planet_class = pc_frozen
-							is_planet_class = pc_ice_asteroid
-							is_inside_nebula = yes
-						}
-					}
-				}
-				owner = {
-					set_country_flag = volatile_motes_found
-					set_country_flag = rare_crystals_found
-					set_country_flag = exotic_gases_found
-					add_advanced_resources_effect = { VALUE = 350 }
-				}
+
+			# Tech bonus for SRs
+			if = {
+				limit = { NOT = { has_technology = tech_exotic_gases } }
+				add_research_option = tech_mine_exotic_gases
+			}
+			if = {
+				limit = { NOT = { has_technology = tech_rare_crystals } }
+				add_research_option = tech_mine_rare_crystals
+			}
+			if = {
+				limit = { NOT = { has_technology = tech_volatile_motes } }
+				add_research_option = tech_mine_volatile_motes
 			}
 		}
 	}
