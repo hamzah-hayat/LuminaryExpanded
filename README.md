@@ -4,7 +4,7 @@
 
 ![Stellaris](https://img.shields.io/badge/Stellaris-v4.3.*-blue)
 ![DLC](https://img.shields.io/badge/Requires-Galactic%20Paragons-purple)
-![Version](https://img.shields.io/badge/Version-1.0.5-green)
+![Version](https://img.shields.io/badge/Version-1.0.6-green)
 
 ---
 
@@ -23,6 +23,7 @@ Luminary Expanded overhauls and expands the Galactic Paragons DLC's Luminary ori
 - Forgotten Situation events have more options
 - Reduce time to ascend the Luminary after achieving an ascension path.
 - You may ascend the Luminary after achieving an ascension path if you were forced to make the apparatus for them. Works retroactively!
+- Reformist situation has a new decision to convince reformists instead of having to subdue them, a softer way to remove the Democratic Tendencies modifier from planets.
 
 ---
 
@@ -56,6 +57,15 @@ Six new narrative speech events triggered by major empire accomplishments. Each 
 - **The Crisis Averted** — Triggered when a mid-game or end-game crisis is defeated.
 
 Winning a war or making another empire a vassal are now repeatable events, rewarding +1 Luminary point each.
+
+---
+
+### 📈 New 40 Year plan effects
+- Six refactored possible effects for the 40 year plan, choose from:
+    - Expand Armada - Give 5000 alloys, Upgrade all starbases and give next starbase + ship tech level
+    - Harness Star - Increase home star output and add one special resource to it, plus give dyson swarm (and SR resource) as tech options. (Requires Machine Age DLC)
+    - Strategic resources - Give all three strategic resources as deposits somewhere and give mining tech for each resource as tech option.
+    - Living Metal/Dark Matter/Zro - Give a single deposit and unlock mining tech for this special resource.
 
 ---
 

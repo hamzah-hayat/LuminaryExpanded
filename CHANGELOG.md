@@ -1,39 +1,68 @@
-[h1]1.0.0[/h1]
-This version is built for Stellaris Cetus 4.3.3 (456f)
+[h1]1.0.6[/h1]
+This version was built and tested with Stellaris Cetus 4.3.5 (df6e)
 
 [h2]Fixes[/h2]
 [list]
-[*]N/A
+[*] Add trigger guard for cure heir ending to prevent reformists situation be below 0 (after losing progress)
 [/list]
 
 [h2]Changes[/h2]
 [list]
-[*]N/A
+[*] Reduce cure heir ending bonus to -8 situation progress
+[*] Change Luminary Tradition event unlock trigger, now triggers once all tradition slots are filled, not when after filling each tree slot.
 [/list]
 
 [h2]Features[/h2]
 [list]
-[*]Initial Release
+[*] Add Convince Reformists decision - This is a softer version of the subdue reformists decision, allowing you to spend some influence and unity to convince reformists to stand down, can remove the democratic modifier as well if no egalitarian pops are left on planet.
 [/list]
 
-[h1]1.0.1[/h1]
+[h1]1.0.5[/h1]
 This version is built for Stellaris Cetus 4.3.3 (456f)
 
 [h2]Fixes[/h2]
 [list]
-[*] Update Megastructures milestone event to only trigger for "big" megastructures, aka do not include the following: Gateways, Hyper Relays and Habitats. Arc Furnaces only trigger on the final upgrade, and Dyson Swarms only trigger when turning into a Dyson Sphere.
-[*] Use country flags for Precursor event check, should be more reliable.
-[*] Fix Apparatus bonus stability, was meant to be +5. This bonus triggers once you have the Luminary maxed trait.
+[*] Fix script trigger scopes for heir situation events
+[*] Fix cure heir event effects on Luminary trait not applying correctly
+[*] Add localisation for heir illness complete and fail outcomes
 [/list]
 
 [h2]Changes[/h2]
 [list]
-[*] Update event localisation, generally a bit more verbose/flavourful while keeping the same event meaning.
+[*] Heir situation ending now affects the Reformation situation — curing the heir reduces reformist situation progress and removes the reformist modifier from 30% of planets, while heir death increases reformist situation progress
+[*] Normalize heir situation random event chances for more balanced outcomes
 [/list]
 
 [h2]Features[/h2]
 [list]
-[*] None
+[*] N/A
+[/list]
+
+[h1]1.0.4[/h1]
+This version is built for Stellaris Cetus 4.3.3 (456f)
+
+[h2]Fixes[/h2]
+[list]
+[*] Fix Heir Leader start events not firing! Wrong scope! 😳
+[/list]
+
+
+[h1]1.0.3[/h1]
+This version is built for Stellaris Cetus 4.3.3 (456f)
+
+[h2]Fixes[/h2]
+[list]
+[*] Stop Milestone events triggering once Luminary trait is maxed.
+[/list]
+
+[h2]Changes[/h2]
+[list]
+[*] Lower Delusion by three when saving Heir and when maxing Luminary trait. Can remove the delusion trait if it is low enough.
+[/list]
+
+[h2]Features[/h2]
+[list]
+[*] Add event on new heir (but only the first one!) that lets you choose their ethic and leader class (commander/scientist/official)
 [/list]
 
 
@@ -57,51 +86,41 @@ This version is built for Stellaris Cetus 4.3.3 (456f)
 [/list]
 
 
-[h1]1.0.3[/h1]
+[h1]1.0.1[/h1]
 This version is built for Stellaris Cetus 4.3.3 (456f)
 
 [h2]Fixes[/h2]
 [list]
-[*] Stop Milestone events triggering once Luminary trait is maxed.
+[*] Update Megastructures milestone event to only trigger for "big" megastructures, aka do not include the following: Gateways, Hyper Relays and Habitats. Arc Furnaces only trigger on the final upgrade, and Dyson Swarms only trigger when turning into a Dyson Sphere.
+[*] Use country flags for Precursor event check, should be more reliable.
+[*] Fix Apparatus bonus stability, was meant to be +5. This bonus triggers once you have the Luminary maxed trait.
 [/list]
 
 [h2]Changes[/h2]
 [list]
-[*] Lower Delusion by three when saving Heir and when maxing Luminary trait. Can remove the delusion trait if it is low enough.
+[*] Update event localisation, generally a bit more verbose/flavourful while keeping the same event meaning.
 [/list]
 
 [h2]Features[/h2]
 [list]
-[*] Add event on new heir (but only the first one!) that lets you choose their ethic and leader class (commander/scientist/official)
+[*] None
 [/list]
 
 
-[h1]1.0.4[/h1]
+[h1]1.0.0[/h1]
 This version is built for Stellaris Cetus 4.3.3 (456f)
 
 [h2]Fixes[/h2]
 [list]
-[*] Fix Heir Leader start events not firing! Wrong scope! 😳
-[/list]
-
-
-[h1]1.0.5[/h1]
-This version is built for Stellaris Cetus 4.3.3 (456f)
-
-[h2]Fixes[/h2]
-[list]
-[*] Fix script trigger scopes for heir situation events
-[*] Fix cure heir event effects on Luminary trait not applying correctly
-[*] Add localisation for heir illness complete and fail outcomes
+[*]N/A
 [/list]
 
 [h2]Changes[/h2]
 [list]
-[*] Heir situation ending now affects the Reformation situation — curing the heir reduces reformist situation progress and removes the reformist modifier from 30% of planets, while heir death increases reformist situation progress
-[*] Normalize heir situation random event chances for more balanced outcomes
+[*]N/A
 [/list]
 
 [h2]Features[/h2]
 [list]
-[*] N/A
+[*]Initial Release
 [/list]

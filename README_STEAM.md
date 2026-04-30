@@ -19,6 +19,7 @@ Luminary Expanded overhauls and expands the Galactic Paragons DLC's Luminary ori
 [*] Forgotten Situation events have more options
 [*] Reduce time to ascend the Luminary after achieving an ascension path.
 [*] You may ascend the Luminary after achieving an ascension path if you were forced to make the apparatus for them. Works retroactively!
+[*] Reformist situation has a new decision to convince reformists instead of having to subdue them, a softer way to remove the Democratic Tendencies modifier from planets.
 [/list]
 
 [hr][/hr]
@@ -55,6 +56,17 @@ Six new narrative speech events triggered by major empire accomplishments. Each 
 [/list]
 
 Winning a war or making another empire a vassal are now repeatable events, rewarding +1 Luminary point each.
+
+[hr][/hr]
+
+[h3]📈 New 40 Year Plan Effects[/h3]
+Six refactored possible effects for the 40 year plan, choose from:
+[list]
+[*] Expand Armada — Give 5000 alloys, Upgrade all starbases and give next starbase + ship tech level
+[*] Harness Star — Increase home star output and add one special resource to it, plus give dyson swarm (and SR resource) as tech options. (Requires Machine Age DLC)
+[*] Strategic Resources — Give all three strategic resources as deposits somewhere and give mining tech for each resource as tech option.
+[*] Living Metal/Dark Matter/Zro — Give a single deposit and unlock mining tech for this special resource.
+[/list]
 
 [hr][/hr]
 
