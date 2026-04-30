@@ -1815,7 +1815,7 @@ country_event = { # All tradition slots filled
 			has_leader_flag = paragon_origin_legendary_leader
 			NOT = { has_leader_flag = paragon_origin_legendary_leader_story_ruling_maxed }
 		}
-		num_tradition_categories >= @max_tradition_trees
+		has_unlocked_all_traditions = yes
 	}
 
 	immediate = {
