@@ -193,3 +193,8 @@
 		paragon.6041.d.tooltip:0 "$paragon.6000.d.tooltip$"
 		paragon.6041.e:0 "$paragon.6000.e$"
 		paragon.6041.e.tooltip:0 "$paragon.6000.e.tooltip$"
+
+	# LumEx - Convince Reformists Decision
+		le_decision_convince_reformists:0 "Convince Reformists"
+		le_decision_convince_reformists_desc:0 "The Luminary meets with reformist leaders behind closed doors, calling upon decades of trust and shared sacrifice. Few can hold their convictions when faced with the quiet weight of a living legend."
+		le_decision_convince_reformists_tt:0 "One §Yegalitarian§! pop on this planet will be converted to §Yauthoritarian§! ethics.\n§GIf no egalitarian pops remain§! on this planet after conversion, the §YDemocratic Tendencies§! modifier will be §Gremoved§!."

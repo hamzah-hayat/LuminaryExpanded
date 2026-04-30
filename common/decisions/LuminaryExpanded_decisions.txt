@@ -1,0 +1,86 @@
+le_decision_convince_reformists = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_deal
+	enactment_time = 60
+
+	potential = {
+		exists = owner
+		owner = {
+			exists = ruler
+			ruler = {
+				has_leader_flag = paragon_origin_legendary_leader
+			}
+			any_situation = { is_situation_type = paragon_origin_reformists_struggle }
+			is_regular_empire = yes
+		}
+		has_modifier = paragon_origin_reformists
+	}
+
+	allow = {
+	}
+
+	abort_trigger = {
+		exists = ruler
+		ruler = {
+			NOT = { has_leader_flag = paragon_origin_legendary_leader }
+		}
+	}
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 25
+		}
+		cost = {
+			unity = 2
+			multiplier = value:paragon_origin_count_egalitarians
+		}
+	}
+
+	effect = {
+		custom_tooltip = le_decision_convince_reformists_tt
+		owner = {
+			if = {
+				limit = {
+					any_situation = {
+						is_situation_type = paragon_origin_reformists_struggle
+						situation_progress > 5
+					}
+				}
+				random_situation = {
+					limit = { is_situation_type = paragon_origin_reformists_struggle }
+					add_situation_progress = -4
+				}
+			}
+		}
+		hidden_effect = {
+			weighted_random_owned_pop_group = {
+				limit = {
+					has_ethic = ethic_egalitarian
+				}
+				from = {
+					pop_group_transfer_ethic = {
+						POP_GROUP = this
+						ETHOS = ethic_authoritarian
+						AMOUNT = 100
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_owned_pop_group = {
+							has_ethic = ethic_egalitarian
+						}
+					}
+				}
+				remove_modifier = paragon_origin_reformists
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
