@@ -4162,7 +4162,10 @@ country_event = {
 				any_situation = { is_situation_type = paragon_origin_reformists_struggle }
 			}
 			random_situation = {
-				limit = { is_situation_type = paragon_origin_reformists_struggle }
+				limit = { 
+					is_situation_type = paragon_origin_reformists_struggle
+					situation_progress > 9
+				}
 				add_situation_progress = -8
 			}
 			every_owned_planet = {
