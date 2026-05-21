@@ -1,0 +1,34 @@
+﻿l_korean:
+	# Used for overwriting vanilla localisation keys
+	paragon.5059.name:99 "성실한 지도자"
+	paragon.5059.desc:99 "§Y[Owner.Ruler.GetTitle] [Owner.Ruler.GetRegnalName]§!은(는) 더 나은 지도자가 되기 위해 매우 열심히 노력해왔다. [Owner.Ruler.GetHisHerCap] 새로워진 의지는 이미 평의회의 눈에 들었다."
+	paragon.5059.a:99 "군대가 중심 역할을 해야 한다." #MILITARIST
+	paragon.5059.b:99 "신앙이 우리를 지탱하리라." #SPIRITUALIST
+	paragon.5059.c:99 "법과 질서가 최우선이다." #AUTHORITARIAN
+	paragon.5059.d:99 "우리 나라는 모든 이에게 열려 있다." #XENOPHILE
+	paragon.5059.e:99 "평화가 우리에게 부와 번영을 가져다줄 것이다." #PACIFIST
+	paragon.5059.f:99 "진보가 우리를 위대함으로 이끌 것이다." #MATERIALIST
+	paragon.5059.g:99 "제국은 외계 위협에 맞서는 방패가 될 것이다." #XENOPHOBE
+
+	paragon.5060.name:99 "질서 회복"
+	#paragon.5060.desc.imprisioned:2 "$paragon.beginning.speech$\n\nSociety is spiralling out of control. Rampant violence, insidious agitation, shameless lies... These things have plagued us for too long. With great pride, I announce an end to these troubled times! Those who sought to undermine us have been arrested, and I promise, they will face the full force of justice. Before long, they will repent for the harm they caused you!\n\n$paragon.ending.speech$"
+	#paragon.5060.desc.negotiated:1 "$paragon.beginning.speech$\n\nIn times of conflict, it can be easy to lose sight of what we fight for, to view our political opponents as outright enemies. We have gone through trying times, but today I am proud to tell you that we have reached a peaceful outcome. Your voices have been heard. You had put your trust in me and I had failed you.\n\nNo more! With the upcoming constitutional reform, I firmly believe that we find ourselves back on the right path, and I am humbled by your trust in my ability to see these changes through. Upon my word, I shall not fail you again!\n\n$paragon.ending.speech$"
+	#paragon.5060.desc.destroyed:1 "$paragon.beginning.speech$\n\nToday marks a great victory, but it has not been bought without sacrifice. Our enemies have been destroyed, yet the sting of their betrayal makes my heart bleed. In their selfishness they sought to destroy us all, but in the end, they were no match for our collective strength. Soon they will be executed for their crimes. We have prevailed!\n\n$paragon.ending.speech$"
+	#paragon.5060.a:1 "We need a stronger leader!"
+	#paragon.5060.a.tt:1 "§LRecent events have shown that only the wise rule of §Y[Ruler.GetTitle] [Ruler.GetRegnalName]§! can bring peace and prosperity to our society. We need to consolidate more power into the hands of our leader.§!"
+	paragon.5060.a:99 "군대가 중심 역할을 해야 한다." #MILITARIST
+	paragon.5060.b:99 "신앙이 우리를 지탱하리라." #SPIRITUALIST
+	paragon.5060.c:99 "법과 질서가 최우선이다." #AUTHORITARIAN
+	paragon.5060.d:99 "우리 나라는 모든 이에게 열려 있다." #XENOPHILE
+	paragon.5060.e:99 "평화가 우리에게 부와 번영을 가져다줄 것이다." #PACIFIST
+	paragon.5060.f:99 "진보가 우리를 위대함으로 이끌 것이다." #MATERIALIST
+	paragon.5060.g:99 "제국은 외계 위협에 맞서는 방패가 될 것이다." #XENOPHOBE
+	paragon.5060.h:99 "유능한 정부가 필요하다!"
+	paragon.5060.h.tt:99 "§L최근의 사태는 앞으로 이러한 난국을 극복하려면 강력한 정부 통치가 필요함을 보여주었다. 우리는 평의회에 더 많은 권한을 부여해야 한다.\n§!$paragon.leader.growth.negative$"
+
+
+	# paragon.5061.name:1 "Tragedy Strikes"
+	paragon.5061.desc:99 "§Y[Owner.GetHeirTitle] [Owner.GetHeirName]§!이(가) 죽어가고 있다. 우리는 아직 병의 정체를 밝히지 못했지만, 초기 보고는 말기라고 시사한다. §Y[Ruler.GetTitle] [Ruler.GetRegnalName]§!은(는) 다가오는 [Ruler.GetHisHer] 자손의 상실에 큰 타격을 받았다. 국가적 애도 기간이 선포되었고, 우리는 후계자의 병에 관한 의학 조사의 완전한 결과를 기다리고 있다.\n\n극심하게 아픈 가운데에서도 §Y[Owner.GetHeirTitle] [Owner.GetHeirName]§!은(는) 훌륭하게 직무를 계속 수행하고 있지만, 상태는 날마다 악화되고 있다. 루미너리는 비록 시민들을 희생시키더라도 제국 전역의 의사와 과학자들이 치료법을 찾는 데 집중하라고 명령했다."
+
+	#paragon.5062.name:1 "Blinding Grief"
+	paragon.5062.desc:99 "§Y[Owner.GetHeirTitle] [Owner.GetHeirName]§!의 예후는 어둡다. 모든 증거가 이 병이 자연발생적임을 가리키고 있음에도 불구하고, §Y[Ruler.GetTitle] [Ruler.GetRegnalName]§!은(는) 그것을 받아들이기를 거부한다. [Ruler.GetHeShe]은(는) 대신 이를 암살 시도로 보고 있으며, 우리 영토 전역에 명령이 내려졌다. 이 비열한 행위에 책임이 있는 자들을 반드시 찾아내야 한다. 보안군은 이미 반대자들을 색출하기 위한 일제 단속을 진행 중이다.\n\n이러한 체포에 동반된 폭력의 정도는 많은 시민에게 충격을 주었다. 후계자의 처지에 동정적이면서도, 권력의 남용을 규탄하고 새로운 정부 개혁을 요구하는 시위가 다시금 폭발했다. 우리 역사상 처음으로 한 행성의 인구 다수가 [Ruler.GetTitle]의 통치에 맞서 일어섰다."

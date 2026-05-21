@@ -1,0 +1,202 @@
+﻿l_simp_chinese:
+	# LumEx - Choose Luminary Ethic Trait
+		paragon.5001.name:99 "指引原则"
+		paragon.5001.desc:99 "当§Y[Owner.Ruler.GetTitle] [Owner.Ruler.GetRegnalName]§!掌握权柄之际,一个决定性的问题浮现:何种指引性的伦理将塑造他传奇般的统治?\n\n议会等待着光辉者的宣告,深知此项抉择将在帝国上下回响数代之久。"
+		# Use Vanilla text when able, to keep loc for other languages
+		paragon.5001.militarist:99 "$paragon.5021.a$"
+		paragon.5001.pacifist:99 "$paragon.5021.e$"
+		paragon.5001.authoritarian:99 "$paragon.5021.c$"
+		paragon.5001.spiritualist:99 "$paragon.5021.b$"
+		paragon.5001.materialist:99 "$paragon.5021.f$"
+		paragon.5001.xenophobe:99 "$paragon.5021.g$"
+		paragon.5001.xenophile:99 "$paragon.5021.d$"
+
+	# LumEx - Choose Heir Ethic
+		paragon.5002.name:99 "塑造继承人"
+		paragon.5002.desc:99 "一位新的继承人已被指定,以延续§Y[Owner.Ruler.GetTitle] [Owner.Ruler.GetRegnalName]§!的传承。在§Y[Owner.GetHeirName]§!开始训练之前,必须做出一个关键的决定:何种指引性的伦理将塑造他的世界观与未来的领导才能?\n\n光辉者必须明智抉择,因为这一选择将在多年内定义继承人的品格。"
+		paragon.5002.militarist:99 "$paragon.5001.militarist$"
+		paragon.5002.pacifist:99 "$paragon.5001.pacifist$"
+		paragon.5002.authoritarian:99 "$paragon.5001.authoritarian$"
+		paragon.5002.spiritualist:99 "$paragon.5001.spiritualist$"
+		paragon.5002.materialist:99 "$paragon.5001.materialist$"
+		paragon.5002.xenophobe:99 "$paragon.5001.xenophobe$"
+		paragon.5002.xenophile:99 "$paragon.5001.xenophile$"
+
+	# LumEx - Choose Heir Leader Class
+		paragon.5003.name:99 "继承人之路"
+		paragon.5003.desc:99 "§Y[Owner.GetHeirName]§!的指引原则既已确立,如今正是决定其训练方向的时刻。是要将其锻造为军事指挥官,塑造为出色的科学家,还是培养为娴熟的官员?\n\n光辉者的选择将决定继承人在帝国中的专长与角色。"
+		paragon.5003.commander:99 "训练为指挥官"
+		paragon.5003.scientist:99 "训练为科学家"
+		paragon.5003.official:99 "训练为官员"
+
+	# 40 Year Plan Insight events
+		paragon.5324.name:99 "四十年计划"
+		paragon.5324.desc:99 "$paragon.beginning.speech$\n\n根基已经奠定。我在统治之初提出的伟大愿景——四十年计划——终于走到了顶点。我们的人民不知疲倦地劳作,我们的科学家不断推动知识的边界,我们的帝国正屹立于伟大的门槛之上。\n\n但这绝不仅仅是终点,而是一个开端。我们所建造的基础设施、我们所积累的专业知识、我们所聚集的势头,这一切如今让我们能够实现真正非凡的成就。我已审视了摆在我们面前的种种可能,如今该是抉择的时候了——选择何种道路,将我们的帝国引向下一个荣光的时代。\n\n$paragon.ending.speech$"
+
+		paragon.5324.expand_armada:99 "扩展无敌舰队"
+		paragon.5324.expand_armada.tt:99 "获得§Y5000§! $i_alloys$ \n所有§Y恒星基地§!提升一级\n获得下一项§Y恒星基地§!科技的研究进度\n获得下一项§Y舰体§!科技的研究进度"
+		paragon.5324.harness_star:99 "驾驭恒星"
+		paragon.5324.harness_star.tt:99 "首都恒星出现一个大型$i_energy$矿藏\n首都恒星出现以下任一矿藏:$i_volatile_motes$、$i_rare_crystals$、$i_exotic_gases$或$i_alloys$\n获得相应§Y开采科技§!的研究进度"
+		paragon.5324.strategic_resources:99 "勘探战略资源"
+		paragon.5324.strategic_resources.tt:99 "获得§Y250§! $i_volatile_motes$\n获得§Y250§! $i_rare_crystals$\n获得§Y250§! $i_exotic_gases$\n获得一个$i_volatile_motes$矿藏\n获得一个$i_rare_crystals$矿藏\n获得一个$i_exotic_gases$矿藏\n获得三项§Y开采科技§!的研究进度"
+		paragon.5324.living_metal:99 "发现活体金属"
+		paragon.5324.living_metal.tt:99 "获得一个$i_living_metal$矿藏\n获得$i_living_metal$开采科技的研究进度"
+		paragon.5324.dark_matter:99 "寻获暗物质"
+		paragon.5324.dark_matter.tt:99 "获得一个$i_dark_matter$矿藏\n获得$i_dark_matter$开采科技的研究进度"
+		paragon.5324.zro:99 "蒸馏泽珞"
+		paragon.5324.zro.tt:99 "获得一个$i_zro$矿藏\n获得$i_zro$开采科技的研究进度"
+
+	# 40 Year Plan - Expand Armada event
+		paragon.5326.name:99 "无敌舰队扩张"
+		paragon.5326.desc:99 "$paragon.beginning.speech$\n\n锻造一支与我们命运相称的无敌舰队的时刻已然到来。我已颁布广泛的政令:我们领土内的每一座恒星基地都将立即得到升级,防御得到加固,能力扩展至现有上限之外。我们的造船工匠获得了无限的资源,以开发下一代战舰,而我们的军事建筑师们也已开始绘制将使我们的边境牢不可破的要塞蓝图。\n\n让银河留意吧。曾经只有前哨之处,如今矗立着堡垒。曾经只能派出护卫舰之处,我们将很快部署无畏舰。我们的力量将无可争辩。\n\n$paragon.ending.speech$"
+
+	# 40 Year Plan - Zro event
+		paragon.5327.name:99 "泽珞蒸馏"
+		paragon.5327.desc:99 "$paragon.beginning.speech$\n\n我们的科学家们在我们边境内的虚空中检测到泽珞——那最为神秘的物质——的微弱踪迹。这并非寻常之物,它违反传统物理法则,与灵能共鸣,拥有连我们最伟大的头脑也难以参透的特性。我已经动员我们的科考船,以确定其源头并立即建立采掘行动。\n\n无论泽珞最终揭开心智的奥秘、为我们当前理解之外的科技提供能量,还是开启通往尚未想象之现实的大门,发现它的都将是我们。宇宙嫉妒地守护着自己的秘密,但我们终将把它们撬开。\n\n$paragon.ending.speech$"
+
+	# 40 Year Plan - Harness the Star event
+		paragon.5328.name:99 "驾驭恒星"
+		paragon.5328.desc:99 "$paragon.beginning.speech$\n\n亿万年来,我们的母星在虚空中燃烧,是一座潜力无限的熔炉,我们对它的开发不过才刚刚起步。我已命令我们最优秀的工程师们在近轨道上建造一张先进的能量收集器之网,以前所未有的规模为我们的文明汲取能量。\n\n但这还不止。在勘察最佳收集点的过程中,我们的科学家做出了一个非凡的发现:在恒星的日冕之中,隐藏着由恒星过程锻造、如今可供采掘的浓集战略材料矿藏。曾经只是我们的太阳的它,将成为我们工业力量的跳动之心。\n\n$paragon.ending.speech$"
+	
+	# Milestone Events
+		paragon.5031.name:99 "进步的丰碑"
+		paragon.5031.desc:99 "$paragon.beginning.speech$\n\n今天标志着我们伟大帝国历史上的决定性时刻。这一巨型建筑的完工是我们人民才智与决心的明证。在我有远见的领导下,我们成就了许多人曾认为不可能之事,将宇宙本身的结构折服于我们的意志之下。\n\n$paragon.ending.speech$"
+		paragon.5031.a:99 "工程的胜利!"
+
+		paragon.5401.name:99 "巨兽伏诛"
+		paragon.5401.desc:99 "$paragon.beginning.speech$\n\n一头庞大而可怖的造物,虚空中的巨像,在我们舰队的威力之下倒下。当他人战栗之际,我们坚定不移,在我的指引下,我们的部队斩杀了利维坦。让银河知晓,无论何等古老或令人生畏的兽类,皆无法逃脱我们帝国的触手。\n\n$paragon.ending.speech$"
+		paragon.5401.a:99 "无人能与我们抗衡!"
+
+		paragon.5403.name:99 "母星已降"
+		paragon.5403.desc:99 "$paragon.beginning.speech$\n\n一支敌对文明的诞生之星如今飘扬着我们的旗帜。这不仅是领土的征服,更是将一个民族最神圣的土壤连根拔起。在我果断的领导下,我们的军队夺取了另一个种族的摇篮本身,永远改变了银河中的力量平衡。\n\n$paragon.ending.speech$"
+		paragon.5403.a:99 "他们的传承如今属于我们!"
+
+		paragon.5405.name:99 "文化之柱"
+		paragon.5405.desc:99 "$paragon.beginning.speech$\n\n我们的传统已引领我们度过数代,如今已然完全实现。我们的社会达到了星辰之间罕有所见的文化成就广度。在我的执掌下,我们的人民探索了一切可及的思想、哲学与实践之路。我们以一个完全成熟的文明姿态屹立于此。\n\n$paragon.ending.speech$"
+		paragon.5405.a:99 "我们的文化无与伦比!"
+
+		paragon.5407.name:99 "古者之回响"
+		paragon.5407.desc:99 "$paragon.beginning.speech$\n\n我们已经发掘出在我们之前存在的文明的最后遗迹——一个先驱者的遗迹,他们的成就曾塑造过整个银河。他们的秘密如今属于我们去研究和保存。在我的远见下,我们完成了我们民族历史上最伟大的考古事业,将我们的未来与一段失落而古老的过去联系在一起。\n\n$paragon.ending.speech$"
+		paragon.5407.a:99 "我们将传承他们的火炬!"
+
+		paragon.5409.name:99 "危机化解"
+		paragon.5409.desc:99 "$paragon.beginning.speech$\n\n银河曾在毁灭的边缘摇摇欲坠,然而我们挺了过来。那曾威胁吞噬一切文明的危机已被击败。在我不屈的决心下,我们的帝国如对抗黑暗的壁垒巍然屹立。这场胜利不仅属于我们,也属于每一个仍在群星之下呼吸的世界。在无数他者倒下的地方,我们守住了防线,从而保住了所有有感生命的未来。\n\n$paragon.ending.speech$"
+		paragon.5409.a:99 "银河得以矗立,因为我们坚守住了!"
+
+	# Forgotten Events
+		paragon.forgotten.a.2:99 "释放一些「持不同意见者」"
+		paragon.forgotten.a.3:99 "压制媒体。"
+
+		paragon.forgotten.b.2:99 "以贿赂安抚。"
+		paragon.forgotten.b.3:99 "对欺骗视而不见。"
+
+		paragon.forgotten.c.2:99 "捏造反证。"
+		paragon.forgotten.c.3:99 "公开道歉。"
+
+	# Heir Illness Situation
+		paragon_origin_heir_illness:99 "垂危的继承人"
+		paragon_origin_heir_illness_type:99 "$paragon_origin_heir_illness$"
+		paragon_origin_heir_illness_desc:99 "§Y[Owner.GetHeirTitle] [Owner.GetHeirName]§!罹患不治之症!我们必须尽快寻得疗法,然而病情每况愈下,帝国各地的医生与科学家正不知疲倦地寻找永久治愈之法。"
+		paragon_origin_heir_illness_monthly_change_tooltip:99 "继承人的疾病仍在恶化,只有最佳的医疗与生物学研究,才能给我们及时治愈它的希望。"
+		situation_paragon_origin_heir_illness_palliative:99 "姑息治疗"
+		approach_situation_paragon_origin_heir_illness_palliative_tt:99 "我们将尽力让[Owner.GetHeirName]在最后的时日里得到安宁,但我们必须接受没有治愈希望的事实。"
+		situation_paragon_origin_heir_illness_medical:99 "医疗治疗"
+		approach_situation_paragon_origin_heir_illness_medical_tt:99 "我们将不惜代价治疗[Owner.GetHeirName]的疾病。在帝国各地医生的不懈努力下,我们希望能找到治愈之法。"
+		situation_paragon_origin_heir_illness_radical:99 "激进干预"
+		approach_situation_paragon_origin_heir_illness_radical_tt:99 "帝国中的每一位医生与生物学家都将被动员起来拯救[Owner.GetHeirName]。其他一切优先事项都将让位,以挽救光辉者的继承人!"
+
+		situation_heir_illness_dying:99 "[Owner.GetHeirName]的状况正在恶化,似乎不太可能再撑下去太久。"
+		situation_heir_illness_steady:99 "[Owner.GetHeirName]的状况已稳定下来,但永久性的治愈仍遥不可及。"
+		situation_heir_illness_recovering:99 "[Owner.GetHeirName]的状况正在好转,有望完全康复。"
+
+		paragon_origin_heir_illness_getting_worse:99 "病情严重程度"
+		paragon_origin_heir_illness_medical_approach:99 "医疗治疗"
+		paragon_origin_heir_illness_radical_approach:99 "激进干预"
+
+		paragon_origin_heir_illness_doctor_number:99 "帝国内医生数量"
+		paragon_origin_heir_illness_biologist_number:99 "帝国内生物学家数量"
+
+		paragon_origin_heir_illness_complete:99 "§G[Owner.GetHeirName]奇迹般地康复了§!。"
+		paragon_origin_heir_illness_fail:99 "§R[Owner.GetHeirName]终未敌过病魔§!。"
+
+		paragon.heir.sickness.positive:99 "§Y[owner.GetHeirTitle] [owner.GetHeirName]§!的§Y病情§!§G有所好转§!。"
+		paragon.heir.sickness.negative:99 "§Y[owner.GetHeirTitle] [owner.GetHeirName]§!的§Y病情§!§R继续恶化§!。"
+
+		# Events
+		# Heir illness outcome events
+		paragon.5080.name:99 "奇迹般的康复"
+		paragon.5080.desc:99 "§H§Y[Owner.GetHeirTitle] [Owner.GetHeirName]§!的身影出现在帝国各地的每一块屏幕上。我们的人民正等待讲话开始。§!\n\n我们伟大帝国的公民们,今日我活生生地、完整地、怀着言语难以表达的感激之情站在你们面前。不久前,我躺在死亡的门前,身体衰竭,前途未卜。我得以站在此处,正是因为那些非凡之人拒绝任由我离去。\n\n那些彻夜不眠工作的医生,那些将科学本身的边界推得更远的生物学家,他们才是这个帝国真正的英雄。\n\n我亏欠他们一切,这个帝国亦然。让他们的名字被铭记吧,因为正是他们的才华与奉献维系着这个帝国!\n\n$paragon.ending.speech$"
+		paragon.5080.a:99 "[Owner.GetHeirTitle]万岁!"
+
+		paragon.5081.name:99 "悲剧性的失去"
+		paragon.5081.desc:99 "$paragon.beginning.speech$\n\n今天,我不仅以你们的光辉者的身份,更以一个被悲痛击碎的父母的身份,向你们讲话。我的孩子,§Y[Owner.GetHeirName]§!,这个伟大帝国的未来,被人从我们身边夺走了。莫要弄错,这绝非命运的安排。是改革派——那些在每一处播下分裂之种、阻挠我们一切努力的卑劣鼓动者——背负着这场悲剧的重量。\n\n他们的阻挠延误了关键的研究,他们的破坏抽走了用于研制疗法的资源,如今我的骨血因他们的背叛而冰冷地躺着。我在这个帝国的每一位公民面前发誓:对他们的清算必将到来。我们将忍受这一损失,但我们永远不会忘记谁要为此负责。\n\n$paragon.ending.speech$"
+		paragon.5081.a:99 "叛徒们必将为此付出代价!"
+
+		# Heir illness progression events
+		paragon.5082.name:99 "严重的挫折"
+		paragon.5082.desc:99 "照护§Y[owner.GetHeirTitle] [owner.GetHeirName]§!的医疗团队带来了沉重的消息。一夜之间,继承人的生命体征急剧恶化,出现了一波医生此前未曾预料到的新症状。\n\n此前一直将疾病压制住的精心制定的治疗方案似乎正在失效,医生们正争分夺秒地调整方案,以免机会之窗彻底关闭。\n这一消息已开始在帝国各地传播。政府大楼前出现了守夜的群众,首都的氛围变得阴郁。\n\n官员们正悄声讨论着无人敢公开提及的种种应对方案。"
+		paragon.5082.a:99 "我们必须坚持下去。"
+
+		paragon.5083.name:99 "并发症"
+		paragon.5083.desc:99 "一连串次生并发症袭向§Y[owner.GetHeirTitle] [owner.GetHeirName]§!,使本已严峻的预后雪上加霜。最初仅是单一病症的疾患,如今已将其触手延伸至多个器官系统,继承人的身体在如此多的战线上同时挣扎。主治医生报告称,几项实验性疗法在引发不良反应后不得不放弃,所剩选项已大为收窄。"
+		paragon.5083.a:99 "保持希望。"
+
+		paragon.5084.name:99 "疾病的突破"
+		paragon.5084.desc:99 "夜以继日地致力于挽救§Y[owner.GetHeirTitle] [owner.GetHeirName]§!的研究团队取得了关键发现。一种从帝国各地搜集的生物样本中合成出的新化合物,在实验室试验中显示出对该疾病的非凡疗效。\n\n对继承人的初步试验取得了令人鼓舞的结果,自疾病发作以来,关键症状首次出现可量化的回退。\n\n这一消息使整个帝国为之振奋。医生们被誉为英雄,一股审慎乐观的浪潮席卷了民众。\n\n数月以来,人们第一次真正抱有希望,认为完全治愈或许触手可及。"
+		paragon.5084.a:99 "治愈就在眼前!"
+
+		paragon.5085.name:99 "康复的进展"
+		paragon.5085.desc:99 "在仿佛漫长得如永恒之后,§Y[owner.GetHeirTitle] [owner.GetHeirName]§!的医生们终于带来了振奋人心的消息。继承人的气色恢复了,胃口好转了,体力也有所回升,这是几周前根本难以想象的事。\n医疗团队提醒说,通往完全康复的道路仍漫长且充满未知,但这一好转不容置疑。\n\n民众走上街头,以静默的方式庆祝;支持的讯息仍源源不断地从帝国各地涌来。"
+		paragon.5085.a:99 "好消息!"
+
+		# Heir working events
+		paragon.5086.name:99 "公开演讲"
+		paragon.5086.desc:99 "§Y[owner.GetHeirTitle] [owner.GetHeirName]§!按计划将向首都市民发表一场重大公开讲话。尽管疾病留下的痕迹清晰可见,继承人仍明确表示要亲自登台。其医生们警告,这样一次出席的体力消耗可能会令病情显著恶化,但继承人坚持认为人民需要从未来的领导者身上看到力量。\n议会已直接将此事提交给我们。我们该怎么办?"
+		paragon.5086.a:99 "按原计划进行演讲。"
+		paragon.5086.b:99 "提前录制演讲。"
+		paragon.5086.c:99 "取消演讲。"
+
+		paragon.5087.name:99 "议会工作"
+		paragon.5087.desc:99 "日复一日,§Y[owner.GetHeirTitle] [owner.GetHeirName]§!仍在不顾一切地驱使着自己,出席每一场议会会议、审阅法案、就国事发表意见,仿佛一切如常。议员们注意到了他眼下的黑圈、苍白憔悴的面容,以及他在话语中突然停顿、调整气息的瞬间。\n几位顾问已在私下表达了警觉,提醒说这种残酷的日程正在加速继承人的衰退。然而继承人拒绝退让,坚持认为对帝国的责任高于自身的安康。议会已正式将此事提请我们注意。我们该怎么办?"
+		paragon.5087.a:99 "按现有的职务安排不变。"
+		paragon.5087.b:99 "减轻继承人的工作量。"
+		paragon.5087.c:99 "免除继承人参与议会工作的职务。"
+
+		paragon.5088.name:99 "殖民地访问"
+		paragon.5088.desc:99 "对[reformist_colony.GetName]的外交访问,长久以来便列在§Y[owner.GetHeirTitle] [owner.GetHeirName]§!的日程之中。该殖民地已成为改革派情绪的温床,而继承人亲自到场,本意是缓和紧张局势,并劝说当地领导人与中央政府合作。\n然而旅途本身令人疲惫不堪,谈判压力巨大,继承人的医生们也警告说,以他目前的身体状况出行风险极大。另一方面,取消行程可能会令改革派愈发胆大妄为。我们该怎么办?"
+		paragon.5088.a:99 "按计划进行访问。"
+		paragon.5088.b:99 "推迟访问。"
+		paragon.5088.c:99 "取消访问。"
+
+		paragon.5089.name:99 "舰队检阅"
+		paragon.5089.desc:99 "§Y[owner.GetHeirTitle] [owner.GetHeirName]§!按计划将正式检阅帝国舰队。此次访问数月前便已安排妥当,意在向我们的海军部队展现领导力与团结,继承人将巡视旗舰、向军官致辞、并亲自审阅作战准备报告。\n海军部一直在为继承人的到来作准备,但他的医疗团队提出了严正反对。在一艘战舰中走动所需的体力,加之各项典礼的疲惫,可能会将他原本脆弱的健康推过极限。我们该怎么办?"
+		paragon.5089.a:99 "按计划进行检阅。"
+		paragon.5089.b:99 "推迟检阅。"
+		paragon.5089.c:99 "取消检阅。"
+
+		# Luminary Speech events
+		# Event which triggers once Luminary maxes trait out
+		paragon.5040.name:99 "传奇的光辉者"
+		paragon.5040.desc:99 "$paragon.beginning.speech$\n\n在以下的讯息中,[Root.Owner.Ruler.GetName]反思了由考验、成长与启示塑造的旅程,详尽谈及在逆境中所获的智慧与所锻造的力量。她讲述了关于她自身、她的人民以及她所栖居的浩瀚宇宙的种种教训,将这些洞见编织为一种焕然一新的使命感。讲话最终汇聚为一份意志的宣告——一项誓言,要永远引领帝国走向辉煌而繁荣的未来。\n\n$paragon.ending.speech$"
+		paragon.5040.a:99 "光辉者将引领我们!"
+		paragon.leader.growth.positive.max:99 "§Y[owner.Ruler.GetTitle] [owner.Ruler.GetRegnalName]§!的§Y光辉者§!特质§G已达到最大值§!。\n§Y光辉者特质(以及光辉者飞升特质)将获得额外效果,且永远不会减弱。§!"
+
+	# LumEx - Post-Fall Ascension Upgrade
+		paragon.6041.name:99 "超越仪器"
+		paragon.6041.desc:99 "$paragon.beginning.speech$\n\n多年以来,维生仪器维系着我的生命——一项工程奇迹,将我的意识与这具凡躯绑在一起。但我们的人民已经成就了远为伟大之事。通过我们的飞升,一条新道路已然敞开:它有可能将我从这台机器的束缚中解放出来,赋予我一副与我所建立的帝国相称的形态。\n\n如今摆在我们面前的问题很简单:我究竟应当继续被仪器束缚,还是应当拥抱我们人民所开启的未来?\n\n$paragon.ending.speech$"
+		paragon.6041.a:99 "保留仪器。"
+		paragon.6041.a.tooltip:99 "我的王座足矣。§R警告:此选择不会再次出现§!"
+		paragon.6041.b:99 "$paragon.6000.b$"
+		paragon.6041.b.tooltip:99 "$paragon.6000.b.tooltip$"
+		paragon.6041.c:99 "$paragon.6000.c$"
+		paragon.6041.c.tooltip:99 "$paragon.6000.c.tooltip$"
+		paragon.6041.d:99 "$paragon.6000.d$"
+		paragon.6041.d.tooltip:99 "$paragon.6000.d.tooltip$"
+		paragon.6041.e:99 "$paragon.6000.e$"
+		paragon.6041.e.tooltip:99 "$paragon.6000.e.tooltip$"
+
+	# LumEx - Convince Reformists Decision
+		le_decision_convince_reformists:99 "说服改革派"
+		le_decision_convince_reformists_desc:99 "光辉者于密室之内会见改革派的领袖,凭借数十年的信任与共度的牺牲与他们对话。在一位活生生的传奇所散发的静默重压之下,鲜有人能继续坚持自己的信念。"
+		le_decision_convince_reformists_tt:99 "本行星上一个§Y平等主义§!人口将被转化为§Y威权主义§!伦理。\n§G转化后若本行星上不再有平等主义人口§!,§Y民主倾向§!状态将被§G移除§!。"
+

@@ -1,0 +1,202 @@
+﻿l_korean:
+	# LumEx - Choose Luminary Ethic Trait
+		paragon.5001.name:99 "지도 원칙"
+		paragon.5001.desc:99 "§Y[Owner.Ruler.GetTitle] [Owner.Ruler.GetRegnalName]§!이(가) 권력의 고삐를 쥐는 지금, 결정적인 질문이 떠오른다. 그의 전설적인 통치를 이끌 지도 윤리는 무엇인가?\n\n평의회는 루미너리의 선언을 기다린다. 이 선택이 여러 세대에 걸쳐 제국 전체에 메아리치리라는 것을 알기 때문이다."
+		# Use Vanilla text when able, to keep loc for other languages
+		paragon.5001.militarist:99 "$paragon.5021.a$"
+		paragon.5001.pacifist:99 "$paragon.5021.e$"
+		paragon.5001.authoritarian:99 "$paragon.5021.c$"
+		paragon.5001.spiritualist:99 "$paragon.5021.b$"
+		paragon.5001.materialist:99 "$paragon.5021.f$"
+		paragon.5001.xenophobe:99 "$paragon.5021.g$"
+		paragon.5001.xenophile:99 "$paragon.5021.d$"
+
+	# LumEx - Choose Heir Ethic
+		paragon.5002.name:99 "후계자를 빚다"
+		paragon.5002.desc:99 "§Y[Owner.Ruler.GetTitle] [Owner.Ruler.GetRegnalName]§!의 유산을 이어갈 새로운 후계자가 지명되었다. §Y[Owner.GetHeirName]§!이(가) 훈련을 시작하기 전에 중대한 결정을 내려야 한다. 후계자의 세계관과 미래의 지도력을 빚어낼 지도 윤리는 무엇인가?\n\n루미너리는 현명하게 선택해야 한다. 이 선택이 후계자의 인격을 오랜 세월에 걸쳐 정의하기 때문이다."
+		paragon.5002.militarist:99 "$paragon.5001.militarist$"
+		paragon.5002.pacifist:99 "$paragon.5001.pacifist$"
+		paragon.5002.authoritarian:99 "$paragon.5001.authoritarian$"
+		paragon.5002.spiritualist:99 "$paragon.5001.spiritualist$"
+		paragon.5002.materialist:99 "$paragon.5001.materialist$"
+		paragon.5002.xenophobe:99 "$paragon.5001.xenophobe$"
+		paragon.5002.xenophile:99 "$paragon.5001.xenophile$"
+
+	# LumEx - Choose Heir Leader Class
+		paragon.5003.name:99 "후계자의 길"
+		paragon.5003.desc:99 "이제 §Y[Owner.GetHeirName]§!의 지도 원칙이 정해졌으니, 훈련의 길을 정할 때가 되었다. 군 지휘관으로 단련할 것인가, 뛰어난 과학자로 빚어낼 것인가, 유능한 관리로 길러낼 것인가?\n\n루미너리의 선택이 제국 내에서 후계자의 전문 분야와 역할을 결정한다."
+		paragon.5003.commander:99 "지휘관으로 훈련"
+		paragon.5003.scientist:99 "과학자로 훈련"
+		paragon.5003.official:99 "관리로 훈련"
+
+	# 40 Year Plan Insight events
+		paragon.5324.name:99 "40년 계획"
+		paragon.5324.desc:99 "$paragon.beginning.speech$\n\n기반은 마련되었다. 내 통치의 새벽에 내세웠던 그 위대한 비전, 40년 계획이 마침내 정점에 이르렀다. 우리 백성은 쉬지 않고 일했고, 우리 과학자들은 지식의 한계를 넓혀왔으며, 우리 제국은 위대함의 문턱에 서 있다.\n\n그러나 이는 단순한 끝이 아니라 시작이다. 우리가 쌓아 올린 기반시설, 우리가 길러낸 전문성, 우리가 모은 추진력, 이 모든 것이 이제 우리로 하여금 진정으로 비범한 일을 이룰 수 있게 한다. 나는 우리 앞에 놓인 가능성들을 검토했고, 우리 제국을 다음 영광의 시대로 이끌 길을 선택할 때가 되었다.\n\n$paragon.ending.speech$"
+
+		paragon.5324.expand_armada:99 "함대를 확장한다"
+		paragon.5324.expand_armada.tt:99 "§Y5000§! $i_alloys$ 획득 \n모든 §Y우주 정거장§!이 한 단계 업그레이드됨\n다음 §Y우주 정거장§! 기술의 연구 진행도 획득\n다음 §Y함체§! 기술의 연구 진행도 획득"
+		paragon.5324.harness_star:99 "항성을 활용한다"
+		paragon.5324.harness_star.tt:99 "수도 항성에 대규모 $i_energy$ 매장지 출현\n수도 항성에 다음 중 하나의 매장지가 출현: $i_volatile_motes$, $i_rare_crystals$, $i_exotic_gases$ 또는 $i_alloys$\n해당 §Y채취 기술§!의 연구 진행도 획득"
+		paragon.5324.strategic_resources:99 "전략 자원을 탐사한다"
+		paragon.5324.strategic_resources.tt:99 "§Y250§! $i_volatile_motes$ 획득\n§Y250§! $i_rare_crystals$ 획득\n§Y250§! $i_exotic_gases$ 획득\n$i_volatile_motes$ 매장지 획득\n$i_rare_crystals$ 매장지 획득\n$i_exotic_gases$ 매장지 획득\n세 가지 §Y채취 기술§! 모두의 연구 진행도 획득"
+		paragon.5324.living_metal:99 "리빙 메탈을 발견한다"
+		paragon.5324.living_metal.tt:99 "$i_living_metal$ 매장지 획득\n$i_living_metal$ 채취 기술의 연구 진행도 획득"
+		paragon.5324.dark_matter:99 "암흑 물질을 찾는다"
+		paragon.5324.dark_matter.tt:99 "$i_dark_matter$ 매장지 획득\n$i_dark_matter$ 채취 기술의 연구 진행도 획득"
+		paragon.5324.zro:99 "즈로를 증류한다"
+		paragon.5324.zro.tt:99 "$i_zro$ 매장지 획득\n$i_zro$ 채취 기술의 연구 진행도 획득"
+
+	# 40 Year Plan - Expand Armada event
+		paragon.5326.name:99 "함대가 확장되다"
+		paragon.5326.desc:99 "$paragon.beginning.speech$\n\n우리 운명에 어울리는 함대를 벼려낼 때가 왔다. 나는 광범위한 명령을 내렸다. 우리 영토 내의 모든 우주 정거장은 즉시 업그레이드되고, 방어는 강화되며, 능력은 현재의 한계를 넘어 확장된다. 우리 조선공들은 차세대 전함을 개발하기 위해 무제한의 자원을 부여받았고, 우리 군 건축가들은 이미 우리 국경을 난공불락으로 만들 요새의 도면을 그리고 있다.\n\n은하는 주목하라. 한때 전초기지가 있던 곳에는 이제 요새가 솟아 있다. 우리가 코르벳을 배치하던 곳에는 곧 드레드노트를 보낼 것이다. 우리 힘은 부정할 수 없게 될 것이다.\n\n$paragon.ending.speech$"
+
+	# 40 Year Plan - Zro event
+		paragon.5327.name:99 "즈로 증류"
+		paragon.5327.desc:99 "$paragon.beginning.speech$\n\n우리 과학자들은 가장 수수께끼 같은 물질인 즈로의 희미한 흔적을 우리 영토 내의 진공 속에서 감지해냈다. 이는 평범한 물질이 아니다. 통상의 물리 법칙을 거스르고, 사이오닉 에너지와 공명하며, 우리 최고의 두뇌들조차 가까스로 이해하는 성질을 지녔다. 나는 우리 연구함을 동원해 그 근원을 찾아내고 즉시 채취 작전을 수립하도록 했다.\n\n즈로가 정신의 비밀을 풀어내든, 우리의 현재 이해를 넘어선 기술의 연료가 되든, 아직 상상조차 하지 못한 현실로 통하는 문을 열든, 그것을 발견하는 것은 우리일 것이다. 우주는 그 비밀을 시기심 많게 간직하지만, 우리는 그것들을 빼앗아낼 것이다.\n\n$paragon.ending.speech$"
+
+	# 40 Year Plan - Harness the Star event
+		paragon.5328.name:99 "항성의 활용"
+		paragon.5328.desc:99 "$paragon.beginning.speech$\n\n수많은 시대 동안 우리 모성은 진공 속에서 타올랐다. 우리가 이용하기 시작한 지 얼마 되지 않은, 무한한 잠재력의 용광로였다. 나는 우리 최고의 기술자들에게 근접 궤도에 첨단 에너지 수집기 망을 건설하라 명했다. 우리 문명이 이전에 도달한 적 없는 규모로 동력을 끌어내기 위함이다.\n\n그러나 그뿐만이 아니다. 최적의 수집 지점을 조사하는 과정에서 우리 과학자들은 놀라운 발견을 했다. 별의 코로나 안에 항성 작용으로 단련된 전략 물자의 농축된 매장지가 숨어 있고, 이제 채취할 준비가 되어 있다는 사실이다. 단지 우리의 태양일 뿐이었던 것이 우리 산업 역량의 고동치는 심장이 될 것이다.\n\n$paragon.ending.speech$"
+	
+	# Milestone Events
+		paragon.5031.name:99 "진보의 기념비"
+		paragon.5031.desc:99 "$paragon.beginning.speech$\n\n오늘은 우리 위대한 제국의 역사에서 결정적인 순간이다. 이 거대 구조물의 완공은 우리 백성의 독창성과 결의의 증거이다. 나의 선견지명에 찬 지도 아래, 우리는 많은 이가 불가능하다고 믿었던 것을 이루어내고 우주의 결 그 자체를 우리 의지에 굴복시켰다.\n\n$paragon.ending.speech$"
+		paragon.5031.a:99 "공학의 승리다!"
+
+		paragon.5401.name:99 "야수가 쓰러지다"
+		paragon.5401.desc:99 "$paragon.beginning.speech$\n\n진공의 거상이라 할 만한 거대하고 무서운 생물이 우리 함대의 위력 앞에 쓰러졌다. 다른 이들이 떨고 있던 곳에서 우리는 굳건히 섰고, 나의 인도 아래 우리 군대는 리바이어던을 베어 쓰러뜨렸다. 은하는 알라. 아무리 오래되고 두려운 짐승이라도 우리 제국의 손길을 벗어날 수는 없다는 것을.\n\n$paragon.ending.speech$"
+		paragon.5401.a:99 "누구도 우리에게 맞설 수 없다!"
+
+		paragon.5403.name:99 "고향 행성을 차지하다"
+		paragon.5403.desc:99 "$paragon.beginning.speech$\n\n경쟁 문명의 탄생 행성이 이제 우리의 깃발을 휘날린다. 이는 단순한 영토 정복이 아니라 한 민족의 가장 신성한 땅을 뿌리 뽑는 일이다. 나의 단호한 지도 아래 우리 군대는 다른 종족의 요람 그 자체를 장악했고, 은하의 세력 균형을 영원히 바꾸어놓았다.\n\n$paragon.ending.speech$"
+		paragon.5403.a:99 "그들의 유산은 이제 우리의 것이다!"
+
+		paragon.5405.name:99 "문화의 기둥"
+		paragon.5405.desc:99 "$paragon.beginning.speech$\n\n우리 전통은 여러 세대에 걸쳐 우리를 인도해왔고, 이제 온전히 결실을 맺었다. 우리 사회는 별들 사이에서 보기 드문 문화적 성취의 폭을 이루었다. 나의 보살핌 아래 우리 백성은 그들이 가질 수 있는 사상, 철학, 실천의 모든 길을 탐구해왔다. 우리는 완전히 완성된 문명으로 서 있다.\n\n$paragon.ending.speech$"
+		paragon.5405.a:99 "우리 문화는 견줄 데가 없다!"
+
+		paragon.5407.name:99 "고대인의 메아리"
+		paragon.5407.desc:99 "$paragon.beginning.speech$\n\n우리는 우리에 앞섰던 문명, 그 업적이 한때 은하 그 자체를 빚어낸 선구자의 마지막 잔재를 발굴해냈다. 그들의 비밀은 이제 우리가 연구하고 보존해야 할 우리의 것이다. 나의 비전 아래 우리는 우리 백성의 역사상 가장 위대한 고고학적 사업을 완수했고, 우리의 미래를 잃어버린 고대의 과거와 이어 붙였다.\n\n$paragon.ending.speech$"
+		paragon.5407.a:99 "우리는 그들의 횃불을 이어간다!"
+
+		paragon.5409.name:99 "위기를 막아내다"
+		paragon.5409.desc:99 "$paragon.beginning.speech$\n\n은하는 절멸의 벼랑에서 흔들렸지만, 우리는 견뎌냈다. 모든 문명을 집어삼키려 했던 위기는 격파되었다. 나의 굽히지 않는 결단 아래 우리 제국은 어둠에 맞선 보루로 섰다. 이 승리는 우리만의 것이 아니라 별빛 아래 여전히 숨 쉬는 모든 세계의 것이다. 헤아릴 수 없는 다른 이들이 쓰러진 곳에서 우리는 전선을 지켜냈고, 그렇게 함으로써 모든 지각 있는 생명의 미래를 지켜냈다.\n\n$paragon.ending.speech$"
+		paragon.5409.a:99 "우리가 버텨냈기에 은하가 서 있다!"
+
+	# Forgotten Events
+		paragon.forgotten.a.2:99 "「반대자」 몇 명을 풀어준다"
+		paragon.forgotten.a.3:99 "언론을 억누른다."
+
+		paragon.forgotten.b.2:99 "뇌물로 달랜다."
+		paragon.forgotten.b.3:99 "기만을 무시한다."
+
+		paragon.forgotten.c.2:99 "반박 증거를 조작한다."
+		paragon.forgotten.c.3:99 "공개적으로 사과한다."
+
+	# Heir Illness Situation
+		paragon_origin_heir_illness:99 "죽어가는 후계자"
+		paragon_origin_heir_illness_type:99 "$paragon_origin_heir_illness$"
+		paragon_origin_heir_illness_desc:99 "§Y[Owner.GetHeirTitle] [Owner.GetHeirName]§!이(가) 불치병에 걸렸다! 우리는 빠르게 치료법을 찾아야 하지만, 상태는 날마다 악화되고 있고, 제국 전역의 의사와 과학자들이 영구적인 치료법을 찾기 위해 쉴 새 없이 일하고 있다."
+		paragon_origin_heir_illness_monthly_change_tooltip:99 "후계자의 병은 계속 악화되고 있으며, 최고의 의료와 생물학 연구가 있어야만 제때 치유할 희망이 있다."
+		situation_paragon_origin_heir_illness_palliative:99 "완화 치료"
+		approach_situation_paragon_origin_heir_illness_palliative_tt:99 "[Owner.GetHeirName]이(가) 마지막 날들을 편안하게 보낼 수 있도록 최선을 다하겠지만, 치유의 희망은 없다는 것을 받아들여야 한다."
+		situation_paragon_origin_heir_illness_medical:99 "의료 치료"
+		approach_situation_paragon_origin_heir_illness_medical_tt:99 "우리는 [Owner.GetHeirName]의 병을 치료하는 데 비용을 아끼지 않을 것이다. 제국 전역의 의사들이 쉬지 않고 일하며 치료법을 찾기를 바란다."
+		situation_paragon_origin_heir_illness_radical:99 "급진적 개입"
+		approach_situation_paragon_origin_heir_illness_radical_tt:99 "[Owner.GetHeirName]을(를) 살리기 위해 제국의 모든 의사와 생물학자가 동원될 것이다. 루미너리의 후계자를 구하기 위해 다른 모든 우선순위는 미뤄둘 것이다!"
+
+		situation_heir_illness_dying:99 "[Owner.GetHeirName]의 상태는 악화되고 있으며, 더 오래 살아남을 가능성은 낮아 보인다."
+		situation_heir_illness_steady:99 "[Owner.GetHeirName]의 상태는 안정되었지만, 영구적인 치료법은 여전히 손에 닿지 않는다."
+		situation_heir_illness_recovering:99 "[Owner.GetHeirName]의 상태가 호전되고 있으며, 완전한 회복에 대한 희망이 보인다."
+
+		paragon_origin_heir_illness_getting_worse:99 "병의 중증도"
+		paragon_origin_heir_illness_medical_approach:99 "의료 치료"
+		paragon_origin_heir_illness_radical_approach:99 "급진적 개입"
+
+		paragon_origin_heir_illness_doctor_number:99 "제국 내 의사 수"
+		paragon_origin_heir_illness_biologist_number:99 "제국 내 생물학자 수"
+
+		paragon_origin_heir_illness_complete:99 "§G[Owner.GetHeirName]이(가) 기적적으로 회복한다§!."
+		paragon_origin_heir_illness_fail:99 "§R[Owner.GetHeirName]이(가) 병에 굴복한다§!."
+
+		paragon.heir.sickness.positive:99 "§Y[owner.GetHeirTitle] [owner.GetHeirName]§!의 §Y병세§!가 §G호전§!된다."
+		paragon.heir.sickness.negative:99 "§Y[owner.GetHeirTitle] [owner.GetHeirName]§!의 §Y병세§!가 §R악화§!된다."
+
+		# Events
+		# Heir illness outcome events
+		paragon.5080.name:99 "기적의 회복"
+		paragon.5080.desc:99 "§H§Y[Owner.GetHeirTitle] [Owner.GetHeirName]§!이(가) 제국 전역의 모든 화면에 모습을 드러냈다. 우리 시민들은 연설이 시작되기를 기다리고 있다.§!\n\n우리 위대한 제국의 시민 여러분, 나는 오늘 살아 있는 몸으로, 온전한 모습으로, 말로는 거의 표현할 수 없는 감사를 가득 안고 여러분 앞에 섰다. 얼마 전까지 나는 죽음의 문턱에 누워 있었고, 내 몸은 무너지고 있었으며, 미래는 불확실했다. 그러나 내가 지금 이 자리에 서 있는 것은 나를 죽게 두지 않은 비범한 사람들 덕분이다.\n\n잠 못 이루는 밤을 견디며 일한 의사들, 과학 그 자체의 한계를 넓힌 생물학자들, 그들이야말로 이 제국의 진정한 영웅들이다.\n\n나는 그들에게 모든 것을 빚지고 있고, 이 제국 또한 그러하다. 그들의 이름이 기억되게 하라. 그들의 명석함과 헌신이 이 제국을 지탱하고 있는 것이다!\n\n$paragon.ending.speech$"
+		paragon.5080.a:99 "[Owner.GetHeirTitle] 만세!"
+
+		paragon.5081.name:99 "비극적 상실"
+		paragon.5081.desc:99 "$paragon.beginning.speech$\n\n오늘 나는 여러분의 루미너리로서뿐만 아니라 슬픔에 부서진 부모로서 여러분에게 말한다. 내 아이, §Y[Owner.GetHeirName]§!, 이 위대한 제국의 미래가 우리에게서 빼앗겼다. 오해하지 말라. 이는 운명의 손길이 아니다. 모든 길목에서 분열의 씨앗을 뿌리고 우리 노력을 깎아내린 저 비열한 선동가들, 즉 개혁주의자들이야말로 이 비극의 무게를 짊어져야 할 자들이다.\n\n그들의 방해가 결정적인 연구를 지연시켰고, 그들의 사보타주가 치료법을 위한 자원을 흘려보냈으며, 이제 내 자식은 그들의 배신 때문에 차갑게 누워 있다. 나는 이 제국의 모든 시민 앞에 맹세한다. 그들에 대한 청산은 반드시 올 것이다. 우리는 이 상실을 견뎌내겠지만, 누가 책임이 있는지 결코 잊지 않을 것이다.\n\n$paragon.ending.speech$"
+		paragon.5081.a:99 "반역자들이 그 대가를 치를 것이다!"
+
+		# Heir illness progression events
+		paragon.5082.name:99 "심각한 차질"
+		paragon.5082.desc:99 "§Y[owner.GetHeirTitle] [owner.GetHeirName]§!을(를) 돌보는 의료진이 암울한 소식을 전해왔다. 하룻밤 사이 후계자의 활력 징후가 급격히 악화되었고, 의사들이 예상하지 못했던 새로운 증상의 물결이 나타났다.\n\n그동안 병을 억제해온 정교히 짜인 치료 체계가 실패하는 듯하며, 의사들은 기회의 문이 완전히 닫히기 전에 접근법을 조정하느라 분주하다.\n제국 전역에 소식이 이미 퍼지기 시작했다. 정부 청사 앞에는 추모 모임이 형성되었고, 수도의 분위기는 어두워졌다.\n\n관리들은 누구도 공개적으로 입에 담지 못할 시나리오를 조용히 논의하고 있다."
+		paragon.5082.a:99 "우리는 견뎌내야 한다."
+
+		paragon.5083.name:99 "합병증"
+		paragon.5083.desc:99 "이차 합병증의 연쇄가 §Y[owner.GetHeirTitle] [owner.GetHeirName]§!을(를) 강타하여, 이미 어두운 예후를 더욱 악화시켰다. 하나의 병으로 시작된 것이 이제 여러 장기 계통으로 촉수를 뻗었고, 후계자의 몸은 여러 전선에서 동시에 싸우는 데 어려움을 겪고 있다. 수석 의사는 몇몇 실험적 치료가 부작용을 일으킨 뒤 포기되어야 했다고 보고했고, 남은 선택지는 상당히 좁아졌다."
+		paragon.5083.a:99 "희망을 잃지 말라."
+
+		paragon.5084.name:99 "병에 대한 돌파구"
+		paragon.5084.desc:99 "§Y[owner.GetHeirTitle] [owner.GetHeirName]§!을(를) 살리기 위해 밤낮으로 일하는 연구팀들이 결정적인 발견을 해냈다. 제국 전역에서 수집된 생체 시료로부터 합성된 새로운 화합물이 실험실 시험에서 병에 대해 놀라운 효능을 보였다.\n\n후계자에 대한 초기 시험은 유망한 결과를 가져왔고, 병이 시작된 이래 처음으로 주요 증상이 측정 가능할 정도로 후퇴했다.\n\n이 소식은 제국을 흥분시켰다. 의사들은 영웅으로 칭송받고, 신중한 낙관의 물결이 국민 사이에 퍼졌다.\n\n수개월 만에 처음으로, 완전한 치료가 손에 닿을 수 있다는 진정한 희망이 생겼다."
+		paragon.5084.a:99 "치료법이 손에 닿는다!"
+
+		paragon.5085.name:99 "치유의 진전"
+		paragon.5085.desc:99 "영원처럼 느껴지는 시간 만에 처음으로 §Y[owner.GetHeirTitle] [owner.GetHeirName]§!의 의사들이 고무적인 소식을 전해왔다. 후계자의 혈색이 돌아왔고, 식욕이 좋아졌으며, 어느 정도 기력을 되찾았다. 몇 주 전이라면 상상도 할 수 없던 일이다.\n의료진은 완전한 회복까지의 길이 여전히 길고 불확실하다고 주의를 주지만, 호전은 부정할 수 없다.\n\n시민들은 조용한 축하를 위해 거리로 나섰고, 응원의 메시지가 제국의 모든 곳에서 끊임없이 쏟아지고 있다."
+		paragon.5085.a:99 "멋진 소식이다!"
+
+		# Heir working events
+		paragon.5086.name:99 "공개 연설"
+		paragon.5086.desc:99 "§Y[owner.GetHeirTitle] [owner.GetHeirName]§!이(가) 수도 시민들 앞에서 중대한 공개 연설을 하기로 예정되어 있다. 병으로 인한 쇠약이 눈에 보임에도 불구하고, 후계자는 직접 연단에 오르겠다는 의지를 분명히 밝혔다. 의사들은 그러한 출연에 따르는 신체적 부담이 그의 상태를 크게 악화시킬 수 있다고 경고했지만, 후계자는 미래의 지도자에게서 강함을 보여줘야 한다고 주장하고 있다.\n평의회는 이 사안을 우리에게 직접 가져왔다. 어떻게 해야 할까?"
+		paragon.5086.a:99 "예정대로 연설을 진행시킨다."
+		paragon.5086.b:99 "연설을 사전 녹화한다."
+		paragon.5086.c:99 "연설을 취소한다."
+
+		paragon.5087.name:99 "평의회 업무"
+		paragon.5087.desc:99 "날마다 §Y[owner.GetHeirTitle] [owner.GetHeirName]§!은(는) 마치 아무 일도 없다는 듯 모든 평의회 회의에 참석하고, 입법안을 검토하며, 국정 사안에 견해를 밝히는 등 자신을 가차 없이 몰아붙이고 있다. 평의원들은 그의 눈 밑의 그림자, 창백하고 야윈 모습, 문장 중간에 숨을 고르기 위해 멈추는 순간들을 알아챘다.\n여러 보좌관이 사적으로 우려를 표하며, 이 가혹한 일정이 후계자의 쇠퇴를 가속하고 있다고 경고했다. 그러나 후계자는 물러서기를 거부하고, 제국에 대한 자신의 의무가 자신의 안녕보다 앞선다고 주장한다. 평의회는 이 사안을 정식으로 우리에게 알렸다. 어떻게 해야 할까?"
+		paragon.5087.a:99 "임무 일정을 그대로 유지한다."
+		paragon.5087.b:99 "후계자의 업무량을 줄인다."
+		paragon.5087.c:99 "후계자를 평의회 업무에서 면제한다."
+
+		paragon.5088.name:99 "식민지 방문"
+		paragon.5088.desc:99 "[reformist_colony.GetName]에 대한 외교 방문은 오랫동안 §Y[owner.GetHeirTitle] [owner.GetHeirName]§!의 일정에 올라 있었다. 그 식민지는 개혁주의 정서의 온상이 되었고, 후계자의 직접 방문은 긴장을 가라앉히고 지역 지도자들이 중앙 정부와 협력하도록 설득하는 것을 의도했다.\n그러나 이동 자체가 고된 일이고, 협상의 압박은 막대할 것이며, 후계자의 의료진은 현재 상태로 이동하는 것은 심각한 위험을 수반한다고 경고했다. 한편 취소는 개혁주의자들을 더욱 대담하게 만들 수 있다. 어떻게 해야 할까?"
+		paragon.5088.a:99 "예정대로 방문을 진행한다."
+		paragon.5088.b:99 "방문을 연기한다."
+		paragon.5088.c:99 "방문을 취소한다."
+
+		paragon.5089.name:99 "함대 사열"
+		paragon.5089.desc:99 "§Y[owner.GetHeirTitle] [owner.GetHeirName]§!이(가) 제국 함대의 정식 사열을 실시할 예정이다. 이 방문은 수개월 전부터 준비된 것으로, 우리 해군에 대한 지도력과 연대를 보여주는 자리이며, 후계자가 기함을 둘러보고 장교들에게 연설하며 전투 준비 보고서를 직접 검토하기로 되어 있었다.\n해군 본부는 후계자의 도착에 대비해왔지만, 의료진은 심각한 이의를 제기했다. 군함을 누비는 신체적 부담과 의식의 피로가 합쳐져 그의 허약한 건강을 한계 너머로 밀어낼 수 있다. 어떻게 해야 할까?"
+		paragon.5089.a:99 "예정대로 사열을 진행한다."
+		paragon.5089.b:99 "사열을 연기한다."
+		paragon.5089.c:99 "사열을 취소한다."
+
+		# Luminary Speech events
+		# Event which triggers once Luminary maxes trait out
+		paragon.5040.name:99 "전설의 루미너리"
+		paragon.5040.desc:99 "$paragon.beginning.speech$\n\n다음 메시지에서 [Root.Owner.Ruler.GetName]은(는) 시련, 성장, 계시로 빚어진 여정을 돌아보며, 얻은 지혜와 역경 속에서 단련된 강인함에 대해 길게 이야기한다. 자기 자신과 자신의 백성, 그리고 자신이 사는 광대한 우주에 대해 배운 교훈들을 풀어내며, 이 통찰을 새로워진 사명감으로 엮어낸다. 연설은 의지의 선언, 즉 영원토록 제국을 빛나고 번영하는 미래로 인도하겠다는 약속으로 절정에 이른다.\n\n$paragon.ending.speech$"
+		paragon.5040.a:99 "루미너리가 우리를 인도하리라!"
+		paragon.leader.growth.positive.max:99 "§Y[owner.Ruler.GetTitle] [owner.Ruler.GetRegnalName]§!의 §Y루미너리§! 특성이 §G최고치에 도달했다§!.\n§Y루미너리 특성(및 루미너리 승화 특성)은 추가 효과를 얻고 결코 감소하지 않는다.§!"
+
+	# LumEx - Post-Fall Ascension Upgrade
+		paragon.6041.name:99 "장치를 초월하다"
+		paragon.6041.desc:99 "$paragon.beginning.speech$\n\n수년 동안 생명 유지 장치는 나를 살려두었다. 내 의식을 이 필멸의 육신에 묶어둔 공학의 경이였다. 그러나 우리 백성은 훨씬 더 위대한 것을 이루어냈다. 우리의 승천을 통해 새로운 길이 열렸다. 이 기계의 한계로부터 나를 해방시키고, 내가 세운 제국에 어울리는 모습을 부여할 수 있는 길이다.\n\n우리 앞에 놓인 질문은 단순하다. 나는 장치에 묶인 채로 있어야 할 것인가, 아니면 우리 백성이 열어준 미래를 받아들여야 할 것인가?\n\n$paragon.ending.speech$"
+		paragon.6041.a:99 "장치를 유지한다."
+		paragon.6041.a.tooltip:99 "내 옥좌로 충분하다. §R경고: 이 선택은 다시 반복되지 않는다§!"
+		paragon.6041.b:99 "$paragon.6000.b$"
+		paragon.6041.b.tooltip:99 "$paragon.6000.b.tooltip$"
+		paragon.6041.c:99 "$paragon.6000.c$"
+		paragon.6041.c.tooltip:99 "$paragon.6000.c.tooltip$"
+		paragon.6041.d:99 "$paragon.6000.d$"
+		paragon.6041.d.tooltip:99 "$paragon.6000.d.tooltip$"
+		paragon.6041.e:99 "$paragon.6000.e$"
+		paragon.6041.e.tooltip:99 "$paragon.6000.e.tooltip$"
+
+	# LumEx - Convince Reformists Decision
+		le_decision_convince_reformists:99 "개혁주의자 설득"
+		le_decision_convince_reformists_desc:99 "루미너리는 닫힌 문 뒤에서 개혁주의 지도자들과 회담하며, 수십 년에 걸친 신뢰와 함께한 희생에 호소한다. 살아 있는 전설의 조용한 무게 앞에서 자신의 신념을 지킬 수 있는 자는 거의 없다."
+		le_decision_convince_reformists_tt:99 "이 행성의 §Y평등주의§! 팝 하나가 §Y권위주의§! 윤리로 전환된다.\n전환 후 이 행성에 §G평등주의 팝이 남지 않으면§!, §Y민주적 경향§! 모디파이어가 §G제거된다§!."
+

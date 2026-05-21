@@ -80,7 +80,8 @@
 		paragon.5407.a:0 "We carry their torch forward!"
 
 		paragon.5409.name:0 "The Crisis Averted"
-		paragon.5409.desc:0 "$paragon.beginning.speech$\n\nThe galaxy teetered on the brink of annihilation, and yet we endured. The crisis that threatened to consume all of civilization has been defeated. Under my unyielding resolve, our empire stood as a bulwark against the darkness. This victory  
+		paragon.5409.desc:0 "$paragon.beginning.speech$\n\nThe galaxy teetered on the brink of annihilation, and yet we endured. The crisis that threatened to consume all of civilization has been defeated. Under my unyielding resolve, our empire stood as a bulwark against the darkness. This victory belongs not to us alone, but to every world that still draws breath beneath the stars. Where countless others fell, we held the line, and in doing so, secured the future of all sentient life.\n\n$paragon.ending.speech$"
+		paragon.5409.a:0 "The galaxy stands because we did!"
 
 	# Forgotten Events
 		paragon.forgotten.a.2:0 "Release some \"dissenters\""

@@ -1,0 +1,202 @@
+﻿l_polish:
+	# LumEx - Choose Luminary Ethic Trait
+		paragon.5001.name:99 "Zasady przewodnie"
+		paragon.5001.desc:99 "Gdy §Y[Owner.Ruler.GetTitle] [Owner.Ruler.GetRegnalName]§! przejmuje stery władzy, wyłania się decydujące pytanie: jaka przewodnia etyka ukształtuje [Owner.Ruler.GetHisHer] legendarne rządy?\n\nRada czeka na deklarację Luminarza, świadoma, że ten wybór będzie pobrzmiewał w całym imperium przez pokolenia."
+		# Use Vanilla text when able, to keep loc for other languages
+		paragon.5001.militarist:99 "$paragon.5021.a$"
+		paragon.5001.pacifist:99 "$paragon.5021.e$"
+		paragon.5001.authoritarian:99 "$paragon.5021.c$"
+		paragon.5001.spiritualist:99 "$paragon.5021.b$"
+		paragon.5001.materialist:99 "$paragon.5021.f$"
+		paragon.5001.xenophobe:99 "$paragon.5021.g$"
+		paragon.5001.xenophile:99 "$paragon.5021.d$"
+
+	# LumEx - Choose Heir Ethic
+		paragon.5002.name:99 "Kształtowanie następcy"
+		paragon.5002.desc:99 "Wyznaczono nowego następcę, który ma kontynuować dziedzictwo §Y[Owner.Ruler.GetTitle] [Owner.Ruler.GetRegnalName]§!. Zanim §Y[Owner.GetHeirName]§! rozpocznie szkolenie, należy podjąć kluczową decyzję: jaka przewodnia etyka ukształtuje jego światopogląd i przyszłe przywództwo?\n\nLuminarz musi wybierać mądrze, gdyż wybór ten określi charakter następcy na długie lata."
+		paragon.5002.militarist:99 "$paragon.5001.militarist$"
+		paragon.5002.pacifist:99 "$paragon.5001.pacifist$"
+		paragon.5002.authoritarian:99 "$paragon.5001.authoritarian$"
+		paragon.5002.spiritualist:99 "$paragon.5001.spiritualist$"
+		paragon.5002.materialist:99 "$paragon.5001.materialist$"
+		paragon.5002.xenophobe:99 "$paragon.5001.xenophobe$"
+		paragon.5002.xenophile:99 "$paragon.5001.xenophile$"
+
+	# LumEx - Choose Heir Leader Class
+		paragon.5003.name:99 "Ścieżka następcy"
+		paragon.5003.desc:99 "Skoro zasady przewodnie §Y[Owner.GetHeirName]§! są już ustalone, nadszedł czas, by określić ścieżkę szkolenia. Czy zostanie wykuty na dowódcę wojskowego, ukształtowany na błyskotliwego naukowca, czy przygotowany jako sprawny urzędnik?\n\nWybór Luminarza zadecyduje o specjalizacji i roli następcy w imperium."
+		paragon.5003.commander:99 "Szkolić jako dowódcę"
+		paragon.5003.scientist:99 "Szkolić jako naukowca"
+		paragon.5003.official:99 "Szkolić jako urzędnika"
+
+	# 40 Year Plan Insight events
+		paragon.5324.name:99 "Plan 40-letni"
+		paragon.5324.desc:99 "$paragon.beginning.speech$\n\nFundamenty zostały położone. Plan 40-letni, owa wielka wizja, którą przedstawiłem u zarania mych rządów, osiągnął swój szczyt. Nasz lud trudził się niestrudzenie, nasi naukowcy przesuwali granice wiedzy, a nasze imperium stoi u progu wielkości.\n\nLecz nie jest to jedynie koniec, to początek. Infrastruktura, którą zbudowaliśmy, wiedza, którą pielęgnowaliśmy, rozpęd, który zgromadziliśmy, wszystko to pozwala nam teraz osiągnąć coś naprawdę niezwykłego. Rozważyłem możliwości, jakie stoją przed nami, i nadszedł czas wybrać, która droga poprowadzi nasze imperium ku kolejnej erze chwały.\n\n$paragon.ending.speech$"
+
+		paragon.5324.expand_armada:99 "Rozbudować Armadę"
+		paragon.5324.expand_armada.tt:99 "Otrzymujesz §Y5000§! $i_alloys$ \nWszystkie §Ybazy gwiezdne§! ulepszone o jeden poziom\nOtrzymujesz postęp badań ku następnej technologii §Ybazy gwiezdnej§!\nOtrzymujesz postęp badań ku następnej technologii §Ykadłubów okrętów§!"
+		paragon.5324.harness_star:99 "Okiełznać Gwiazdę"
+		paragon.5324.harness_star.tt:99 "Stołeczna gwiazda otrzymuje duże złoże $i_energy$\nStołeczna gwiazda otrzymuje jedno z: złoże $i_volatile_motes$, $i_rare_crystals$, $i_exotic_gases$ lub $i_alloys$\nOtrzymujesz postęp badań ku odpowiedniej §YTechnologii Wydobycia§!"
+		paragon.5324.strategic_resources:99 "Poszukiwanie zasobów strategicznych"
+		paragon.5324.strategic_resources.tt:99 "Otrzymujesz §Y250§! $i_volatile_motes$\nOtrzymujesz §Y250§! $i_rare_crystals$\nOtrzymujesz §Y250§! $i_exotic_gases$\nOtrzymujesz złoże $i_volatile_motes$\nOtrzymujesz złoże $i_rare_crystals$\nOtrzymujesz złoże $i_exotic_gases$\nOtrzymujesz postęp badań ku wszystkim trzem §YTechnologiom Wydobycia§!"
+		paragon.5324.living_metal:99 "Odkryć Żywy Metal"
+		paragon.5324.living_metal.tt:99 "Otrzymujesz złoże $i_living_metal$\nOtrzymujesz postęp badań ku technologii wydobycia $i_living_metal$"
+		paragon.5324.dark_matter:99 "Znaleźć Ciemną Materię"
+		paragon.5324.dark_matter.tt:99 "Otrzymujesz złoże $i_dark_matter$\nOtrzymujesz postęp badań ku technologii wydobycia $i_dark_matter$"
+		paragon.5324.zro:99 "Destylować Zro"
+		paragon.5324.zro.tt:99 "Otrzymujesz złoże $i_zro$\nOtrzymujesz postęp badań ku technologii wydobycia $i_zro$"
+
+	# 40 Year Plan - Expand Armada event
+		paragon.5326.name:99 "Armada się rozrasta"
+		paragon.5326.desc:99 "$paragon.beginning.speech$\n\nNadszedł czas, by wykuć armadę godną naszego przeznaczenia. Wydałem szeroki dekret: każda baza gwiezdna na naszym terytorium zostanie natychmiast ulepszona, ich obrona wzmocniona, a możliwości rozszerzone poza obecne granice. Nasi szkutnicy otrzymali nieograniczone środki na opracowanie kolejnej generacji okrętów wojennych, a nasi architekci wojskowi już kreślą plany fortyfikacji, które uczynią nasze granice nie do zdobycia.\n\nNiech galaktyka to dostrzeże. Tam, gdzie niegdyś mieliśmy posterunki, teraz wznoszą się twierdze. Tam, gdzie wystawialiśmy korwety, wkrótce wyślemy pancerniki. Nasza siła będzie niepodważalna.\n\n$paragon.ending.speech$"
+
+	# 40 Year Plan - Zro event
+		paragon.5327.name:99 "Destylacja Zro"
+		paragon.5327.desc:99 "$paragon.beginning.speech$\n\nNasi naukowcy wykryli słabe ślady Zro, owej najbardziej tajemniczej z substancji, dryfującej w pustce w obrębie naszych granic. To nie zwyczajny materiał, kpi sobie z konwencjonalnej fizyki, rezonuje z energią psioniczną i posiada właściwości, których nawet nasze największe umysły z trudem pojmują. Zmobilizowałem nasze statki badawcze, by wskazały jego źródło i niezwłocznie ustanowiły wydobycie.\n\nCzy Zro odsłoni tajemnice umysłu, zasili technologie wykraczające poza nasze obecne pojęcie, czy otworzy drzwi do rzeczywistości, których jeszcze nie potrafimy sobie wyobrazić, to my je odkryjemy. Wszechświat zazdrośnie strzeże swych tajemnic, lecz wydobędziemy je z niego.\n\n$paragon.ending.speech$"
+
+	# 40 Year Plan - Harness the Star event
+		paragon.5328.name:99 "Okiełznanie Gwiazdy"
+		paragon.5328.desc:99 "$paragon.beginning.speech$\n\nPrzez eony nasza rodzima gwiazda płonęła w pustce, piec o nieograniczonym potencjale, którego dopiero zaczynamy używać. Nakazałem naszym najlepszym inżynierom zbudować sieć zaawansowanych kolektorów energii na bliskiej orbicie, czerpiąc moc na skalę, jakiej nasza cywilizacja jeszcze nie osiągnęła.\n\nLecz to nie wszystko. W trakcie badań nad optymalnymi punktami zbioru nasi naukowcy dokonali niezwykłego odkrycia: ukryte w koronie gwiazdy leży skoncentrowane złoże materiałów strategicznych, wykute w procesach gwiezdnych i gotowe do wydobycia. To, co było tylko naszym słońcem, stanie się bijącym sercem naszej potęgi przemysłowej.\n\n$paragon.ending.speech$"
+	
+	# Milestone Events
+		paragon.5031.name:99 "Pomnik Postępu"
+		paragon.5031.desc:99 "$paragon.beginning.speech$\n\nDzisiejszy dzień stanowi przełomową chwilę w historii naszego wielkiego imperium. Ukończenie tej megastruktury jest dowodem pomysłowości i determinacji naszego ludu. Pod moim wizjonerskim przewodnictwem osiągnęliśmy to, co wielu uważało za niemożliwe, naginając samą tkaninę kosmosu do naszej woli.\n\n$paragon.ending.speech$"
+		paragon.5031.a:99 "Triumf inżynierii!"
+
+		paragon.5401.name:99 "Bestia powalona"
+		paragon.5401.desc:99 "$paragon.beginning.speech$\n\nWielka i straszliwa istota, kolos pustki, padła przed potęgą naszych flot. Tam, gdzie inni drżeli, my staliśmy twardo, a pod moim kierownictwem nasze siły powaliły lewiatana. Niech galaktyka wie, że żadna bestia, jakkolwiek pradawna i straszliwa, nie jest poza zasięgiem naszego imperium.\n\n$paragon.ending.speech$"
+		paragon.5401.a:99 "Nikt nam się nie oprze!"
+
+		paragon.5403.name:99 "Świat ojczysty zdobyty"
+		paragon.5403.desc:99 "$paragon.beginning.speech$\n\nŚwiat narodzin rywalizującej cywilizacji niesie teraz nasz sztandar. To nie tylko zdobycie terytorium, to wyrwanie najświętszej ziemi pewnego ludu. Pod moim zdecydowanym przywództwem nasze armie zabezpieczyły samą kolebkę innego gatunku, na zawsze zmieniając równowagę sił w galaktyce.\n\n$paragon.ending.speech$"
+		paragon.5403.a:99 "Ich dziedzictwo jest teraz nasze!"
+
+		paragon.5405.name:99 "Filary Kultury"
+		paragon.5405.desc:99 "$paragon.beginning.speech$\n\nNasze tradycje prowadziły nas przez pokolenia, a teraz są w pełni urzeczywistnione. Nasze społeczeństwo osiągnęło rzadko spotykany pośród gwiazd zasięg dokonań kulturowych. Pod moim patronatem nasz lud zbadał wszystkie dostępne mu drogi myśli, filozofii i praktyki. Stoimy jako w pełni dopełniona cywilizacja.\n\n$paragon.ending.speech$"
+		paragon.5405.a:99 "Nasza kultura nie ma sobie równych!"
+
+		paragon.5407.name:99 "Echa Pradawnych"
+		paragon.5407.desc:99 "$paragon.beginning.speech$\n\nOdkryliśmy ostatnie pozostałości cywilizacji, która istniała przed nami, prekursora, którego osiągnięcia kiedyś kształtowały samą galaktykę. Ich tajemnice są teraz nasze do badania i zachowania. Pod moim przewodnictwem zakończyliśmy największe przedsięwzięcie archeologiczne w historii naszego ludu, łącząc naszą przyszłość z utraconą i pradawną przeszłością.\n\n$paragon.ending.speech$"
+		paragon.5407.a:99 "Niesiemy ich pochodnię dalej!"
+
+		paragon.5409.name:99 "Kryzys zażegnany"
+		paragon.5409.desc:99 "$paragon.beginning.speech$\n\nGalaktyka chwiała się na krawędzi unicestwienia, a jednak przetrwaliśmy. Kryzys, który groził pochłonięciem całej cywilizacji, został pokonany. Pod moją niezłomną wolą nasze imperium stanęło jako wał obronny przeciw mrokowi. To zwycięstwo nie należy tylko do nas, lecz do każdego świata, który wciąż oddycha pod gwiazdami. Tam, gdzie padli niezliczeni inni, my utrzymaliśmy linię, a tym samym zapewniliśmy przyszłość wszelkiego świadomego życia.\n\n$paragon.ending.speech$"
+		paragon.5409.a:99 "Galaktyka stoi, bo my staliśmy!"
+
+	# Forgotten Events
+		paragon.forgotten.a.2:99 "Uwolnić kilku „dysydentów”"
+		paragon.forgotten.a.3:99 "Stłumić media."
+
+		paragon.forgotten.b.2:99 "Ułagodzić łapówkami."
+		paragon.forgotten.b.3:99 "Zignorować oszustwo."
+
+		paragon.forgotten.c.2:99 "Sfabrykować kontrdowody."
+		paragon.forgotten.c.3:99 "Publicznie przeprosić."
+
+	# Heir Illness Situation
+		paragon_origin_heir_illness:99 "Umierający następca"
+		paragon_origin_heir_illness_type:99 "$paragon_origin_heir_illness$"
+		paragon_origin_heir_illness_desc:99 "§Y[Owner.GetHeirTitle] [Owner.GetHeirName]§! cierpi na śmiertelną chorobę! Musimy szybko znaleźć lekarstwo, lecz stan pogarsza się z dnia na dzień, lekarze i naukowcy w całym imperium pracują niestrudzenie nad znalezieniem ostatecznego ratunku."
+		paragon_origin_heir_illness_monthly_change_tooltip:99 "Choroba następcy nadal się pogarsza, jedynie najlepsza opieka medyczna i badania biologiczne dają nadzieję na wyleczenie jej w porę."
+		situation_paragon_origin_heir_illness_palliative:99 "Opieka paliatywna"
+		approach_situation_paragon_origin_heir_illness_palliative_tt:99 "Dołożymy starań, by [Owner.GetHeirName] mógł spędzić ostatnie dni w spokoju, lecz musimy przyjąć, że nie ma nadziei na wyleczenie."
+		situation_paragon_origin_heir_illness_medical:99 "Leczenie medyczne"
+		approach_situation_paragon_origin_heir_illness_medical_tt:99 "Nie szczędzić środków na leczenie choroby [Owner.GetHeirName]. Dzięki niestrudzonej pracy lekarzy w całym imperium liczymy na znalezienie lekarstwa."
+		situation_paragon_origin_heir_illness_radical:99 "Radykalna interwencja"
+		approach_situation_paragon_origin_heir_illness_radical_tt:99 "Każdy lekarz i biolog w imperium zostanie zmobilizowany, by ocalić [Owner.GetHeirName]. Wszystkie inne priorytety zostaną odłożone, by uratować następcę Luminarza!"
+
+		situation_heir_illness_dying:99 "Stan [Owner.GetHeirName] pogarsza się i wydaje się mało prawdopodobne, by przetrwał dłużej."
+		situation_heir_illness_steady:99 "Stan [Owner.GetHeirName] ustabilizował się, ale ostateczne wyleczenie wciąż pozostaje poza zasięgiem."
+		situation_heir_illness_recovering:99 "Stan [Owner.GetHeirName] poprawia się i jest nadzieja na pełny powrót do zdrowia."
+
+		paragon_origin_heir_illness_getting_worse:99 "Nasilenie choroby"
+		paragon_origin_heir_illness_medical_approach:99 "Leczenie medyczne"
+		paragon_origin_heir_illness_radical_approach:99 "Radykalna interwencja"
+
+		paragon_origin_heir_illness_doctor_number:99 "Lekarze w imperium"
+		paragon_origin_heir_illness_biologist_number:99 "Biolodzy w imperium"
+
+		paragon_origin_heir_illness_complete:99 "§G[Owner.GetHeirName] dokonuje cudownego powrotu do zdrowia§!."
+		paragon_origin_heir_illness_fail:99 "§R[Owner.GetHeirName] umiera z powodu swojej choroby§!."
+
+		paragon.heir.sickness.positive:99 "§YChoroba§! §Y[owner.GetHeirTitle] [owner.GetHeirName]§! §Gulega poprawie§!."
+		paragon.heir.sickness.negative:99 "§YChoroba§! §Y[owner.GetHeirTitle] [owner.GetHeirName]§! §Rsię pogarsza§!."
+
+		# Events
+		# Heir illness outcome events
+		paragon.5080.name:99 "Cudowny powrót do zdrowia"
+		paragon.5080.desc:99 "§H§Y[Owner.GetHeirTitle] [Owner.GetHeirName]§! pojawił się na każdym ekranie w imperium. Nasi obywatele czekają na rozpoczęcie przemówienia.§!\n\nObywatele naszego wielkiego imperium, staję dziś przed wami żywy, cały i przepełniony wdzięcznością, której słowa ledwie potrafią wyrazić. Niedawno leżałem u bram śmierci, moje ciało odmawiało posłuszeństwa, moja przyszłość była niepewna. Jestem tu dzięki niezwykłym ludziom, którzy nie pozwolili mi umrzeć.\n\nLekarze, którzy pracowali bezsenne noce, biolodzy, którzy przesuwali same granice nauki, oni są prawdziwymi bohaterami tego imperium.\n\nWszystko im zawdzięczam, podobnie jak to imperium. Niech ich imiona zostaną zapamiętane, gdyż to ich geniusz i poświęcenie utrzymują imperium w działaniu!\n\n$paragon.ending.speech$"
+		paragon.5080.a:99 "Niech żyje [Owner.GetHeirTitle]!"
+
+		paragon.5081.name:99 "Tragiczna strata"
+		paragon.5081.desc:99 "$paragon.beginning.speech$\n\nDzisiaj zwracam się do was nie tylko jako wasz Luminarz, ale jako rodzic złamany żałobą. Moje dziecko, §Y[Owner.GetHeirName]§!, przyszłość tego wielkiego imperium, zostało nam odebrane. Niech nie będzie żadnych wątpliwości, to nie był wyrok losu. To Reformiści, ci nikczemni podżegacze, którzy siali podziały i podkopywali nasze wysiłki na każdym kroku, są winni tej tragedii.\n\nIch obstrukcja opóźniła kluczowe badania, ich sabotaż wyciekł zasoby przeznaczone na lekarstwo, a teraz moje potomstwo leży zimne z powodu ich zdrady. Przysięgam przed każdym obywatelem tego imperium: rozliczenie ich nadejdzie. Wytrzymamy tę stratę, ale nigdy nie zapomnimy, kto jest za nią odpowiedzialny.\n\n$paragon.ending.speech$"
+		paragon.5081.a:99 "Zdrajcy za to zapłacą!"
+
+		# Heir illness progression events
+		paragon.5082.name:99 "Poważne pogorszenie"
+		paragon.5082.desc:99 "Zespoły medyczne opiekujące się §Y[owner.GetHeirTitle] [owner.GetHeirName]§! przekazały ponure wieści. W ciągu nocy parametry życiowe następcy gwałtownie się pogorszyły, a pojawiła się nowa fala objawów, której lekarze nie przewidzieli.\n\nStarannie opracowany schemat leczenia, który dotąd trzymał chorobę w ryzach, wydaje się zawodzić, a lekarze gorączkowo modyfikują podejście, zanim okno możliwości całkowicie się zamknie.\nW całym imperium wieść już zaczęła się rozchodzić. Przed budynkami rządowymi zawiązują się czuwania, a nastrój w stolicy stał się ponury.\n\nUrzędnicy po cichu omawiają scenariusze, których nikt nie ośmiela się wypowiedzieć na głos."
+		paragon.5082.a:99 "Musimy wytrwać."
+
+		paragon.5083.name:99 "Powikłania"
+		paragon.5083.desc:99 "Kaskada wtórnych powikłań spadła na §Y[owner.GetHeirTitle] [owner.GetHeirName]§!, pogłębiając i tak już ciężkie rokowania. To, co zaczęło się jako jedna dolegliwość, rozprzestrzeniło teraz swoje macki na wiele układów organizmu, a ciało następcy walczy na zbyt wielu frontach naraz. Naczelny lekarz zgłosił, że kilka eksperymentalnych metod leczenia trzeba było porzucić po wywołaniu reakcji niepożądanych, znacznie zawężając pozostałe opcje."
+		paragon.5083.a:99 "Zachowajmy nadzieję."
+
+		paragon.5084.name:99 "Przełom w chorobie"
+		paragon.5084.desc:99 "Zespoły badawcze pracujące całą dobę nad ratowaniem §Y[owner.GetHeirTitle] [owner.GetHeirName]§! dokonały kluczowego odkrycia. Nowy związek, zsyntetyzowany z próbek biologicznych zebranych w całym imperium, wykazał niezwykłą skuteczność przeciw chorobie w testach laboratoryjnych.\n\nWczesne badania na następcy dały obiecujące wyniki, a kluczowe objawy wymiernie cofnęły się po raz pierwszy od początku choroby.\n\nWieść zelektryzowała imperium. Lekarze są okrzykiwani bohaterami, a fala ostrożnego optymizmu ogarnęła ludność.\n\nPo raz pierwszy od miesięcy istnieje prawdziwa nadzieja, że pełne wyleczenie jest w zasięgu."
+		paragon.5084.a:99 "Lekarstwo jest w zasięgu!"
+
+		paragon.5085.name:99 "Postęp w zdrowieniu"
+		paragon.5085.desc:99 "Po raz pierwszy od czasu, który wydaje się wiecznością, lekarze §Y[owner.GetHeirTitle] [owner.GetHeirName]§! przekazali budujące wieści. Rumieńce następcy wróciły, apetyt poprawił się, a on sam odzyskał nieco sił, co kilka tygodni temu byłoby nie do pomyślenia.\nChoć zespół medyczny przestrzega, że droga do pełnego powrotu do zdrowia jest jeszcze długa i niepewna, poprawa jest niezaprzeczalna.\n\nObywatele wyszli na ulice w cichym świętowaniu, a wiadomości z wyrazami wsparcia nadal napływają z każdego zakątka imperium."
+		paragon.5085.a:99 "Wspaniałe wieści!"
+
+		# Heir working events
+		paragon.5086.name:99 "Publiczne przemówienie"
+		paragon.5086.desc:99 "§Y[owner.GetHeirTitle] [owner.GetHeirName]§! ma wygłosić ważne publiczne przemówienie do mieszkańców stolicy. Mimo widocznych skutków choroby, następca jasno dał do zrozumienia, że zamierza osobiście wystąpić na scenie. Jego lekarze ostrzegli, że obciążenie fizyczne takiego wystąpienia może znacznie pogorszyć jego stan, ale następca nalega, że lud musi zobaczyć siłę swojego przyszłego przywódcy.\nRada zwróciła się do nas wprost w tej sprawie. Co zrobić?"
+		paragon.5086.a:99 "Pozwolić, by przemówienie odbyło się zgodnie z planem."
+		paragon.5086.b:99 "Nagrać przemówienie wcześniej."
+		paragon.5086.c:99 "Odwołać przemówienie."
+
+		paragon.5087.name:99 "Praca w radzie"
+		paragon.5087.desc:99 "Dzień po dniu §Y[owner.GetHeirTitle] [owner.GetHeirName]§! nadal niestrudzenie się eksploatuje, uczęszczając na każde posiedzenie rady, przeglądając ustawy i wypowiadając się w sprawach państwowych, jakby nic się nie działo. Członkowie rady zauważyli ciemne kręgi pod oczami, bladą i wynędzniałą twarz, chwile, gdy zatrzymuje się w połowie zdania, by się zebrać.\nKilku doradców prywatnie wyraziło zaniepokojenie, ostrzegając, że ten katorżniczy harmonogram przyspiesza upadek następcy. Mimo to następca odmawia odsunięcia się, podkreślając, że jego obowiązek wobec imperium wyprzedza własne dobro. Rada formalnie przedstawiła nam tę sprawę. Co zrobić?"
+		paragon.5087.a:99 "Pozostawić harmonogram obowiązków bez zmian."
+		paragon.5087.b:99 "Zmniejszyć obciążenie pracą następcy."
+		paragon.5087.c:99 "Zwolnić następcę z prac rady."
+
+		paragon.5088.name:99 "Wizyta w kolonii"
+		paragon.5088.desc:99 "Wizyta dyplomatyczna w [reformist_colony.GetName] od dawna figuruje w harmonogramie §Y[owner.GetHeirTitle] [owner.GetHeirName]§!. Kolonia stała się gniazdem nastrojów reformistycznych, a osobista obecność następcy miała załagodzić napięcia i przekonać miejscowych przywódców do współpracy z rządem centralnym.\nJednak sama podróż jest wyczerpująca, stres negocjacji byłby ogromny, a lekarze następcy ostrzegli, że podróżowanie w obecnym stanie niesie poważne ryzyko. Z drugiej strony odwołanie wizyty mogłoby ośmielić reformistów. Co zrobić?"
+		paragon.5088.a:99 "Przeprowadzić wizytę zgodnie z planem."
+		paragon.5088.b:99 "Odłożyć wizytę."
+		paragon.5088.c:99 "Odwołać wizytę."
+
+		paragon.5089.name:99 "Inspekcja floty"
+		paragon.5089.desc:99 "§Y[owner.GetHeirTitle] [owner.GetHeirName]§! ma przeprowadzić oficjalną inspekcję cesarskiej floty. Wizytę zaplanowano miesiące temu, jako pokaz przywództwa i solidarności z naszymi siłami marynarki, podczas której następca obejdzie okręt flagowy, przemówi do oficerów i osobiście przejrzy raporty gotowości bojowej.\nAdmiralicja przygotowywała się do przybycia następcy, lecz jego zespół medyczny zgłosił poważne sprzeciwy. Wymogi fizyczne poruszania się po okręcie wojennym, w połączeniu ze zmęczeniem ceremoniami, mogą wypchnąć jego kruche zdrowie poza granice. Co zrobić?"
+		paragon.5089.a:99 "Przeprowadzić inspekcję zgodnie z planem."
+		paragon.5089.b:99 "Odłożyć inspekcję."
+		paragon.5089.c:99 "Odwołać inspekcję."
+
+		# Luminary Speech events
+		# Event which triggers once Luminary maxes trait out
+		paragon.5040.name:99 "Legendarny Luminarz"
+		paragon.5040.desc:99 "$paragon.beginning.speech$\n\nW poniższej wiadomości [Root.Owner.Ruler.GetName] zastanawia się nad podróżą ukształtowaną przez próby, wzrost i objawienia, mówiąc obszernie o nabytej mądrości i sile wykutej w przeciwnościach. Opowiada o lekcjach o sobie, swoim ludzie i rozległym wszechświecie, w którym żyje, splatając te przemyślenia w odnowione poczucie celu. Przemówienie krescenduje w deklaracji intencji, w obietnicy wiecznego prowadzenia imperium ku promiennej i pomyślnej przyszłości.\n\n$paragon.ending.speech$"
+		paragon.5040.a:99 "Luminarz nas poprowadzi!"
+		paragon.leader.growth.positive.max:99 "Cecha §YLuminarza§! §Y[owner.Ruler.GetTitle] [owner.Ruler.GetRegnalName]§! §Gosiągnęła swoje maksimum§!.\n§YCecha Luminarza (oraz cechy wstąpienia Luminarza) zyskują dodatkowe efekty i nigdy się nie zmniejszą.§!"
+
+	# LumEx - Post-Fall Ascension Upgrade
+		paragon.6041.name:99 "Przekroczenie Aparatu"
+		paragon.6041.desc:99 "$paragon.beginning.speech$\n\nPrzez lata Aparat Podtrzymujący trzymał mnie przy życiu, cud inżynierii, który związał moją świadomość z tą śmiertelną powłoką. Lecz nasz lud osiągnął coś znacznie większego. Dzięki naszemu wstąpieniu otworzyła się nowa droga, która mogłaby uwolnić mnie od ograniczeń tej maszyny i obdarzyć mnie formą godną imperium, które zbudowałem.\n\nPytanie, które przed nami stoi, jest proste: czy mam pozostać przykuty do aparatu, czy też przyjąć przyszłość, którą nasz lud otworzył?\n\n$paragon.ending.speech$"
+		paragon.6041.a:99 "Zachować Aparat."
+		paragon.6041.a.tooltip:99 "Mój tron wystarczy. §RUwaga: ten wybór się nie powtórzy§!"
+		paragon.6041.b:99 "$paragon.6000.b$"
+		paragon.6041.b.tooltip:99 "$paragon.6000.b.tooltip$"
+		paragon.6041.c:99 "$paragon.6000.c$"
+		paragon.6041.c.tooltip:99 "$paragon.6000.c.tooltip$"
+		paragon.6041.d:99 "$paragon.6000.d$"
+		paragon.6041.d.tooltip:99 "$paragon.6000.d.tooltip$"
+		paragon.6041.e:99 "$paragon.6000.e$"
+		paragon.6041.e.tooltip:99 "$paragon.6000.e.tooltip$"
+
+	# LumEx - Convince Reformists Decision
+		le_decision_convince_reformists:99 "Przekonać Reformistów"
+		le_decision_convince_reformists_desc:99 "Luminarz spotyka się z przywódcami reformistów za zamkniętymi drzwiami, odwołując się do dziesięcioleci zaufania i wspólnych poświęceń. Niewielu potrafi utrzymać swoje przekonania w obliczu cichej powagi żywej legendy."
+		le_decision_convince_reformists_tt:99 "Jedna §Yegalitarna§! populacja na tej planecie zostanie nawrócona na §Yautorytarną§! etykę.\n§GJeśli po nawróceniu na tej planecie nie pozostanie żadna egalitarna populacja§!, modyfikator §YDemokratyczne tendencje§! zostanie §Gusunięty§!."
+

@@ -1,0 +1,34 @@
+﻿l_braz_por:
+	# Used for overwriting vanilla localisation keys
+	paragon.5059.name:99 "Líder Diligente"
+	paragon.5059.desc:99 "§Y[Owner.Ruler.GetTitle] [Owner.Ruler.GetRegnalName]§! trabalhou intensamente para se tornar um líder melhor. [Owner.Ruler.GetHisHerCap] empenho renovado já foi notado pelo conselho."
+	paragon.5059.a:99 "O exército deve desempenhar um papel central." #MILITARIST
+	paragon.5059.b:99 "A fé nos sustentará." #SPIRITUALIST
+	paragon.5059.c:99 "Lei e ordem são primordiais." #AUTHORITARIAN
+	paragon.5059.d:99 "Nossa nação está aberta a todos." #XENOPHILE
+	paragon.5059.e:99 "A paz nos trará riqueza e prosperidade." #PACIFIST
+	paragon.5059.f:99 "O progresso nos levará à grandeza." #MATERIALIST
+	paragon.5059.g:99 "O Império será um escudo contra a ameaça xeno." #XENOPHOBE
+
+	paragon.5060.name:99 "Ordem Restaurada"
+	#paragon.5060.desc.imprisioned:2 "$paragon.beginning.speech$\n\nSociety is spiralling out of control. Rampant violence, insidious agitation, shameless lies... These things have plagued us for too long. With great pride, I announce an end to these troubled times! Those who sought to undermine us have been arrested, and I promise, they will face the full force of justice. Before long, they will repent for the harm they caused you!\n\n$paragon.ending.speech$"
+	#paragon.5060.desc.negotiated:1 "$paragon.beginning.speech$\n\nIn times of conflict, it can be easy to lose sight of what we fight for, to view our political opponents as outright enemies. We have gone through trying times, but today I am proud to tell you that we have reached a peaceful outcome. Your voices have been heard. You had put your trust in me and I had failed you.\n\nNo more! With the upcoming constitutional reform, I firmly believe that we find ourselves back on the right path, and I am humbled by your trust in my ability to see these changes through. Upon my word, I shall not fail you again!\n\n$paragon.ending.speech$"
+	#paragon.5060.desc.destroyed:1 "$paragon.beginning.speech$\n\nToday marks a great victory, but it has not been bought without sacrifice. Our enemies have been destroyed, yet the sting of their betrayal makes my heart bleed. In their selfishness they sought to destroy us all, but in the end, they were no match for our collective strength. Soon they will be executed for their crimes. We have prevailed!\n\n$paragon.ending.speech$"
+	#paragon.5060.a:1 "We need a stronger leader!"
+	#paragon.5060.a.tt:1 "§LRecent events have shown that only the wise rule of §Y[Ruler.GetTitle] [Ruler.GetRegnalName]§! can bring peace and prosperity to our society. We need to consolidate more power into the hands of our leader.§!"
+	paragon.5060.a:99 "O exército deve desempenhar um papel central." #MILITARIST
+	paragon.5060.b:99 "A fé nos sustentará." #SPIRITUALIST
+	paragon.5060.c:99 "Lei e ordem são primordiais." #AUTHORITARIAN
+	paragon.5060.d:99 "Nossa nação está aberta a todos." #XENOPHILE
+	paragon.5060.e:99 "A paz nos trará riqueza e prosperidade." #PACIFIST
+	paragon.5060.f:99 "O progresso nos levará à grandeza." #MATERIALIST
+	paragon.5060.g:99 "O Império será um escudo contra a ameaça xeno." #XENOPHOBE
+	paragon.5060.h:99 "Precisamos de um governo eficiente!"
+	paragon.5060.h.tt:99 "§LOs eventos recentes mostraram que é necessário um governo forte para superar tais dilemas no futuro. Devemos dar mais poder ao conselho.\n§!$paragon.leader.growth.negative$"
+
+
+	# paragon.5061.name:1 "Tragedy Strikes"
+	paragon.5061.desc:99 "§Y[Owner.GetHeirTitle] [Owner.GetHeirName]§! está morrendo. Ainda não determinamos a natureza da doença, mas relatórios preliminares sugerem que é terminal. §Y[Ruler.GetTitle] [Ruler.GetRegnalName]§! foi duramente atingido pela perda iminente de [Ruler.GetHisHer] descendente. Foi decretado um período de luto nacional e aguardamos os resultados completos da investigação médica sobre a doença do herdeiro.\n\nApesar de gravemente enfermo, §Y[Owner.GetHeirTitle] [Owner.GetHeirName]§! continua admiravelmente a desempenhar suas funções, mas seu estado piora a cada dia. O Luminar ordenou que médicos e cientistas em todo o império se concentrem em encontrar uma cura, mesmo às custas dos nossos cidadãos."
+
+	#paragon.5062.name:1 "Blinding Grief"
+	paragon.5062.desc:99 "O prognóstico para §Y[Owner.GetHeirTitle] [Owner.GetHeirName]§! é sombrio. Apesar de todas as evidências apontarem que a doença é natural, §Y[Ruler.GetTitle] [Ruler.GetRegnalName]§! recusa-se a aceitar isso. [Ruler.GetHeShe] acredita, em vez disso, tratar-se de uma tentativa de assassinato, e ordens foram enviadas por todos os nossos territórios. Os responsáveis por essa covardia precisam ser encontrados. As forças de segurança já realizam operações para extirpar dissidentes.\n\nO nível de violência que acompanhou essas prisões chocou muitos dos nossos cidadãos. Embora simpáticos à situação do herdeiro, eclodiram novamente protestos denunciando os abusos de poder e exigindo uma nova onda de reformas governamentais. Pela primeira vez em nossa história, a maioria da população de um planeta se levantou contra o governo do [Ruler.GetTitle]."

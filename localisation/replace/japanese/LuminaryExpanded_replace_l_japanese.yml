@@ -1,0 +1,34 @@
+﻿l_japanese:
+	# Used for overwriting vanilla localisation keys
+	paragon.5059.name:99 "勤勉な指導者"
+	paragon.5059.desc:99 "§Y[Owner.Ruler.GetTitle] [Owner.Ruler.GetRegnalName]§!はより優れた指導者となるために極めて懸命に努力してきた。[Owner.Ruler.GetHisHerCap]の新たな決意は既に評議会の目に留まっている。"
+	paragon.5059.a:99 "軍が中核的役割を担うべきだ。" #MILITARIST
+	paragon.5059.b:99 "信仰が我らを支える。" #SPIRITUALIST
+	paragon.5059.c:99 "法と秩序が至上である。" #AUTHORITARIAN
+	paragon.5059.d:99 "我らが国は全ての者に開かれている。" #XENOPHILE
+	paragon.5059.e:99 "平和が我らに富と繁栄をもたらす。" #PACIFIST
+	paragon.5059.f:99 "進歩が我らを偉大さへと導く。" #MATERIALIST
+	paragon.5059.g:99 "帝国はゼノの脅威に対する盾となる。" #XENOPHOBE
+
+	paragon.5060.name:99 "秩序の回復"
+	#paragon.5060.desc.imprisioned:2 "$paragon.beginning.speech$\n\nSociety is spiralling out of control. Rampant violence, insidious agitation, shameless lies... These things have plagued us for too long. With great pride, I announce an end to these troubled times! Those who sought to undermine us have been arrested, and I promise, they will face the full force of justice. Before long, they will repent for the harm they caused you!\n\n$paragon.ending.speech$"
+	#paragon.5060.desc.negotiated:1 "$paragon.beginning.speech$\n\nIn times of conflict, it can be easy to lose sight of what we fight for, to view our political opponents as outright enemies. We have gone through trying times, but today I am proud to tell you that we have reached a peaceful outcome. Your voices have been heard. You had put your trust in me and I had failed you.\n\nNo more! With the upcoming constitutional reform, I firmly believe that we find ourselves back on the right path, and I am humbled by your trust in my ability to see these changes through. Upon my word, I shall not fail you again!\n\n$paragon.ending.speech$"
+	#paragon.5060.desc.destroyed:1 "$paragon.beginning.speech$\n\nToday marks a great victory, but it has not been bought without sacrifice. Our enemies have been destroyed, yet the sting of their betrayal makes my heart bleed. In their selfishness they sought to destroy us all, but in the end, they were no match for our collective strength. Soon they will be executed for their crimes. We have prevailed!\n\n$paragon.ending.speech$"
+	#paragon.5060.a:1 "We need a stronger leader!"
+	#paragon.5060.a.tt:1 "§LRecent events have shown that only the wise rule of §Y[Ruler.GetTitle] [Ruler.GetRegnalName]§! can bring peace and prosperity to our society. We need to consolidate more power into the hands of our leader.§!"
+	paragon.5060.a:99 "軍が中核的役割を担うべきだ。" #MILITARIST
+	paragon.5060.b:99 "信仰が我らを支える。" #SPIRITUALIST
+	paragon.5060.c:99 "法と秩序が至上である。" #AUTHORITARIAN
+	paragon.5060.d:99 "我らが国は全ての者に開かれている。" #XENOPHILE
+	paragon.5060.e:99 "平和が我らに富と繁栄をもたらす。" #PACIFIST
+	paragon.5060.f:99 "進歩が我らを偉大さへと導く。" #MATERIALIST
+	paragon.5060.g:99 "帝国はゼノの脅威に対する盾となる。" #XENOPHOBE
+	paragon.5060.h:99 "我らには有能な政府が必要だ!"
+	paragon.5060.h.tt:99 "§L最近の出来事は、こうした難局を将来克服するためには強力な政府の統治が必要であることを示した。我らは評議会により多くの権力を与える必要がある。\n§!$paragon.leader.growth.negative$"
+
+
+	# paragon.5061.name:1 "Tragedy Strikes"
+	paragon.5061.desc:99 "§Y[Owner.GetHeirTitle] [Owner.GetHeirName]§!は危篤状態にある。我らはまだ病の性質を特定していないが、初期報告では末期と見られている。§Y[Ruler.GetTitle] [Ruler.GetRegnalName]§!は[Ruler.GetHisHer]子孫を失う恐れに深い衝撃を受けた。国家規模の喪の期間が定められ、我らは後継者の病に関する医学調査の完全な結果を待っている。\n\n極めて重篤でありながらも、§Y[Owner.GetHeirTitle] [Owner.GetHeirName]§!は称賛に値するほど職務を遂行し続けているが、容態は日に日に悪化している。ルミナリーは、たとえ国民を犠牲にしてでも、帝国中の医師と科学者に治療法の発見に専念するよう命じた。"
+
+	#paragon.5062.name:1 "Blinding Grief"
+	paragon.5062.desc:99 "§Y[Owner.GetHeirTitle] [Owner.GetHeirName]§!の予後は厳しい。あらゆる証拠が病の自然発生を指し示しているにもかかわらず、§Y[Ruler.GetTitle] [Ruler.GetRegnalName]§!はそれを受け入れることを拒んでいる。[Ruler.GetHeShe]はそれを暗殺未遂と見做しており、命令が我らが領土全土に発せられた。この卑劣の責任を負う者を見つけ出さねばならない。治安部隊は既に異論者を一掃するための掃討作戦を実施している。\n\nこれらの逮捕に伴った暴力の度合いは多くの市民に衝撃を与えた。後継者の窮状には同情しつつも、権力の濫用を糾弾し政府改革の新たな波を要求する抗議が再び勃発した。我らが歴史上初めて、ある惑星の住民の大多数が[Ruler.GetTitle]の統治に対して立ち上がったのである。"

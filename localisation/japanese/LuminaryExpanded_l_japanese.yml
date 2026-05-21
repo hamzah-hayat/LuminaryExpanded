@@ -1,0 +1,202 @@
+﻿l_japanese:
+	# LumEx - Choose Luminary Ethic Trait
+		paragon.5001.name:99 "導きの理念"
+		paragon.5001.desc:99 "§Y[Owner.Ruler.GetTitle] [Owner.Ruler.GetRegnalName]§!が権力の手綱を握る今、決定的な問いが浮かび上がる。伝説的な治世を形作る導きの理念は何か。\n\n評議会はルミナリーの宣言を待ち受ける。この選択が幾世代にもわたって帝国全土に響き渡ることを承知しているのだ。"
+		# Use Vanilla text when able, to keep loc for other languages
+		paragon.5001.militarist:99 "$paragon.5021.a$"
+		paragon.5001.pacifist:99 "$paragon.5021.e$"
+		paragon.5001.authoritarian:99 "$paragon.5021.c$"
+		paragon.5001.spiritualist:99 "$paragon.5021.b$"
+		paragon.5001.materialist:99 "$paragon.5021.f$"
+		paragon.5001.xenophobe:99 "$paragon.5021.g$"
+		paragon.5001.xenophile:99 "$paragon.5021.d$"
+
+	# LumEx - Choose Heir Ethic
+		paragon.5002.name:99 "後継者の形成"
+		paragon.5002.desc:99 "§Y[Owner.Ruler.GetTitle] [Owner.Ruler.GetRegnalName]§!の遺産を継ぐ新たな後継者が指名された。§Y[Owner.GetHeirName]§!が訓練を始める前に、極めて重要な決定を下さねばならない。後継者の世界観と将来の指導力を形作る導きの理念は何か。\n\nルミナリーは賢明に選ばねばならない。この選択が長い年月にわたって後継者の人格を定めるからである。"
+		paragon.5002.militarist:99 "$paragon.5001.militarist$"
+		paragon.5002.pacifist:99 "$paragon.5001.pacifist$"
+		paragon.5002.authoritarian:99 "$paragon.5001.authoritarian$"
+		paragon.5002.spiritualist:99 "$paragon.5001.spiritualist$"
+		paragon.5002.materialist:99 "$paragon.5001.materialist$"
+		paragon.5002.xenophobe:99 "$paragon.5001.xenophobe$"
+		paragon.5002.xenophile:99 "$paragon.5001.xenophile$"
+
+	# LumEx - Choose Heir Leader Class
+		paragon.5003.name:99 "後継者の道"
+		paragon.5003.desc:99 "§Y[Owner.GetHeirName]§!の導きの理念が定まった今、訓練の道筋を決定するときが来た。軍司令官として鍛え上げるか、優れた科学者として育てるか、有能な官僚として養成するか。\n\nルミナリーの選択が、帝国における後継者の専門性と役割を決定づける。"
+		paragon.5003.commander:99 "司令官として訓練する"
+		paragon.5003.scientist:99 "科学者として訓練する"
+		paragon.5003.official:99 "官僚として訓練する"
+
+	# 40 Year Plan Insight events
+		paragon.5324.name:99 "四十年計画"
+		paragon.5324.desc:99 "$paragon.beginning.speech$\n\n基盤は築かれた。我が治世の黎明に掲げたあの壮大なる構想、四十年計画はついに最終段階を迎えた。我らが民は休みなく働き、我らが科学者は知識の境界を押し広げ、我らが帝国は栄光の閾に立っている。\n\nだがこれは単なる終わりではなく、始まりである。我らが築いたインフラ、我らが培ったあらゆる専門知、我らが集めた勢い、その全てが今、真に並外れたことを成し遂げる力を我らに与えてくれる。私は目の前の可能性を吟味してきた。我らが帝国を次なる栄光の時代へと導く道を選ぶときが来たのだ。\n\n$paragon.ending.speech$"
+
+		paragon.5324.expand_armada:99 "艦隊を拡大する"
+		paragon.5324.expand_armada.tt:99 "§Y5000§! $i_alloys$を獲得 \n全ての§Y宇宙基地§!を一段階アップグレード\n次の§Y宇宙基地§!技術の研究進捗を獲得\n次の§Y艦体§!技術の研究進捗を獲得"
+		paragon.5324.harness_star:99 "恒星を活用する"
+		paragon.5324.harness_star.tt:99 "首都恒星に大規模な$i_energy$鉱床が出現\n首都恒星に以下のいずれかの鉱床が出現:$i_volatile_motes$、$i_rare_crystals$、$i_exotic_gases$、または$i_alloys$\n対応する§Y採取技術§!の研究進捗を獲得"
+		paragon.5324.strategic_resources:99 "戦略資源を探査する"
+		paragon.5324.strategic_resources.tt:99 "§Y250§! $i_volatile_motes$を獲得\n§Y250§! $i_rare_crystals$を獲得\n§Y250§! $i_exotic_gases$を獲得\n$i_volatile_motes$鉱床を獲得\n$i_rare_crystals$鉱床を獲得\n$i_exotic_gases$鉱床を獲得\n三つ全ての§Y採取技術§!の研究進捗を獲得"
+		paragon.5324.living_metal:99 "生体金属を発見する"
+		paragon.5324.living_metal.tt:99 "$i_living_metal$鉱床を獲得\n$i_living_metal$採取技術の研究進捗を獲得"
+		paragon.5324.dark_matter:99 "ダークマターを見つける"
+		paragon.5324.dark_matter.tt:99 "$i_dark_matter$鉱床を獲得\n$i_dark_matter$採取技術の研究進捗を獲得"
+		paragon.5324.zro:99 "ズロを蒸留する"
+		paragon.5324.zro.tt:99 "$i_zro$鉱床を獲得\n$i_zro$採取技術の研究進捗を獲得"
+
+	# 40 Year Plan - Expand Armada event
+		paragon.5326.name:99 "艦隊の拡大"
+		paragon.5326.desc:99 "$paragon.beginning.speech$\n\n我らが運命にふさわしい艦隊を鍛え上げる時が来た。私は包括的な命令を発した。我が領土の全ての宇宙基地は直ちにアップグレードされ、防衛は強化され、能力は現在の限界を超えて拡張される。我らが造船技師は次世代の戦艦を開発するために無制限の資源を与えられ、我らが軍事建築家は既に国境を難攻不落とする要塞の青写真を描いている。\n\n銀河に告ぐ。かつて前哨基地のあった所には、今や要塞が立ち並ぶ。コルベットを配備していた所には、まもなくドレッドノートを派遣する。我らが力は否定し得ぬものとなろう。\n\n$paragon.ending.speech$"
+
+	# 40 Year Plan - Zro event
+		paragon.5327.name:99 "ズロの蒸留"
+		paragon.5327.desc:99 "$paragon.beginning.speech$\n\n我らが科学者たちは、最も謎めいた物質たるズロのかすかな痕跡を、我らが領土内の虚空に漂うのを検出した。これは尋常な物質ではない。従来の物理法則を覆し、サイオニックエネルギーと共鳴し、我らが最高の頭脳をもってしても理解しがたい性質を有している。私は研究船を動員し、その源を特定すると同時に、直ちに採掘活動を確立させた。\n\nズロが心の秘密を解き放つにせよ、現在の我らの理解を超えた技術の燃料となるにせよ、いまだ想像もつかぬ現実への扉を開くにせよ、それを発見するのは我らである。宇宙はその神秘を頑なに守るが、我らはそれをこじ開けてみせよう。\n\n$paragon.ending.speech$"
+
+	# 40 Year Plan - Harness the Star event
+		paragon.5328.name:99 "恒星の活用"
+		paragon.5328.desc:99 "$paragon.beginning.speech$\n\n幾億年もの間、我らが故郷の恒星は虚空に燃え続け、我らが活用し始めたばかりの無限の可能性を秘めた炉であり続けた。私は最高の技術者たちに命じ、近接軌道に高度なエネルギー収集装置の網を構築し、我らが文明がかつて達成したことのない規模で力を引き出させた。\n\nだがそれだけではない。最適な収集地点を調査する過程で、我らが科学者たちは驚くべき発見をした。恒星のコロナの中に、星の作用によって鍛えられ、今や採取できる戦略物資の濃密な鉱床が隠れていたのだ。かつては単なる我らの太陽であったものが、我らが工業力の鼓動する心臓となるのである。\n\n$paragon.ending.speech$"
+	
+	# Milestone Events
+		paragon.5031.name:99 "進歩の記念碑"
+		paragon.5031.desc:99 "$paragon.beginning.speech$\n\n本日は、我らが偉大なる帝国の歴史における画期的な瞬間である。この巨大構造物の完成は、我らが民の創意と決意の証である。私の先見に満ちた指導の下、我らは多くが不可能と信じていたことを成し遂げ、宇宙そのものの構造を我らの意志に屈服させたのだ。\n\n$paragon.ending.speech$"
+		paragon.5031.a:99 "技術の勝利だ!"
+
+		paragon.5401.name:99 "獣は討たれた"
+		paragon.5401.desc:99 "$paragon.beginning.speech$\n\n虚空の巨像とも称すべき、巨大かつ恐るべき生物が、我らが艦隊の威力の前に倒れた。他の者が震えていた所で我らは堅く立ち、私の指導の下、我らが軍はリヴァイアサンを討ち倒したのだ。銀河は知るがよい。いかに古く、いかに恐ろしい獣であろうとも、我らが帝国の届かぬ場所はないのだ。\n\n$paragon.ending.speech$"
+		paragon.5401.a:99 "我らに対抗できる者はいない!"
+
+		paragon.5403.name:99 "故郷世界の領有"
+		paragon.5403.desc:99 "$paragon.beginning.speech$\n\n敵対するある文明の故郷世界が、今や我らの旗を掲げている。これは単なる領土の征服ではなく、ある民の最も神聖な土地を引き抜くことである。私の決然たる指導の下、我らが軍は別種族の揺りかごそのものを掌握し、銀河における勢力の均衡を永遠に変えたのだ。\n\n$paragon.ending.speech$"
+		paragon.5403.a:99 "彼らの遺産は今や我らのものだ!"
+
+		paragon.5405.name:99 "文化の柱"
+		paragon.5405.desc:99 "$paragon.beginning.speech$\n\n我らが伝統は幾世代にもわたって我らを導き、今や完全に実を結んだ。我らが社会は、星々の間でも稀に見る文化的成果の広がりに到達した。私の管掌の下、我らが民は思想、哲学、実践のあらゆる道を探求してきた。我らは一個の完全に成熟した文明として立つ。\n\n$paragon.ending.speech$"
+		paragon.5405.a:99 "我らの文化に並ぶものはない!"
+
+		paragon.5407.name:99 "古代の残響"
+		paragon.5407.desc:99 "$paragon.beginning.speech$\n\n我らに先立つ文明、その業績がかつて銀河そのものを形作った先駆者の最後の遺物を、我らはついに発掘した。彼らの秘密は今や我らのもの、研究し保存するに値する。私の見識の下、我らは我らが民の歴史において最大の考古学的事業を成し遂げ、我らの未来を失われた古代の過去へと結びつけたのである。\n\n$paragon.ending.speech$"
+		paragon.5407.a:99 "我らは彼らの松明を受け継ぐ!"
+
+		paragon.5409.name:99 "回避された危機"
+		paragon.5409.desc:99 "$paragon.beginning.speech$\n\n銀河は絶滅の淵で揺れ動いていたが、我らは持ちこたえた。あらゆる文明を呑み込もうとした危機は打ち破られた。私の不屈の決意の下、我らが帝国は闇に対する防壁として立った。この勝利は我らだけのものではなく、いまだ星々の下で息をするあらゆる世界のものである。数え切れぬ他の世界が倒れた所で、我らは戦線を維持し、それによってあらゆる感覚を持つ生命の未来を確保したのだ。\n\n$paragon.ending.speech$"
+		paragon.5409.a:99 "我らが立ったからこそ、銀河は立っている!"
+
+	# Forgotten Events
+		paragon.forgotten.a.2:99 "「異論者」を何人か釈放する"
+		paragon.forgotten.a.3:99 "メディアを抑え込む。"
+
+		paragon.forgotten.b.2:99 "賄賂で懐柔する。"
+		paragon.forgotten.b.3:99 "欺瞞を見過ごす。"
+
+		paragon.forgotten.c.2:99 "反証を捏造する。"
+		paragon.forgotten.c.3:99 "公に謝罪する。"
+
+	# Heir Illness Situation
+		paragon_origin_heir_illness:99 "瀕死の後継者"
+		paragon_origin_heir_illness_type:99 "$paragon_origin_heir_illness$"
+		paragon_origin_heir_illness_desc:99 "§Y[Owner.GetHeirTitle] [Owner.GetHeirName]§!が末期の病に冒されている! 急ぎ治療法を見つけねばならぬが、容態は日に日に悪化しており、帝国中の医師と科学者が恒久的な治療法を見出すべく不眠不休で奔走している。"
+		paragon_origin_heir_illness_monthly_change_tooltip:99 "後継者の病は悪化の一途をたどっている。最高の医療と生物学研究があってこそ、間に合う形で治癒できる望みがある。"
+		situation_paragon_origin_heir_illness_palliative:99 "緩和ケア"
+		approach_situation_paragon_origin_heir_illness_palliative_tt:99 "[Owner.GetHeirName]の最期の日々を安らかに過ごせるよう最善を尽くすが、治癒の望みはないと受け入れねばならない。"
+		situation_paragon_origin_heir_illness_medical:99 "医療治療"
+		approach_situation_paragon_origin_heir_illness_medical_tt:99 "[Owner.GetHeirName]の病の治療に費用を惜しまない。帝国中の医師が不眠不休で取り組み、治療法の発見を望んでいる。"
+		situation_paragon_origin_heir_illness_radical:99 "急進的介入"
+		approach_situation_paragon_origin_heir_illness_radical_tt:99 "[Owner.GetHeirName]を救うために、帝国の医師と生物学者ひとりひとりまで動員する。ルミナリーの後継者を救うために、他の優先事項は全て後回しにする!"
+
+		situation_heir_illness_dying:99 "[Owner.GetHeirName]の容態は悪化しており、これ以上長く生き延びることは難しいと思われる。"
+		situation_heir_illness_steady:99 "[Owner.GetHeirName]の容態は安定したが、恒久的な治療法は依然として手の届かぬところにある。"
+		situation_heir_illness_recovering:99 "[Owner.GetHeirName]の容態は改善しており、完全な回復への希望が見えている。"
+
+		paragon_origin_heir_illness_getting_worse:99 "病の重篤度"
+		paragon_origin_heir_illness_medical_approach:99 "医療治療"
+		paragon_origin_heir_illness_radical_approach:99 "急進的介入"
+
+		paragon_origin_heir_illness_doctor_number:99 "帝国の医師数"
+		paragon_origin_heir_illness_biologist_number:99 "帝国の生物学者数"
+
+		paragon_origin_heir_illness_complete:99 "§G[Owner.GetHeirName]は奇跡的な回復を遂げる§!。"
+		paragon_origin_heir_illness_fail:99 "§R[Owner.GetHeirName]は病に屈する§!。"
+
+		paragon.heir.sickness.positive:99 "§Y[owner.GetHeirTitle] [owner.GetHeirName]§!の§Y病§!が§G改善§!する。"
+		paragon.heir.sickness.negative:99 "§Y[owner.GetHeirTitle] [owner.GetHeirName]§!の§Y病§!が§R悪化§!する。"
+
+		# Events
+		# Heir illness outcome events
+		paragon.5080.name:99 "奇跡の回復"
+		paragon.5080.desc:99 "§H§Y[Owner.GetHeirTitle] [Owner.GetHeirName]§!が帝国中のあらゆる画面に姿を現した。我らが民は演説の開始を待ち望んでいる。§!\n\n我らが偉大なる帝国の市民諸君、本日私はこうして生きて、五体満足で、言葉にしがたい感謝の念に満たされて諸君の前に立っている。さほど昔のことではない、私は死の淵に横たわり、肉体は衰え、未来は不確かであった。私が今ここに居るのは、私を死なせまいと拒んだ並外れた人々のおかげである。\n\n眠れぬ夜を徹して働いた医師たち、科学そのものの境界を押し広げた生物学者たち、彼らこそがこの帝国の真の英雄である。\n\n私は彼らに全てを負っている。この帝国もまた然り。彼らの名を記憶に留めよ、彼らの叡智と献身こそがこの帝国を支えているのだ!\n\n$paragon.ending.speech$"
+		paragon.5080.a:99 "[Owner.GetHeirTitle]万歳!"
+
+		paragon.5081.name:99 "悲劇的な喪失"
+		paragon.5081.desc:99 "$paragon.beginning.speech$\n\n本日、私は諸君のルミナリーとしてだけでなく、悲しみに打ちひしがれた親として諸君に語りかける。我が子、§Y[Owner.GetHeirName]§!、この偉大なる帝国の未来が、我らから奪われたのだ。誤解するな、これは運命の業ではない。あの卑劣な扇動者ども、改革主義者たちこそが、分断の種を蒔き、我らの努力を一歩一歩切り崩した者たち、この悲劇の重みを負うべき者たちである。\n\n彼らの妨害が重要な研究を遅らせ、彼らの破壊工作が治療法のための資源を流出させ、そして今、我が子は彼らの裏切りゆえに冷たくなって横たわっている。私はこの帝国の市民全てに誓う、彼らに対する清算の時は来る。我らはこの喪失に耐え抜くが、誰の責任なのかを決して忘れぬ。\n\n$paragon.ending.speech$"
+		paragon.5081.a:99 "裏切り者どもにこの代償を払わせる!"
+
+		# Heir illness progression events
+		paragon.5082.name:99 "深刻な後退"
+		paragon.5082.desc:99 "§Y[owner.GetHeirTitle] [owner.GetHeirName]§!を担当する医療チームが暗澹たる知らせをもたらした。一夜にして後継者のバイタルサインは急激に悪化し、医師たちが予測していなかった新たな症状の波が現れた。\n\nこれまで病を抑え込んでいた綿密に組まれた治療計画は破綻しかけており、医師たちは機会の窓が完全に閉ざされる前に方針を調整しようと必死である。\n帝国中で噂はすでに広まり始めている。政府庁舎の前には祈祷の集まりが形成され、首都の雰囲気は陰鬱なものとなっている。\n\n誰一人として公に口にできぬ事態を、官僚たちはひそかに議論している。"
+		paragon.5082.a:99 "我らは耐え抜かねばならない。"
+
+		paragon.5083.name:99 "合併症"
+		paragon.5083.desc:99 "二次的合併症が次々と§Y[owner.GetHeirTitle] [owner.GetHeirName]§!を襲い、ただでさえ厳しい予後をさらに悪化させている。一つの疾患として始まったものが、今や多臓器系へと触手を伸ばし、後継者の身体は同時に多くの戦線で戦うのに苦しんでいる。主治医は、いくつかの実験的治療が副作用を引き起こした後に断念せざるを得なかったと報告し、残された選択肢は大きく狭まっている。"
+		paragon.5083.a:99 "希望を捨てるな。"
+
+		paragon.5084.name:99 "病の突破口"
+		paragon.5084.desc:99 "§Y[owner.GetHeirTitle] [owner.GetHeirName]§!を救うべく昼夜を問わず働く研究チームが、決定的な発見をなした。帝国中から集められた生体試料から合成された新たな化合物が、実験室の試験で病に対し著しい有効性を示したのだ。\n\n後継者に対する初期の試験は有望な結果をもたらし、病の発症以来初めて主要症状が測定可能なほどに後退している。\n\nこの知らせは帝国を熱狂させた。医師たちは英雄として称えられ、慎重ながらも楽観の波が国民の間に広がっている。\n\n数か月ぶりに、完全な治癒が手の届く範囲にあるという真の希望が芽生えている。"
+		paragon.5084.a:99 "治療法が手の届くところに!"
+
+		paragon.5085.name:99 "癒しの進展"
+		paragon.5085.desc:99 "永遠とも思える時を経て初めて、§Y[owner.GetHeirTitle] [owner.GetHeirName]§!の医師たちが励みとなる知らせをもたらした。後継者の顔色は戻り、食欲は改善し、いくらかの体力を取り戻した、数週間前には考えられぬことであった。\n医療チームは完全な回復への道のりはなお長く不確かであると注意を促すものの、改善は明白である。\n\n市民は静かに祝福のために通りに繰り出し、応援のメッセージは帝国の至る所から絶えることなく寄せられている。"
+		paragon.5085.a:99 "素晴らしい知らせだ!"
+
+		# Heir working events
+		paragon.5086.name:99 "公開演説"
+		paragon.5086.desc:99 "§Y[owner.GetHeirTitle] [owner.GetHeirName]§!は首都の市民に向けた重要な公開演説を行う予定である。病による衰弱が目に見えるにもかかわらず、後継者は自ら壇上に立つ意向を明確にしている。担当医は、こうした出席に伴う身体的負担が容態を著しく悪化させ得ると警告しているが、後継者は将来の指導者としての強さを民が見る必要があると主張している。\n評議会はこの件を直接我らに上申してきた。どうすべきか?"
+		paragon.5086.a:99 "予定通り演説を行わせる。"
+		paragon.5086.b:99 "演説を事前収録する。"
+		paragon.5086.c:99 "演説を取りやめる。"
+
+		paragon.5087.name:99 "評議会の任務"
+		paragon.5087.desc:99 "日々、§Y[owner.GetHeirTitle] [owner.GetHeirName]§!は何事もないかのように、評議会の全ての会議に出席し、立法を吟味し、国事に意見を述べ、休むことなく自らを酷使し続けている。評議会の面々は、その目の下のくま、青ざめてやつれた様子、文の途中で息を整えるために言葉を切る瞬間に気づいている。\n複数の顧問は、こうした過酷な日程が後継者の衰えを早めていると個別に懸念を表している。それでも後継者は身を引くことを拒み、帝国への義務が自らの幸福より優先されると主張している。評議会は正式にこの件を我らの注意に上げてきた。どうすべきか?"
+		paragon.5087.a:99 "任務日程をそのまま維持する。"
+		paragon.5087.b:99 "後継者の業務量を減らす。"
+		paragon.5087.c:99 "後継者を評議会業務から免除する。"
+
+		paragon.5088.name:99 "植民地訪問"
+		paragon.5088.desc:99 "[reformist_colony.GetName]への外交訪問は長らく§Y[owner.GetHeirTitle] [owner.GetHeirName]§!の予定に組み込まれていた。同植民地は改革主義者の拠点となっており、後継者の直接の訪問は緊張を和らげ、地元指導者を中央政府との協力に説得することを意図したものであった。\nしかし、旅程そのものが過酷であり、交渉の重圧は計り知れず、後継者の医師団は現状での移動には重大な危険が伴うと警告している。一方、中止すれば改革主義者をさらに勢いづかせかねない。どうすべきか?"
+		paragon.5088.a:99 "予定通り訪問を行う。"
+		paragon.5088.b:99 "訪問を延期する。"
+		paragon.5088.c:99 "訪問を取りやめる。"
+
+		paragon.5089.name:99 "艦隊査閲"
+		paragon.5089.desc:99 "§Y[owner.GetHeirTitle] [owner.GetHeirName]§!は帝国艦隊の正式な査閲を行う予定である。この訪問は数か月前から手配されており、海軍部隊への指導力と連帯を示すものとして、後継者は旗艦を見て回り、士官に演説し、戦闘準備態勢の報告を直接確認する予定であった。\n海軍本部は後継者の到着に向けて準備を進めてきたが、医療チームは深刻な異議を唱えている。戦艦内を移動する身体的要求と式典の疲労が組み合わさることで、その脆弱な健康を限界の向こうへ押しやりかねない。どうすべきか?"
+		paragon.5089.a:99 "予定通り査閲を行う。"
+		paragon.5089.b:99 "査閲を延期する。"
+		paragon.5089.c:99 "査閲を取りやめる。"
+
+		# Luminary Speech events
+		# Event which triggers once Luminary maxes trait out
+		paragon.5040.name:99 "伝説のルミナリー"
+		paragon.5040.desc:99 "$paragon.beginning.speech$\n\n以下のメッセージで、[Root.Owner.Ruler.GetName]は試練、成長、啓示によって形作られた旅路を振り返り、得られた叡智と逆境の中で鍛え上げられた強さについて長く語る。自身、自らの民、そして自身が住む広大な宇宙について学んだ教訓を語り、それらの洞察を新たな目的意識へと織り上げていく。演説は意志の宣言、すなわち帝国を永遠に輝かしく繁栄した未来へと導くという誓約へと高まっていく。\n\n$paragon.ending.speech$"
+		paragon.5040.a:99 "ルミナリーが我らを導く!"
+		paragon.leader.growth.positive.max:99 "§Y[owner.Ruler.GetTitle] [owner.Ruler.GetRegnalName]§!の§Yルミナリー§!特性が§G最大に達した§!。\n§Yルミナリー特性(およびルミナリー昇華特性)は追加効果を獲得し、二度と低下しない。§!"
+
+	# LumEx - Post-Fall Ascension Upgrade
+		paragon.6041.name:99 "装置を超越する"
+		paragon.6041.desc:99 "$paragon.beginning.speech$\n\n何年もの間、生命維持装置は私を生かし続けてきた。技術の驚異であり、私の意識をこの肉体の枠組みに繋ぎ止めてきた。だが我らが民は遥かに大きな業績を成し遂げた。我らの昇華を通じて新たな道が開かれた、この機械の制約から私を解放し、私が築き上げた帝国にふさわしい姿を授けうる道である。\n\n我らの前にある問いは単純である。私はこの装置に縛られ続けるべきか、それとも我らが民の解き放った未来を受け入れるべきか?\n\n$paragon.ending.speech$"
+		paragon.6041.a:99 "装置を保持する。"
+		paragon.6041.a.tooltip:99 "我が玉座で十分である。§R警告:この選択は繰り返されない§!"
+		paragon.6041.b:99 "$paragon.6000.b$"
+		paragon.6041.b.tooltip:99 "$paragon.6000.b.tooltip$"
+		paragon.6041.c:99 "$paragon.6000.c$"
+		paragon.6041.c.tooltip:99 "$paragon.6000.c.tooltip$"
+		paragon.6041.d:99 "$paragon.6000.d$"
+		paragon.6041.d.tooltip:99 "$paragon.6000.d.tooltip$"
+		paragon.6041.e:99 "$paragon.6000.e$"
+		paragon.6041.e.tooltip:99 "$paragon.6000.e.tooltip$"
+
+	# LumEx - Convince Reformists Decision
+		le_decision_convince_reformists:99 "改革主義者を説得する"
+		le_decision_convince_reformists_desc:99 "ルミナリーは改革主義者の指導者たちと密室で会談し、数十年にわたる信頼と共有された犠牲に訴える。生ける伝説の静かな重みに直面したとき、自らの信念を貫ける者はわずかである。"
+		le_decision_convince_reformists_tt:99 "この惑星の§Y平等主義§!ポップ一つが§Y権威主義§!倫理に転向する。\n転向後にこの惑星に§G平等主義ポップが残らない§!場合、§Y民主的傾向§!モディファイアは§G除去§!される。"
+
