@@ -255,6 +255,23 @@ Or install via the Steam Workshop.
 
 [hr][/hr]
 
+[h2]Languages[/h2]
+The mod is fully written in English. AI-assisted translations are provided for the following languages:
+[list]
+[*]Brazilian Portuguese
+[*]French
+[*]German
+[*]Japanese
+[*]Korean
+[*]Polish
+[*]Russian
+[*]Simplified Chinese
+[*]Spanish
+[/list]
+If you spot a translation error, contributions and corrections are welcome.
+
+[hr][/hr]
+
 [h2]Credits[/h2]
 [list]
 [*][b]Mod Author:[/b] Chickenboy

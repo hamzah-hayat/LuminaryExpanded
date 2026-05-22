@@ -4,7 +4,7 @@
 
 ![Stellaris](https://img.shields.io/badge/Stellaris-v4.3.*-blue)
 ![DLC](https://img.shields.io/badge/Requires-Galactic%20Paragons-purple)
-![Version](https://img.shields.io/badge/Version-1.0.6-green)
+![Version](https://img.shields.io/badge/Version-1.0.7-green)
 
 ---
 
@@ -126,6 +126,22 @@ Or install via the [Steam Workshop](https://steamcommunity.com/sharedfiles/filed
 - Vanilla file overwrites:
     - Overwrites `events/origin_events_paragon.txt` (the main Luminary origin events file)
     - Overwrites `common/traits/10_paragon_traits.txt` (paragon leader traits)
+
+---
+
+## Languages
+The mod is fully written in English. AI-assisted translations are provided for the following languages:
+- Brazilian Portuguese
+- French
+- German
+- Japanese
+- Korean
+- Polish
+- Russian
+- Simplified Chinese
+- Spanish
+
+If you spot a translation error, contributions and corrections are welcome.
 
 ---
 
