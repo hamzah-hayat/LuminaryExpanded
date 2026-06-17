@@ -10,6 +10,7 @@
 		paragon.5001.materialist:99 "$paragon.5021.f$"
 		paragon.5001.xenophobe:99 "$paragon.5021.g$"
 		paragon.5001.xenophile:99 "$paragon.5021.d$"
+		paragon.5001.keep:99 "我们的领袖现在就很好"
 
 	# LumEx - Choose Heir Ethic
 		paragon.5002.name:99 "塑造继承人"
@@ -21,6 +22,7 @@
 		paragon.5002.materialist:99 "$paragon.5001.materialist$"
 		paragon.5002.xenophobe:99 "$paragon.5001.xenophobe$"
 		paragon.5002.xenophile:99 "$paragon.5001.xenophile$"
+		paragon.5002.keep:99 "$paragon.5001.keep$"
 
 	# LumEx - Choose Heir Leader Class
 		paragon.5003.name:99 "继承人之路"
@@ -34,7 +36,7 @@
 		paragon.5324.desc:99 "$paragon.beginning.speech$\n\n根基已经奠定。我在统治之初提出的伟大愿景——四十年计划——终于走到了顶点。我们的人民不知疲倦地劳作,我们的科学家不断推动知识的边界,我们的帝国正屹立于伟大的门槛之上。\n\n但这绝不仅仅是终点,而是一个开端。我们所建造的基础设施、我们所积累的专业知识、我们所聚集的势头,这一切如今让我们能够实现真正非凡的成就。我已审视了摆在我们面前的种种可能,如今该是抉择的时候了——选择何种道路,将我们的帝国引向下一个荣光的时代。\n\n$paragon.ending.speech$"
 
 		paragon.5324.expand_armada:99 "扩展无敌舰队"
-		paragon.5324.expand_armada.tt:99 "获得§Y5000§! $i_alloys$ \n所有§Y恒星基地§!提升一级\n获得下一项§Y恒星基地§!科技的研究进度\n获得下一项§Y舰体§!科技的研究进度"
+		paragon.5324.expand_armada.tt:99 "获得§Y2000§! $i_alloys$ \n所有§Y恒星基地§!提升一级\n获得下一项§Y恒星基地§!科技的研究进度\n获得下一项§Y舰体§!科技的研究进度"
 		paragon.5324.harness_star:99 "驾驭恒星"
 		paragon.5324.harness_star.tt:99 "首都恒星出现一个大型$i_energy$矿藏\n首都恒星出现以下任一矿藏:$i_volatile_motes$、$i_rare_crystals$、$i_exotic_gases$或$i_alloys$\n获得相应§Y开采科技§!的研究进度"
 		paragon.5324.strategic_resources:99 "勘探战略资源"

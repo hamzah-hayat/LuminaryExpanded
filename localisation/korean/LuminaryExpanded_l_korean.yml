@@ -10,6 +10,7 @@
 		paragon.5001.materialist:99 "$paragon.5021.f$"
 		paragon.5001.xenophobe:99 "$paragon.5021.g$"
 		paragon.5001.xenophile:99 "$paragon.5021.d$"
+		paragon.5001.keep:99 "우리 지도자는 지금 그대로 좋다"
 
 	# LumEx - Choose Heir Ethic
 		paragon.5002.name:99 "후계자를 빚다"
@@ -21,6 +22,7 @@
 		paragon.5002.materialist:99 "$paragon.5001.materialist$"
 		paragon.5002.xenophobe:99 "$paragon.5001.xenophobe$"
 		paragon.5002.xenophile:99 "$paragon.5001.xenophile$"
+		paragon.5002.keep:99 "$paragon.5001.keep$"
 
 	# LumEx - Choose Heir Leader Class
 		paragon.5003.name:99 "후계자의 길"
@@ -34,7 +36,7 @@
 		paragon.5324.desc:99 "$paragon.beginning.speech$\n\n기반은 마련되었다. 내 통치의 새벽에 내세웠던 그 위대한 비전, 40년 계획이 마침내 정점에 이르렀다. 우리 백성은 쉬지 않고 일했고, 우리 과학자들은 지식의 한계를 넓혀왔으며, 우리 제국은 위대함의 문턱에 서 있다.\n\n그러나 이는 단순한 끝이 아니라 시작이다. 우리가 쌓아 올린 기반시설, 우리가 길러낸 전문성, 우리가 모은 추진력, 이 모든 것이 이제 우리로 하여금 진정으로 비범한 일을 이룰 수 있게 한다. 나는 우리 앞에 놓인 가능성들을 검토했고, 우리 제국을 다음 영광의 시대로 이끌 길을 선택할 때가 되었다.\n\n$paragon.ending.speech$"
 
 		paragon.5324.expand_armada:99 "함대를 확장한다"
-		paragon.5324.expand_armada.tt:99 "§Y5000§! $i_alloys$ 획득 \n모든 §Y우주 정거장§!이 한 단계 업그레이드됨\n다음 §Y우주 정거장§! 기술의 연구 진행도 획득\n다음 §Y함체§! 기술의 연구 진행도 획득"
+		paragon.5324.expand_armada.tt:99 "§Y2000§! $i_alloys$ 획득 \n모든 §Y우주 정거장§!이 한 단계 업그레이드됨\n다음 §Y우주 정거장§! 기술의 연구 진행도 획득\n다음 §Y함체§! 기술의 연구 진행도 획득"
 		paragon.5324.harness_star:99 "항성을 활용한다"
 		paragon.5324.harness_star.tt:99 "수도 항성에 대규모 $i_energy$ 매장지 출현\n수도 항성에 다음 중 하나의 매장지가 출현: $i_volatile_motes$, $i_rare_crystals$, $i_exotic_gases$ 또는 $i_alloys$\n해당 §Y채취 기술§!의 연구 진행도 획득"
 		paragon.5324.strategic_resources:99 "전략 자원을 탐사한다"

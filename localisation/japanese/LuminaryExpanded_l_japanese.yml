@@ -10,6 +10,7 @@
 		paragon.5001.materialist:99 "$paragon.5021.f$"
 		paragon.5001.xenophobe:99 "$paragon.5021.g$"
 		paragon.5001.xenophile:99 "$paragon.5021.d$"
+		paragon.5001.keep:99 "我らが指導者は今のままで良い"
 
 	# LumEx - Choose Heir Ethic
 		paragon.5002.name:99 "後継者の形成"
@@ -21,6 +22,7 @@
 		paragon.5002.materialist:99 "$paragon.5001.materialist$"
 		paragon.5002.xenophobe:99 "$paragon.5001.xenophobe$"
 		paragon.5002.xenophile:99 "$paragon.5001.xenophile$"
+		paragon.5002.keep:99 "$paragon.5001.keep$"
 
 	# LumEx - Choose Heir Leader Class
 		paragon.5003.name:99 "後継者の道"
@@ -34,7 +36,7 @@
 		paragon.5324.desc:99 "$paragon.beginning.speech$\n\n基盤は築かれた。我が治世の黎明に掲げたあの壮大なる構想、四十年計画はついに最終段階を迎えた。我らが民は休みなく働き、我らが科学者は知識の境界を押し広げ、我らが帝国は栄光の閾に立っている。\n\nだがこれは単なる終わりではなく、始まりである。我らが築いたインフラ、我らが培ったあらゆる専門知、我らが集めた勢い、その全てが今、真に並外れたことを成し遂げる力を我らに与えてくれる。私は目の前の可能性を吟味してきた。我らが帝国を次なる栄光の時代へと導く道を選ぶときが来たのだ。\n\n$paragon.ending.speech$"
 
 		paragon.5324.expand_armada:99 "艦隊を拡大する"
-		paragon.5324.expand_armada.tt:99 "§Y5000§! $i_alloys$を獲得 \n全ての§Y宇宙基地§!を一段階アップグレード\n次の§Y宇宙基地§!技術の研究進捗を獲得\n次の§Y艦体§!技術の研究進捗を獲得"
+		paragon.5324.expand_armada.tt:99 "§Y2000§! $i_alloys$を獲得 \n全ての§Y宇宙基地§!を一段階アップグレード\n次の§Y宇宙基地§!技術の研究進捗を獲得\n次の§Y艦体§!技術の研究進捗を獲得"
 		paragon.5324.harness_star:99 "恒星を活用する"
 		paragon.5324.harness_star.tt:99 "首都恒星に大規模な$i_energy$鉱床が出現\n首都恒星に以下のいずれかの鉱床が出現:$i_volatile_motes$、$i_rare_crystals$、$i_exotic_gases$、または$i_alloys$\n対応する§Y採取技術§!の研究進捗を獲得"
 		paragon.5324.strategic_resources:99 "戦略資源を探査する"

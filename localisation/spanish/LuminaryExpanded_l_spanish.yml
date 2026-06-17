@@ -10,6 +10,7 @@
 		paragon.5001.materialist:99 "$paragon.5021.f$"
 		paragon.5001.xenophobe:99 "$paragon.5021.g$"
 		paragon.5001.xenophile:99 "$paragon.5021.d$"
+		paragon.5001.keep:99 "Nuestro líder está bien tal como está"
 
 	# LumEx - Choose Heir Ethic
 		paragon.5002.name:99 "Forjando al heredero"
@@ -21,6 +22,7 @@
 		paragon.5002.materialist:99 "$paragon.5001.materialist$"
 		paragon.5002.xenophobe:99 "$paragon.5001.xenophobe$"
 		paragon.5002.xenophile:99 "$paragon.5001.xenophile$"
+		paragon.5002.keep:99 "$paragon.5001.keep$"
 
 	# LumEx - Choose Heir Leader Class
 		paragon.5003.name:99 "El camino del heredero"
@@ -34,7 +36,7 @@
 		paragon.5324.desc:99 "$paragon.beginning.speech$\n\nLos cimientos están puestos. El Plan de 40 Años, esa gran visión que presenté al amanecer de mi reinado, ha llegado a su culminación. Nuestro pueblo ha trabajado incansablemente, nuestros científicos han ampliado las fronteras del conocimiento y nuestro imperio se alza al borde de la grandeza.\n\nPero esto no es solo un final, es un comienzo. La infraestructura que hemos construido, la pericia que hemos cultivado, el impulso que hemos reunido, todo ello nos permite ahora lograr algo verdaderamente extraordinario. He revisado las posibilidades que tenemos ante nosotros, y ha llegado el momento de elegir qué camino llevará a nuestro imperio a su próxima era de gloria.\n\n$paragon.ending.speech$"
 
 		paragon.5324.expand_armada:99 "Expandir la Armada"
-		paragon.5324.expand_armada.tt:99 "Obtén §Y5000§! $i_alloys$ \nTodas las §Ybases estelares§! mejoradas un nivel\nObtén progreso de investigación hacia la siguiente tecnología de §Ybase estelar§!\nObtén progreso de investigación hacia la siguiente tecnología de §Ycasco de nave§!"
+		paragon.5324.expand_armada.tt:99 "Obtén §Y2000§! $i_alloys$ \nTodas las §Ybases estelares§! mejoradas un nivel\nObtén progreso de investigación hacia la siguiente tecnología de §Ybase estelar§!\nObtén progreso de investigación hacia la siguiente tecnología de §Ycasco de nave§!"
 		paragon.5324.harness_star:99 "Aprovechar la Estrella"
 		paragon.5324.harness_star.tt:99 "La estrella capital obtiene un gran depósito de $i_energy$\nLa estrella capital obtiene uno de: depósito de $i_volatile_motes$, $i_rare_crystals$, $i_exotic_gases$ o $i_alloys$\nObtén progreso de investigación hacia la §YTecnología de Extracción§! correspondiente"
 		paragon.5324.strategic_resources:99 "Prospectar Recursos Estratégicos"

@@ -10,6 +10,7 @@
 		paragon.5001.materialist:0 "$paragon.5021.f$"
 		paragon.5001.xenophobe:0 "$paragon.5021.g$"
 		paragon.5001.xenophile:0 "$paragon.5021.d$"
+		paragon.5001.keep:0 "Our leader is fine as they are"
 
 	# LumEx - Choose Heir Ethic
 		paragon.5002.name:0 "Shaping the Heir"
@@ -21,6 +22,7 @@
 		paragon.5002.materialist:0 "$paragon.5001.materialist$"
 		paragon.5002.xenophobe:0 "$paragon.5001.xenophobe$"
 		paragon.5002.xenophile:0 "$paragon.5001.xenophile$"
+		paragon.5002.keep:0 "$paragon.5001.keep$"
 
 	# LumEx - Choose Heir Leader Class
 		paragon.5003.name:0 "The Heir's Path"
@@ -34,7 +36,7 @@
 		paragon.5324.desc:0 "$paragon.beginning.speech$\n\nThe foundation has been laid. The 40 Year Plan, that grand vision I set forth at the dawn of my rule, has reached its culmination. Our people have laboured tirelessly, our scientists have pushed the boundaries of knowledge, and our empire stands poised on the threshold of greatness.\n\nBut this is not merely an ending, it is a beginning. The infrastructure we have built, the expertise we have cultivated, the momentum we have gathered, all of this now allows us to achieve something truly extraordinary. I have reviewed the possibilities before us, and the time has come to choose which path will carry our empire into its next era of glory.\n\n$paragon.ending.speech$"
 
 		paragon.5324.expand_armada:0 "Expand the Armada"
-		paragon.5324.expand_armada.tt:0 "Gain §Y5000§! $i_alloys$ \nAll §YStarbases§! upgraded by one tier\nGain research progress toward the next §YStarbase§! technology\nGain research progress toward the next §YShip Hull§! technology"
+		paragon.5324.expand_armada.tt:0 "Gain §Y2000§! $i_alloys$ \nAll §YStarbases§! upgraded by one tier\nGain research progress toward the next §YStarbase§! technology\nGain research progress toward the next §YShip Hull§! technology"
 		paragon.5324.harness_star:0 "Harness the Star"
 		paragon.5324.harness_star.tt:0 "Capital Star gains a large $i_energy$ deposit\nCapital Star gains one of: $i_volatile_motes$, $i_rare_crystals$, $i_exotic_gases$, or $i_alloys$ deposit\nGain research progress toward the appropriate §YExtraction Technology§!"
 		paragon.5324.strategic_resources:0 "Prospect Strategic Resources"

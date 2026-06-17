@@ -10,6 +10,7 @@
 		paragon.5001.materialist:99 "$paragon.5021.f$"
 		paragon.5001.xenophobe:99 "$paragon.5021.g$"
 		paragon.5001.xenophile:99 "$paragon.5021.d$"
+		paragon.5001.keep:99 "Nasz przywódca jest dobry taki, jaki jest"
 
 	# LumEx - Choose Heir Ethic
 		paragon.5002.name:99 "Kształtowanie następcy"
@@ -21,6 +22,7 @@
 		paragon.5002.materialist:99 "$paragon.5001.materialist$"
 		paragon.5002.xenophobe:99 "$paragon.5001.xenophobe$"
 		paragon.5002.xenophile:99 "$paragon.5001.xenophile$"
+		paragon.5002.keep:99 "$paragon.5001.keep$"
 
 	# LumEx - Choose Heir Leader Class
 		paragon.5003.name:99 "Ścieżka następcy"
@@ -34,7 +36,7 @@
 		paragon.5324.desc:99 "$paragon.beginning.speech$\n\nFundamenty zostały położone. Plan 40-letni, owa wielka wizja, którą przedstawiłem u zarania mych rządów, osiągnął swój szczyt. Nasz lud trudził się niestrudzenie, nasi naukowcy przesuwali granice wiedzy, a nasze imperium stoi u progu wielkości.\n\nLecz nie jest to jedynie koniec, to początek. Infrastruktura, którą zbudowaliśmy, wiedza, którą pielęgnowaliśmy, rozpęd, który zgromadziliśmy, wszystko to pozwala nam teraz osiągnąć coś naprawdę niezwykłego. Rozważyłem możliwości, jakie stoją przed nami, i nadszedł czas wybrać, która droga poprowadzi nasze imperium ku kolejnej erze chwały.\n\n$paragon.ending.speech$"
 
 		paragon.5324.expand_armada:99 "Rozbudować Armadę"
-		paragon.5324.expand_armada.tt:99 "Otrzymujesz §Y5000§! $i_alloys$ \nWszystkie §Ybazy gwiezdne§! ulepszone o jeden poziom\nOtrzymujesz postęp badań ku następnej technologii §Ybazy gwiezdnej§!\nOtrzymujesz postęp badań ku następnej technologii §Ykadłubów okrętów§!"
+		paragon.5324.expand_armada.tt:99 "Otrzymujesz §Y2000§! $i_alloys$ \nWszystkie §Ybazy gwiezdne§! ulepszone o jeden poziom\nOtrzymujesz postęp badań ku następnej technologii §Ybazy gwiezdnej§!\nOtrzymujesz postęp badań ku następnej technologii §Ykadłubów okrętów§!"
 		paragon.5324.harness_star:99 "Okiełznać Gwiazdę"
 		paragon.5324.harness_star.tt:99 "Stołeczna gwiazda otrzymuje duże złoże $i_energy$\nStołeczna gwiazda otrzymuje jedno z: złoże $i_volatile_motes$, $i_rare_crystals$, $i_exotic_gases$ lub $i_alloys$\nOtrzymujesz postęp badań ku odpowiedniej §YTechnologii Wydobycia§!"
 		paragon.5324.strategic_resources:99 "Poszukiwanie zasobów strategicznych"

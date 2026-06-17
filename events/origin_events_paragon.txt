@@ -145,6 +145,9 @@ country_event = { # Choose Luminary's ethic
 		}
 		ruler = { change_background_ethic = ethic_xenophile }
 	}
+	option = { # Keep current
+		name = paragon.5001.keep
+	}
 }
 
 ####################################
@@ -225,6 +228,9 @@ leader_event = { # Choose Heir's ethic
 		}
 		change_background_ethic = ethic_xenophile
 	}
+	option = { # Keep current
+		name = paragon.5002.keep
+	}
 
 	after = {
 		leader_event = { id = paragon.5003 }
@@ -302,7 +308,7 @@ country_event = { # Start the situation
 	}
 }
 
-planet_event = { # Colonization event - Celebration for starting a colony
+carrier_event = { # Colonization event - Celebration for starting a colony
 	id = paragon.5005
 	title = "paragon.5005.name"
 	desc = "paragon.5005.desc"
@@ -335,7 +341,7 @@ planet_event = { # Colonization event - Celebration for starting a colony
 		owner = {
 			set_country_flag = first_colony
 		}
-		set_planet_flag = first_colonized_planet
+		set_carrier_flag = first_colonized_planet
 	}
 
 	option = {
@@ -498,7 +504,7 @@ country_event = { # situation finished - good
 	}
 }
 
-planet_event = { # Colonization event - Celebration for finishing colony
+carrier_event = { # Colonization event - Celebration for finishing colony
 	id = paragon.5010
 	title = "paragon.5010.name"
 	desc = "paragon.5010.desc"
@@ -507,7 +513,7 @@ planet_event = { # Colonization event - Celebration for finishing colony
 	is_triggered_only = yes
 
 	trigger = {
-		has_planet_flag = first_colonized_planet
+		has_carrier_flag = first_colonized_planet
 		owner = {
 			exists = ruler
 			ruler = { has_leader_flag = paragon_origin_legendary_leader }
@@ -527,7 +533,7 @@ planet_event = { # Colonization event - Celebration for finishing colony
 	option = {
 		name = paragon.5010.a
 		custom_tooltip = paragon.5010.a_tt
-		planet_event = {
+		carrier_event = {
 			id = paragon.5011 days = 180 random = 180
 		}
 	}
@@ -546,20 +552,20 @@ planet_event = { # Colonization event - Celebration for finishing colony
 				alloys = -400
 			}
 		}
-		planet_event = {
+		carrier_event = {
 			id = paragon.5012 days = 180 random = 360
 		}
 	}
 	option = {
 		name = paragon.5010.c
 		custom_tooltip = paragon.5010.c_tt
-		planet_event = {
+		carrier_event = {
 			id = paragon.5013 days = 120 random = 60
 		}
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = paragon.5011
 	title = "paragon.5011.name"
 	desc = "paragon.5011.desc"
@@ -596,7 +602,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = paragon.5012
 	title = "paragon.5012.name"
 	desc = "paragon.5012.desc"
@@ -634,7 +640,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = paragon.5013
 	title = "paragon.5013.name"
 	desc = "paragon.5013.desc"
@@ -1733,14 +1739,14 @@ country_event = {
 	}
 }
 
-planet_event = { # Conquered the homeworld of another empire
+carrier_event = { # Conquered the homeworld of another empire
 	id = paragon.5402
 	hide_window = yes
 
 	is_triggered_only = yes
 
-	# on_planet_conquer
-	# this = planet
+	# on_colony_conquer
+	# this = colony scope
 	# from = new owner (us)
 	# fromfrom = former owner
 
@@ -5045,7 +5051,7 @@ country_event = { #After the Fall - First negotiation batch - with Reformists
 		trigger = {
 			any_system_within_border = {
 				is_capital_system = no
-				any_system_colony = { has_modifier = paragon_origin_reformists }
+				any_system_planet_colony = { has_modifier = paragon_origin_reformists }
 			}
 			NOT = { has_valid_civic = civic_fanatic_purifiers }
 		}
@@ -5071,7 +5077,7 @@ country_event = { #After the Fall - First negotiation batch - with Reformists
 		if = {
 			limit = { host_has_dlc = "Megacorp" }
 			hidden_effect = {
-				force_remove_civic = 2
+				force_remove_civic_by_index = 2
 			}
 			change_government = {
 				authority = auth_democratic
@@ -5084,7 +5090,7 @@ country_event = { #After the Fall - First negotiation batch - with Reformists
 		}
 		else = {
 			hidden_effect = {
-				force_remove_civic = 2
+				force_remove_civic_by_index = 2
 			}
 			change_government = {
 				authority = auth_democratic
@@ -5107,7 +5113,7 @@ country_event = { #After the Fall - First negotiation batch - with Reformists
 		trigger = {
 			any_system_within_border = {
 				is_capital_system = no
-				any_system_colony = { has_modifier = paragon_origin_reformists }
+				any_system_planet_colony = { has_modifier = paragon_origin_reformists }
 			}
 			has_valid_civic = civic_fanatic_purifiers
 		}
@@ -5126,7 +5132,7 @@ country_event = { #After the Fall - First negotiation batch - with Reformists
 		hidden_effect = {
 			clear_ethos = yes
 			paragon_origin_launch_rebelion = yes
-			force_remove_civic = 3
+			force_remove_civic_by_index = 3
 			country_event = {
 				id = paragon.5211 days = 15 random = 30
 			}
@@ -5616,7 +5622,7 @@ country_event = { #Ruler Insight - Terraform
 						}
 					}
 					change_pc = root.owner_species
-					planet_event = {
+					carrier_event = {
 						id = shroud.10010 		# Patron Objective Counter: po_terraform_planet
 					}
 				}
@@ -5790,7 +5796,7 @@ country_event = { # Ruler Insight - 40 Year plan end, choose bonus
 
 	immediate = {}
 
-	option = { # LumEx - Expand Armada: Get 5000 Alloys, upgrade all starbases + next starbase tech + next ship tech
+	option = { # LumEx - Expand Armada: Get 2000 Alloys, upgrade all starbases + next starbase tech + next ship tech
 		name = paragon.5324.expand_armada
 		custom_tooltip = paragon.5324.expand_armada.tt
 		hidden_effect = { country_event = { id = paragon.5326 } }
@@ -5869,7 +5875,7 @@ country_event = { # Ruler Insight - 40 Year plan end, choose bonus
 	}
 }
 
-country_event = { # LumEx - Ruler Insight - Expand Armada: Get 5000 Alloys, upgrade all starbases + next starbase tech + next ship tech
+country_event = { # LumEx - Ruler Insight - Expand Armada: Get 2000 Alloys, upgrade all starbases + next starbase tech + next ship tech
 	id = paragon.5326
 	title = "paragon.5326.name"
 	desc = "paragon.5326.desc"
@@ -5894,7 +5900,7 @@ country_event = { # LumEx - Ruler Insight - Expand Armada: Get 5000 Alloys, upgr
 	after = {
 		owner = {
 			# Get some Alloys
-			add_resource = { alloys = 5000 }
+			add_resource = { alloys = 2000 }
 
 			# Upgrade every starbase by one tier (cap at citadel)
 			every_owned_starbase = {
@@ -6692,8 +6698,8 @@ country_event = { #UTILITY - Ascended Leader Upkeep Tick
 }
 
 # Kill leader & remove "Sustaining Apparatus" modifier
-# via on_planet_transfer (fromfrom = previous owner country) & on_planet_occupied (fromfrom = occupying/controlling country)
-planet_event = {
+# via on_colony_transfer (fromfrom = previous owner country)
+carrier_event = {
 	id = paragon.5930
 	hide_window = yes
 	is_triggered_only = yes
@@ -6721,8 +6727,8 @@ planet_event = {
 }
 
 # Remove invalid Monument modifiers
-# via on_planet_transfer | from/owner = new owner country; fromfrom = previous owner country
-planet_event = {
+# via on_colony_transfer | from/owner = new owner country; fromfrom = previous owner country
+carrier_event = {
 	id = paragon.5931
 	hide_window = yes
 	is_triggered_only = yes
@@ -6796,7 +6802,7 @@ country_event = { #UTILITY - removing vassals during reformists will make them E
 		shift_ethic = ethic_militarist
 		shift_ethic = ethic_fanatic_egalitarian
 		set_origin = origin_legendary_leader_death
-		force_remove_civic = 3
+		force_remove_civic_by_index = 3
 		change_government = {
 			authority = auth_democratic
 			civics = {

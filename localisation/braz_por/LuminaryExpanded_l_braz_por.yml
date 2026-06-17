@@ -10,6 +10,7 @@
 		paragon.5001.materialist:99 "$paragon.5021.f$"
 		paragon.5001.xenophobe:99 "$paragon.5021.g$"
 		paragon.5001.xenophile:99 "$paragon.5021.d$"
+		paragon.5001.keep:99 "Nosso líder está bem como está"
 
 	# LumEx - Choose Heir Ethic
 		paragon.5002.name:99 "Moldando o Herdeiro"
@@ -21,6 +22,7 @@
 		paragon.5002.materialist:99 "$paragon.5001.materialist$"
 		paragon.5002.xenophobe:99 "$paragon.5001.xenophobe$"
 		paragon.5002.xenophile:99 "$paragon.5001.xenophile$"
+		paragon.5002.keep:99 "$paragon.5001.keep$"
 
 	# LumEx - Choose Heir Leader Class
 		paragon.5003.name:99 "O Caminho do Herdeiro"
@@ -34,7 +36,7 @@
 		paragon.5324.desc:99 "$paragon.beginning.speech$\n\nA fundação foi lançada. O Plano de 40 Anos, aquela grande visão que apresentei no alvorecer do meu reinado, atingiu seu ápice. Nosso povo trabalhou incansavelmente, nossos cientistas ampliaram as fronteiras do conhecimento, e nosso império se ergue à beira da grandeza.\n\nMas isto não é apenas um fim, é um começo. A infraestrutura que construímos, a expertise que cultivamos, o impulso que reunimos, tudo isso agora nos permite alcançar algo verdadeiramente extraordinário. Avaliei as possibilidades diante de nós, e chegou a hora de escolher qual caminho levará nosso império à próxima era de glória.\n\n$paragon.ending.speech$"
 
 		paragon.5324.expand_armada:99 "Expandir a Armada"
-		paragon.5324.expand_armada.tt:99 "Ganhe §Y5000§! $i_alloys$ \nTodas as §YBases Estelares§! são aprimoradas em um nível\nGanhe progresso de pesquisa para a próxima tecnologia de §YBase Estelar§!\nGanhe progresso de pesquisa para a próxima tecnologia de §YCasco de Nave§!"
+		paragon.5324.expand_armada.tt:99 "Ganhe §Y2000§! $i_alloys$ \nTodas as §YBases Estelares§! são aprimoradas em um nível\nGanhe progresso de pesquisa para a próxima tecnologia de §YBase Estelar§!\nGanhe progresso de pesquisa para a próxima tecnologia de §YCasco de Nave§!"
 		paragon.5324.harness_star:99 "Aproveitar a Estrela"
 		paragon.5324.harness_star.tt:99 "A Estrela Capital ganha um grande depósito de $i_energy$\nA Estrela Capital ganha um dos depósitos a seguir: $i_volatile_motes$, $i_rare_crystals$, $i_exotic_gases$ ou $i_alloys$\nGanhe progresso de pesquisa para a §YTecnologia de Extração§! correspondente"
 		paragon.5324.strategic_resources:99 "Prospectar Recursos Estratégicos"

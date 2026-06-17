@@ -29,8 +29,8 @@ on_fleet_destroyed_perp = {
 	}
 }
 
-# this = planet, from = new owner, fromfrom = former owner
-on_planet_conquer = {
+# this = colony scope, from = new owner, fromfrom = former owner
+on_colony_conquer = {
 	events = {
 		paragon.5402	# Conquered homeworld of another empire
 	}

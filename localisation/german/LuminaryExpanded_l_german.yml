@@ -10,6 +10,7 @@
 		paragon.5001.materialist:99 "$paragon.5021.f$"
 		paragon.5001.xenophobe:99 "$paragon.5021.g$"
 		paragon.5001.xenophile:99 "$paragon.5021.d$"
+		paragon.5001.keep:99 "Unser Anführer ist gut so, wie er ist"
 
 	# LumEx - Choose Heir Ethic
 		paragon.5002.name:99 "Den Erben formen"
@@ -21,6 +22,7 @@
 		paragon.5002.materialist:99 "$paragon.5001.materialist$"
 		paragon.5002.xenophobe:99 "$paragon.5001.xenophobe$"
 		paragon.5002.xenophile:99 "$paragon.5001.xenophile$"
+		paragon.5002.keep:99 "$paragon.5001.keep$"
 
 	# LumEx - Choose Heir Leader Class
 		paragon.5003.name:99 "Der Weg des Erben"
@@ -34,7 +36,7 @@
 		paragon.5324.desc:99 "$paragon.beginning.speech$\n\nDas Fundament ist gelegt. Der 40-Jahres-Plan, jene große Vision, die ich im Morgenrot meiner Herrschaft verkündete, hat seinen Höhepunkt erreicht. Unser Volk hat unermüdlich geschuftet, unsere Wissenschaftler haben die Grenzen des Wissens verschoben, und unser Reich steht an der Schwelle zur Größe.\n\nDoch dies ist nicht bloß ein Ende, sondern ein Anfang. Die Infrastruktur, die wir errichtet, das Wissen, das wir gewonnen, der Schwung, den wir aufgebaut haben, all dies erlaubt uns nun, etwas wahrhaft Außergewöhnliches zu vollbringen. Ich habe die Möglichkeiten geprüft, die vor uns liegen, und es ist Zeit zu wählen, welcher Weg unser Reich in seine nächste Ära des Glanzes tragen soll.\n\n$paragon.ending.speech$"
 
 		paragon.5324.expand_armada:99 "Die Armada erweitern"
-		paragon.5324.expand_armada.tt:99 "Erhalte §Y5000§! $i_alloys$ \nAlle §YSternenbasen§! werden um eine Stufe verbessert\nErhalte Forschungsfortschritt zur nächsten §YSternenbasis§!-Technologie\nErhalte Forschungsfortschritt zur nächsten §YSchiffsrumpf§!-Technologie"
+		paragon.5324.expand_armada.tt:99 "Erhalte §Y2000§! $i_alloys$ \nAlle §YSternenbasen§! werden um eine Stufe verbessert\nErhalte Forschungsfortschritt zur nächsten §YSternenbasis§!-Technologie\nErhalte Forschungsfortschritt zur nächsten §YSchiffsrumpf§!-Technologie"
 		paragon.5324.harness_star:99 "Den Stern nutzbar machen"
 		paragon.5324.harness_star.tt:99 "Der Hauptstern erhält ein großes $i_energy$-Vorkommen\nDer Hauptstern erhält eines der folgenden Vorkommen: $i_volatile_motes$, $i_rare_crystals$, $i_exotic_gases$ oder $i_alloys$\nErhalte Forschungsfortschritt zur entsprechenden §YAbbau-Technologie§!"
 		paragon.5324.strategic_resources:99 "Strategische Ressourcen erkunden"

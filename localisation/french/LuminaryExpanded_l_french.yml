@@ -10,6 +10,7 @@
 		paragon.5001.materialist:99 "$paragon.5021.f$"
 		paragon.5001.xenophobe:99 "$paragon.5021.g$"
 		paragon.5001.xenophile:99 "$paragon.5021.d$"
+		paragon.5001.keep:99 "Notre chef est très bien tel qu'il est"
 
 	# LumEx - Choose Heir Ethic
 		paragon.5002.name:99 "Façonner l'héritier"
@@ -21,6 +22,7 @@
 		paragon.5002.materialist:99 "$paragon.5001.materialist$"
 		paragon.5002.xenophobe:99 "$paragon.5001.xenophobe$"
 		paragon.5002.xenophile:99 "$paragon.5001.xenophile$"
+		paragon.5002.keep:99 "$paragon.5001.keep$"
 
 	# LumEx - Choose Heir Leader Class
 		paragon.5003.name:99 "La voie de l'héritier"
@@ -34,7 +36,7 @@
 		paragon.5324.desc:99 "$paragon.beginning.speech$\n\nLes fondations sont posées. Le Plan de 40 ans, cette grande vision que j'ai présentée à l'aube de mon règne, a atteint son apogée. Notre peuple a travaillé sans relâche, nos scientifiques ont repoussé les frontières du savoir, et notre empire se tient prêt au seuil de la grandeur.\n\nMais ce n'est pas qu'une fin, c'est un commencement. L'infrastructure que nous avons bâtie, l'expertise que nous avons cultivée, l'élan que nous avons rassemblé, tout cela nous permet désormais d'accomplir quelque chose de véritablement extraordinaire. J'ai examiné les possibilités qui s'offrent à nous, et le moment est venu de choisir la voie qui mènera notre empire vers sa prochaine ère de gloire.\n\n$paragon.ending.speech$"
 
 		paragon.5324.expand_armada:99 "Étendre l'Armada"
-		paragon.5324.expand_armada.tt:99 "Gagnez §Y5000§! $i_alloys$ \nToutes les §Ybases stellaires§! sont améliorées d'un palier\nGagnez des progrès de recherche vers la prochaine technologie de §Ybase stellaire§!\nGagnez des progrès de recherche vers la prochaine technologie de §Ycoque de vaisseau§!"
+		paragon.5324.expand_armada.tt:99 "Gagnez §Y2000§! $i_alloys$ \nToutes les §Ybases stellaires§! sont améliorées d'un palier\nGagnez des progrès de recherche vers la prochaine technologie de §Ybase stellaire§!\nGagnez des progrès de recherche vers la prochaine technologie de §Ycoque de vaisseau§!"
 		paragon.5324.harness_star:99 "Maîtriser l'étoile"
 		paragon.5324.harness_star.tt:99 "L'étoile capitale obtient un grand gisement d'$i_energy$\nL'étoile capitale obtient l'un des gisements suivants : $i_volatile_motes$, $i_rare_crystals$, $i_exotic_gases$ ou $i_alloys$\nGagnez des progrès de recherche vers la §Ytechnologie d'extraction§! appropriée"
 		paragon.5324.strategic_resources:99 "Prospecter les ressources stratégiques"
