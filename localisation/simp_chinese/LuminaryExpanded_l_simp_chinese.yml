@@ -198,5 +198,5 @@
 	# LumEx - Convince Reformists Decision
 		le_decision_convince_reformists:99 "说服改革派"
 		le_decision_convince_reformists_desc:99 "光辉者于密室之内会见改革派的领袖,凭借数十年的信任与共度的牺牲与他们对话。在一位活生生的传奇所散发的静默重压之下,鲜有人能继续坚持自己的信念。"
-		le_decision_convince_reformists_tt:99 "本行星上一个§Y平等主义§!人口将被转化为§Y威权主义§!伦理。\n§G转化后若本行星上不再有平等主义人口§!,§Y民主倾向§!状态将被§G移除§!。"
+		le_decision_convince_reformists_tt:99 "本行星上100个§Y平等主义§!人口将被转化为§Y威权主义§!伦理。\n§G转化后若本行星上不再有平等主义人口§!,§Y民主倾向§!状态将被§G移除§!。"
 

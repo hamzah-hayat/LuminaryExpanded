@@ -198,5 +198,5 @@
 	# LumEx - Convince Reformists Decision
 		le_decision_convince_reformists:99 "Przekonać Reformistów"
 		le_decision_convince_reformists_desc:99 "Luminarz spotyka się z przywódcami reformistów za zamkniętymi drzwiami, odwołując się do dziesięcioleci zaufania i wspólnych poświęceń. Niewielu potrafi utrzymać swoje przekonania w obliczu cichej powagi żywej legendy."
-		le_decision_convince_reformists_tt:99 "Jedna §Yegalitarna§! populacja na tej planecie zostanie nawrócona na §Yautorytarną§! etykę.\n§GJeśli po nawróceniu na tej planecie nie pozostanie żadna egalitarna populacja§!, modyfikator §YDemokratyczne tendencje§! zostanie §Gusunięty§!."
+		le_decision_convince_reformists_tt:99 "100 §Yegalitarnych§! populacji na tej planecie zostanie nawróconych na §Yautorytarną§! etykę.\n§GJeśli po nawróceniu na tej planecie nie pozostanie żadna egalitarna populacja§!, modyfikator §YDemokratyczne tendencje§! zostanie §Gusunięty§!."
 

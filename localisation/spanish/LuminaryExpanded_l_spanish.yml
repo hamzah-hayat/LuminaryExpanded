@@ -198,5 +198,5 @@
 	# LumEx - Convince Reformists Decision
 		le_decision_convince_reformists:99 "Convencer a los Reformistas"
 		le_decision_convince_reformists_desc:99 "El Luminario se reúne con los líderes reformistas a puerta cerrada, apelando a décadas de confianza y sacrificios compartidos. Pocos pueden mantener sus convicciones ante el peso silencioso de una leyenda viva."
-		le_decision_convince_reformists_tt:99 "Una población §Yigualitaria§! de este planeta será convertida a la ética §Yautoritaria§!.\n§GSi no quedan poblaciones igualitarias§! en este planeta tras la conversión, el modificador §YTendencias Democráticas§! será §Geliminado§!."
+		le_decision_convince_reformists_tt:99 "100 poblaciones §Yigualitarias§! de este planeta serán convertidas a la ética §Yautoritaria§!.\n§GSi no quedan poblaciones igualitarias§! en este planeta tras la conversión, el modificador §YTendencias Democráticas§! será §Geliminado§!."
 

@@ -198,5 +198,5 @@
 	# LumEx - Convince Reformists Decision
 		le_decision_convince_reformists:99 "Reformisten überzeugen"
 		le_decision_convince_reformists_desc:99 "Der Luminar trifft sich hinter verschlossenen Türen mit den Anführern der Reformisten und beruft sich auf jahrzehntelanges Vertrauen und gemeinsame Opfer. Wenige können ihre Überzeugungen halten, wenn sie dem stillen Gewicht einer lebenden Legende gegenüberstehen."
-		le_decision_convince_reformists_tt:99 "Eine §Yegalitäre§! Bevölkerungsgruppe auf diesem Planeten wird zur §Yautoritären§! Ethik bekehrt.\n§GFalls keine egalitären Bevölkerungsgruppen§! mehr auf diesem Planeten verbleiben, wird der Modifikator §YDemokratische Tendenzen§! §Gentfernt§!."
+		le_decision_convince_reformists_tt:99 "100 §Yegalitäre§! Bevölkerungsgruppen auf diesem Planeten werden zur §Yautoritären§! Ethik bekehrt.\n§GFalls keine egalitären Bevölkerungsgruppen§! mehr auf diesem Planeten verbleiben, wird der Modifikator §YDemokratische Tendenzen§! §Gentfernt§!."
 

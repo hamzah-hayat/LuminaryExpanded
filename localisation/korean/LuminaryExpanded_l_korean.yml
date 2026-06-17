@@ -198,5 +198,5 @@
 	# LumEx - Convince Reformists Decision
 		le_decision_convince_reformists:99 "개혁주의자 설득"
 		le_decision_convince_reformists_desc:99 "루미너리는 닫힌 문 뒤에서 개혁주의 지도자들과 회담하며, 수십 년에 걸친 신뢰와 함께한 희생에 호소한다. 살아 있는 전설의 조용한 무게 앞에서 자신의 신념을 지킬 수 있는 자는 거의 없다."
-		le_decision_convince_reformists_tt:99 "이 행성의 §Y평등주의§! 팝 하나가 §Y권위주의§! 윤리로 전환된다.\n전환 후 이 행성에 §G평등주의 팝이 남지 않으면§!, §Y민주적 경향§! 모디파이어가 §G제거된다§!."
+		le_decision_convince_reformists_tt:99 "이 행성의 §Y평등주의§! 팝 100개가 §Y권위주의§! 윤리로 전환된다.\n전환 후 이 행성에 §G평등주의 팝이 남지 않으면§!, §Y민주적 경향§! 모디파이어가 §G제거된다§!."
 

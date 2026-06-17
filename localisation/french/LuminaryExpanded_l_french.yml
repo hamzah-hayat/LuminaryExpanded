@@ -198,5 +198,5 @@
 	# LumEx - Convince Reformists Decision
 		le_decision_convince_reformists:99 "Convaincre les Réformistes"
 		le_decision_convince_reformists_desc:99 "Le Luminaire rencontre les chefs réformistes à huis clos, faisant appel à des décennies de confiance et de sacrifices partagés. Peu peuvent maintenir leurs convictions face au poids tranquille d'une légende vivante."
-		le_decision_convince_reformists_tt:99 "Un pop §Yégalitaire§! de cette planète sera converti à l'éthique §Yautoritaire§!.\n§GS'il ne reste plus aucun pop égalitaire§! sur cette planète après conversion, le modificateur §YTendances démocratiques§! sera §Gretiré§!."
+		le_decision_convince_reformists_tt:99 "100 pops §Yégalitaires§! de cette planète seront convertis à l'éthique §Yautoritaire§!.\n§GS'il ne reste plus aucun pop égalitaire§! sur cette planète après conversion, le modificateur §YTendances démocratiques§! sera §Gretiré§!."
 

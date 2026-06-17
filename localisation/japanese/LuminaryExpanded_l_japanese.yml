@@ -198,5 +198,5 @@
 	# LumEx - Convince Reformists Decision
 		le_decision_convince_reformists:99 "改革主義者を説得する"
 		le_decision_convince_reformists_desc:99 "ルミナリーは改革主義者の指導者たちと密室で会談し、数十年にわたる信頼と共有された犠牲に訴える。生ける伝説の静かな重みに直面したとき、自らの信念を貫ける者はわずかである。"
-		le_decision_convince_reformists_tt:99 "この惑星の§Y平等主義§!ポップ一つが§Y権威主義§!倫理に転向する。\n転向後にこの惑星に§G平等主義ポップが残らない§!場合、§Y民主的傾向§!モディファイアは§G除去§!される。"
+		le_decision_convince_reformists_tt:99 "この惑星の§Y平等主義§!ポップ100個が§Y権威主義§!倫理に転向する。\n転向後にこの惑星に§G平等主義ポップが残らない§!場合、§Y民主的傾向§!モディファイアは§G除去§!される。"
 
