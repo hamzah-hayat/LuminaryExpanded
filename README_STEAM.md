@@ -56,7 +56,7 @@ Winning a war or vassalising another empire are now repeatable for +1 Luminary e
 
 [h3]📈 New 40 Year Plan Effects[/h3]
 [list]
-[*][b]Expand Armada[/b] — 5000 alloys, upgrade all starbases, next starbase + ship tech
+[*][b]Expand Armada[/b] — 2000 alloys, upgrade all starbases, next starbase + ship tech
 [*][b]Harness Star[/b] — boosts home star output, adds a special resource, unlocks Dyson Swarm tech (Machine Age DLC)
 [*][b]Strategic Resources[/b] — adds deposits of all three strategics, unlocks each mining tech
 [*][b]Living Metal / Dark Matter / Zro[/b] — adds one deposit and unlocks the matching mining tech

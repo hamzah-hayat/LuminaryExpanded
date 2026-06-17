@@ -3526,7 +3526,10 @@ country_event = {
 						is_controlled_by = root
 					}
 				}
-				random_system_colony = {
+				random_system_planet = {
+					limit = {
+						is_colony = yes
+					}
 					save_event_target_as = first_reformist_planet
 				}
 			}
@@ -3569,7 +3572,7 @@ country_event = {
 						any_owned_pop_group = { has_ethic = ethic_egalitarian }
 					}
 				}
-				random_system_colony = {
+				random_system_planet = {
 					limit = {
 						is_colony = yes
 						has_owner = yes
@@ -4632,7 +4635,7 @@ situation_event = {
 
 		owner = {
 			random_system_within_border = {
-				random_system_colony = {
+				random_system_planet = {
 					limit = {
 						has_modifier = paragon_origin_reformists
 					}

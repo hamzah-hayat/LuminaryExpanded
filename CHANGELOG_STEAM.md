@@ -1,3 +1,23 @@
+[h1]1.0.8[/h1]
+This version was built and tested with Stellaris Cetus 4.4.3 (0a3d)
+
+[h2]Fixes[/h2]
+[list]
+[*] Fix colony conquer on_action
+[*] Change planet_events to carrier_events, also flags as well
+[/list]
+
+[h2]Changes[/h2]
+[list]
+[*] Change Convince Reformist decision to say 100 pops (technically its 100 pops from a pop group but close enough)
+[*] Reduce alloys bonus in 40 year plan agenda option to 2000
+[/list]
+
+[h2]Features[/h2]
+[list]
+[*] Add option for both leader ethic choices to just keep as they are.
+[/list]
+
 [h1]1.0.7[/h1]
 This version was built and tested with Stellaris Cetus 4.3.5 (df6e)
 

@@ -62,7 +62,7 @@ Winning a war or making another empire a vassal are now repeatable events, rewar
 
 ### 📈 New 40 Year plan effects
 - Six refactored possible effects for the 40 year plan, choose from:
-    - Expand Armada - Give 5000 alloys, Upgrade all starbases and give next starbase + ship tech level
+    - Expand Armada - Give 2000 alloys, Upgrade all starbases and give next starbase + ship tech level
     - Harness Star - Increase home star output and add one special resource to it, plus give dyson swarm (and SR resource) as tech options. (Requires Machine Age DLC)
     - Strategic resources - Give all three strategic resources as deposits somewhere and give mining tech for each resource as tech option.
     - Living Metal/Dark Matter/Zro - Give a single deposit and unlock mining tech for this special resource.

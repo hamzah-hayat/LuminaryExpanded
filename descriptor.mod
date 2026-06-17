@@ -1,4 +1,4 @@
-version="1.0.7"
+version="1.0.8"
 tags={
 	"Overhaul"
 	"Events"
@@ -8,5 +8,5 @@ tags={
 }
 name="LuminaryExpanded"
 picture="thumbnail.png"
-supported_version="v4.3.*"
+supported_version="v4.4.*"
 remote_file_id="3704128169"
