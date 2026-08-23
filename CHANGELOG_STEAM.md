@@ -1,3 +1,14 @@
+[h1]1.0.9[/h1]
+This version was built and tested with Stellaris Cygnus 4.5.0 (4f3c)
+
+Now uses the new Pop ethics system, please use the old version if you need the old pop system.
+
+[h2]Fixes[/h2]
+[list]
+[*] Replace removed vanilla scripted effect pop_group_transfer_ethic with built-in pop_force_transfer_ethic in le_decision_convince_reformists
+[*] Replace removed vanilla script value paragon_origin_count_egalitarians with new le_count_egalitarians (uses pop_ethic_amount trigger)
+[/list]
+
 [h1]1.0.8[/h1]
 This version was built and tested with Stellaris Cetus 4.4.3 (0a3d)
 
