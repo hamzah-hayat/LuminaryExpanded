@@ -1463,6 +1463,8 @@ country_event = { # Become Overlord
 	is_triggered_only = yes
 
 	trigger = {
+		# LumEx - Exclude Champions Forge tournament vassals (Nomads DLC)
+		NOT = { is_country_type = champions_forge_contestant }
 		from = {
 			NOT = { has_country_flag = increase_leader_upkeep }
 			exists = ruler
