@@ -34,7 +34,7 @@ le_decision_convince_reformists = {
 		}
 		cost = {
 			unity = 2
-			multiplier = value:le_count_egalitarians
+			multiplier = colony.value:pop_ethic_amount_value|ETHIC|egalitarian|
 		}
 	}
 
@@ -59,10 +59,12 @@ le_decision_convince_reformists = {
 				limit = {
 					has_ethic = ethic_egalitarian
 				}
-				pop_force_transfer_ethic = {
-					old_ethic = ethic_egalitarian
-					new_ethic = ethic_authoritarian
-					amount = 100
+				pop_group_transfer_effect = {
+					POP_GROUP = this
+					OLD_ETHOS = ethic_egalitarian
+					ETHOS = ethic_authoritarian
+					AMOUNT = 100
+					RANDOM = 25
 				}
 			}
 			if = {

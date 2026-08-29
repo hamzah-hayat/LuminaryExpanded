@@ -27,15 +27,3 @@ le_biologist_workforce = {
 	multiply = 0.1
 }
 
-# Replacement for removed vanilla paragon_origin_count_egalitarians
-# Counts the number of egalitarian pops in the country for decision cost scaling
-le_count_egalitarians = {
-	base = 0
-	complex_trigger_modifier = {
-		trigger = pop_ethic_amount
-		parameters = {
-			ethic = ethic_egalitarian
-		}
-		mode = add
-	}
-}
