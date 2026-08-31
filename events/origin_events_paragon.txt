@@ -1096,10 +1096,11 @@ country_event = { #Coronation
 				has_any_ethic = yes
 				NOT = { has_ethic = ethic_egalitarian }
 			}
-			pop_group_transfer_ethic = {
+			pop_group_add_ethic_effect = {
 				POP_GROUP = this
 				ETHOS = ethic_egalitarian
 				PERCENTAGE = 0.1
+				RANDOM = 0.025
 			}
 		}
 	}
@@ -2336,10 +2337,11 @@ country_event = { # Release the Forgotten
 				has_any_ethic = yes
 				NOT = { has_ethic = ethic_egalitarian }
 			}
-			pop_group_transfer_ethic = {
+			pop_group_add_ethic_effect = {
 				POP_GROUP = this
 				ETHOS = ethic_egalitarian
 				PERCENTAGE = 0.1
+				RANDOM = 0.025
 			}
 		}
 	}
@@ -2372,9 +2374,10 @@ situation_event = { # 1st
 
 	immediate = {
 		owner = {
-			pop_group_transfer_ethic = {
+			pop_group_add_ethic_effect = {
 				ETHOS = ethic_egalitarian
 				AMOUNT = 100
+				RANDOM = 25
 			}
 			switch = {
 				trigger = has_modifier
@@ -2489,9 +2492,10 @@ situation_event = { # 2nd
 
 	immediate = {
 		owner = {
-			pop_group_transfer_ethic = {
+			pop_group_add_ethic_effect = {
 				ETHOS = ethic_egalitarian
 				AMOUNT = 100
+				RANDOM = 25
 			}
 		}
 	}
@@ -2585,9 +2589,10 @@ situation_event = { # 3rd
 
 	immediate = {
 		owner = {
-			pop_group_transfer_ethic = {
+			pop_group_add_ethic_effect = {
 				ETHOS = ethic_egalitarian
 				AMOUNT = 100
+				RANDOM = 25
 			}
 		}
 	}
@@ -2717,8 +2722,12 @@ situation_event = { #Situation ended
 	option = { #Execute leaders
 		name = paragon.5057.c
 		owner = {
-			random_owned_pop_group = {
+			weighted_random_owned_pop_group = {
 				limit = { has_ethic = ethic_egalitarian }
+				pop_force_remove_ethic = {
+					ethic = ethic_egalitarian
+					amount = 100
+				}
 				kill_single_pop = yes
 			}
 			hidden_effect = {
@@ -3487,10 +3496,11 @@ country_event = {
 				has_any_ethic = yes
 				NOT = { has_ethic = ethic_egalitarian }
 			}
-			pop_group_transfer_ethic = {
+			pop_group_add_ethic_effect = {
 				POP_GROUP = this
 				ETHOS = ethic_egalitarian
 				PERCENTAGE = 0.05
+				RANDOM = 0.01
 			}
 		}
 		export_trigger_value_to_variable = {
@@ -3548,9 +3558,10 @@ country_event = {
 			hidden_effect = {
 				while = {
 					count = 2
-					pop_group_transfer_ethic = {
+					pop_group_add_ethic_effect = {
 						ETHOS = ethic_egalitarian
 						AMOUNT = 100
+						RANDOM = 25
 					}
 				}
 			}
@@ -3761,8 +3772,12 @@ situation_event = { #Tyranny
 		add_situation_progress = -8
 		owner = {
 			ruler = { paragon_origin_gain_delusion = yes }
-			random_owned_pop_group = {
+			weighted_random_owned_pop_group = {
 				limit = { has_ethic = ethic_egalitarian }
+				pop_force_remove_ethic = {
+					ethic = ethic_egalitarian
+					amount = 100
+				}
 				kill_single_pop = yes
 			}
 		}
@@ -4658,9 +4673,10 @@ situation_event = {
 		event_target:reformist_colony = {
 			while = {
 				count = 2
-				pop_group_transfer_ethic = {
+				pop_group_add_ethic_effect = {
 					ETHOS = ethic_authoritarian
 					AMOUNT = 100
+					RANDOM = 25
 				}
 			}
 			remove_modifier = paragon_origin_reformists
@@ -4714,9 +4730,10 @@ situation_event = {
 		event_target:reformist_colony = {
 			while = {
 				count = 2
-				pop_group_transfer_ethic = {
+				pop_group_add_ethic_effect = {
 					ETHOS = ethic_egalitarian
 					AMOUNT = 100
+					RANDOM = 25
 				}
 			}
 		}
@@ -6251,7 +6268,6 @@ country_event = { # LumEx - Ruler Insight - Dark Matter: add deposit + tech
 			# Create a new Dark Matter deposit
 			random_planet_within_border = {
 				limit = {
-					is_star = yes
 					is_colonizable = no
 					is_colony = no
 					has_any_strategic_resource = no
