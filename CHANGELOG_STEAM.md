@@ -1,3 +1,17 @@
+[h1]1.1.0[/h1]
+This version was built and tested with Stellaris Cygnus 4.5.0 (8697)
+
+[h2]Fixes[/h2]
+[list]
+[*] Fix Convince Reformists decision
+[*] Exclude Champion forge tournament from triggering the vassal event (technically a vanilla bug)
+[/list]
+
+[h2]Changes[/h2]
+[list]
+[*] Use the new Pop group effects for ethic changes, plus a minor trigger fix for adding dark matter
+[/list]
+
 [h1]1.0.9[/h1]
 This version was built and tested with Stellaris Cygnus 4.5.0 (4f3c)
 
